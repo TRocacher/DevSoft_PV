@@ -1,0 +1,1366 @@
+2021-02-03 10:30:01,147 [INFO] Activator:170 - 
+
+
+2021-02-03 10:30:01,153 [INFO] Activator:171 - !SESSION log4j initialized
+2021-02-03 10:30:50,316 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-02-03 10:30:50,500 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304
+2021-02-03 10:30:50,517 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/mcu/
+2021-02-03 10:30:50,523 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/boardmanager/
+2021-02-03 10:30:50,525 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,525 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,531 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,541 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,543 [INFO] DbMcusJson:63 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,545 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,546 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,589 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-02-03 10:30:50,595 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,769 [INFO] RulesReader:52 - Compatibility file has been processed (228 Rules)
+2021-02-03 10:30:50,913 [INFO] MicroXplorer:565 - Detected Java Version = 1.8.0_202
+2021-02-03 10:30:50,913 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/mcu/
+2021-02-03 10:30:50,915 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/boardmanager/
+2021-02-03 10:30:50,915 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,916 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,916 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:50,917 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,917 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,917 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,918 [INFO] DbMcusJson:63 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,918 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,918 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,919 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,919 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:50,919 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,920 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,920 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-02-03 10:30:50,920 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:50,921 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,019 [INFO] MainPanel:190 - HeapMemory: 333447168
+2021-02-03 10:30:51,187 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/mcu/
+2021-02-03 10:30:51,188 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/boardmanager/
+2021-02-03 10:30:51,188 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:51,189 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:51,189 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/plugins/mcufinder/images/
+2021-02-03 10:30:51,190 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,190 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,191 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,191 [INFO] DbMcusJson:63 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,191 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,191 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,192 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,192 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,192 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,193 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,193 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-02-03 10:30:51,193 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\trocache\.stmcufinder\plugins\mcufinder/ => C:\Users\trocache\.stmcufinder\plugins\mcufinder
+2021-02-03 10:30:51,194 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\trocache\.stmcufinder\plugins\mcufinder//mcu/
+2021-02-03 10:30:51,224 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304
+2021-02-03 10:30:51,227 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2021-02-03 10:30:51,229 [INFO] PluginManage:292 - Check plugin analytics
+2021-02-03 10:30:56,007 [INFO] AnalyticsPlugin:225 - Accepted Software Licenses: 
+2021-02-03 10:30:56,008 [INFO] AnalyticsPlugin:227 - Accepted CMSIS Pack Licenses: 
+2021-02-03 10:30:56,009 [INFO] AnalyticsPlugin:229 - Accepted Firmware Licenses: 
+2021-02-03 10:30:56,010 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-02-03 10:30:56,011 [INFO] PluginManage:292 - Check plugin clock
+2021-02-03 10:30:56,033 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2021-02-03 10:30:56,034 [INFO] PluginManage:292 - Check plugin ddr
+2021-02-03 10:30:56,036 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-02-03 10:30:56,037 [INFO] PluginManage:292 - Check plugin filemanager
+2021-02-03 10:30:56,247 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-02-03 10:30:56,248 [INFO] PluginManage:292 - Check plugin ipmanager
+2021-02-03 10:30:56,259 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-02-03 10:30:56,260 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2021-02-03 10:30:56,273 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-02-03 10:30:56,273 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2021-02-03 10:30:56,314 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-02-03 10:30:56,315 [INFO] PluginManage:292 - Check plugin power
+2021-02-03 10:30:56,328 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2021-02-03 10:30:56,328 [INFO] PluginManage:292 - Check plugin projectmanager
+2021-02-03 10:30:56,360 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-02-03 10:30:56,360 [INFO] PluginManage:292 - Check plugin thirdparty
+2021-02-03 10:30:56,592 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-02-03 10:30:56,592 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-02-03 10:30:56,592 [INFO] PluginManage:292 - Check plugin tools
+2021-02-03 10:30:56,593 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-02-03 10:30:56,594 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2021-02-03 10:30:56,597 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2021-02-03 10:30:56,597 [INFO] PluginManage:292 - Check plugin tutovideos
+2021-02-03 10:30:56,913 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-02-03 10:30:56,914 [INFO] PluginManage:292 - Check plugin updater
+2021-02-03 10:30:56,935 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2021-02-03 10:30:56,936 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2021-02-03 10:30:57,280 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 10:30:57,474 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,474 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2021-02-03 10:30:57,479 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,480 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2021-02-03 10:30:57,485 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,486 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2021-02-03 10:30:57,489 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,489 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2021-02-03 10:30:57,494 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,495 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2021-02-03 10:30:57,505 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,505 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2021-02-03 10:30:57,515 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,516 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2021-02-03 10:30:57,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,520 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2021-02-03 10:30:57,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,528 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2021-02-03 10:30:57,540 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,541 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2021-02-03 10:30:57,545 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,545 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2021-02-03 10:30:57,551 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,552 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2021-02-03 10:30:57,563 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,563 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2021-02-03 10:30:57,571 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,571 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2021-02-03 10:30:57,576 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,576 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2021-02-03 10:30:57,580 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,581 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2021-02-03 10:30:57,586 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,587 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2021-02-03 10:30:57,591 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,592 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2021-02-03 10:30:57,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,597 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2021-02-03 10:30:57,602 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,602 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2021-02-03 10:30:57,606 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,607 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2021-02-03 10:30:57,615 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,615 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2021-02-03 10:30:57,622 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,623 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2021-02-03 10:30:57,628 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,629 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2021-02-03 10:30:57,634 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,635 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2021-02-03 10:30:57,646 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,647 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2021-02-03 10:30:57,656 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,661 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2021-02-03 10:30:57,664 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,664 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2021-02-03 10:30:57,668 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,669 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2021-02-03 10:30:57,673 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,674 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2021-02-03 10:30:57,680 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,680 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2021-02-03 10:30:57,687 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,688 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2021-02-03 10:30:57,690 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,691 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2021-02-03 10:30:57,697 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,698 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2021-02-03 10:30:57,702 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,702 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2021-02-03 10:30:57,706 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,706 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2021-02-03 10:30:57,710 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,710 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2021-02-03 10:30:57,712 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,713 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2021-02-03 10:30:57,717 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:30:57,717 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2021-02-03 10:30:58,209 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:30:58,393 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:30:58,444 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2021-02-03 10:30:58,451 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:30:58,452 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2021-02-03 10:30:58,557 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:30:58,557 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2021-02-03 10:30:59,594 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2021-02-03 10:31:02,596 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:31:02,596 [ERROR] AbstractThirdPartyUpdaterManager:153 - java.lang.Integer cannot be cast to java.util.List
+2021-02-03 10:31:02,597 [INFO] ThirdParty:887 - Integrity check success = false
+2021-02-03 10:31:02,598 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-02-03 10:31:02,598 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-02-03 10:31:02,598 [INFO] ThirdParty:785 - entering critical section [close project]
+2021-02-03 10:31:02,602 [INFO] ThirdParty:796 - exiting critical section [close project]
+2021-02-03 10:31:02,612 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 10:31:02,613 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-02-03 10:31:02,623 [ERROR] Updater:1065 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2021-02-03 10:31:02,627 [INFO] Updater:1002 - Updater Version found : 6.1.1
+2021-02-03 10:31:02,650 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304
+2021-02-03 10:31:02,847 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 10:31:02,851 [INFO] MainUpdater:249 - Updater Check For Update Now.
+2021-02-03 10:31:02,851 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-02-03 10:31:02,909 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-02-03 10:31:02,961 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 10:31:03,724 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\trocache\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-02-03 10:31:03,730 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2021-02-03 10:31:03,734 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-02-03 10:31:03,736 [INFO] DbMcusXml:97 - Load MCU database from C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\/mcu/families.xml
+2021-02-03 10:31:05,084 [INFO] DbMcusJson:92 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-02-03 10:31:06,683 [INFO] DbMcus:176 - Found 1835 MCUs (1796 are supported by CubeMX, 1804 are visible in CubeMX)
+2021-02-03 10:31:06,684 [INFO] ApiDb:238 - Load user favorites file C:\Users\trocache/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-02-03 10:31:06,685 [INFO] ApiDb:242 - User favorites MCUs=[]
+2021-02-03 10:31:06,685 [INFO] DbMcus:188 - Set 0 / 0 favorites MCUs
+2021-02-03 10:31:07,467 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2021-02-03 10:31:08,041 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2021-02-03 10:31:08,196 [INFO] DbBoardsPdsc:91 - Found 24 items
+2021-02-03 10:31:08,199 [INFO] DbBoardsPdsc:91 - Found 9 items
+2021-02-03 10:31:08,206 [INFO] DbBoardsPdsc:91 - Found 32 items
+2021-02-03 10:31:08,209 [INFO] DbBoardsPdsc:91 - Found 1 items
+2021-02-03 10:31:08,220 [INFO] DbBoardsPdsc:91 - Found 45 items
+2021-02-03 10:31:08,234 [INFO] DbBoardsPdsc:91 - Found 41 items
+2021-02-03 10:31:08,237 [INFO] DbBoardsPdsc:91 - Found 2 items
+2021-02-03 10:31:08,241 [INFO] DbBoardsPdsc:91 - Found 4 items
+2021-02-03 10:31:08,252 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-02-03 10:31:08,253 [WARN] DbBoardsPdsc:255 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-02-03 10:31:08,259 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-02-03 10:31:08,259 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-02-03 10:31:08,259 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-02-03 10:31:08,286 [INFO] DbBoardsJson:85 - JSON generation date=Wed Jan 20 09:08:10 CET 2021 (1611130090)
+2021-02-03 10:31:08,300 [INFO] DbBoards:118 - Found 158 boards (155 are supported by CubeMX)
+2021-02-03 10:31:08,318 [INFO] DbBoardsDocs:145 - JSON generation date=Wed Jan 20 10:17:20 CET 2021 (1611134240)
+2021-02-03 10:31:08,358 [INFO] DbBoardsDocs:81 - Found 190 boards documents
+2021-02-03 10:31:08,359 [WARN] DbBoards:128 - board B-L462E-CELL1 has no document id list !
+2021-02-03 10:31:08,359 [WARN] DbBoards:128 - board B-L475E-IOT01A2 has no document id list !
+2021-02-03 10:31:08,361 [WARN] DbBoards:128 - board NUCLEO-G0B1RE has no document id list !
+2021-02-03 10:31:08,361 [WARN] DbBoards:128 - board NUCLEO-G491RE has no document id list !
+2021-02-03 10:31:08,361 [WARN] DbBoards:128 - board NUCLEO-H743ZI2 has no document id list !
+2021-02-03 10:31:08,362 [WARN] DbBoards:128 - board NUCLEO-L4A6ZG has no document id list !
+2021-02-03 10:31:08,363 [WARN] DbBoards:128 - board NUCLEO-WB55RG has no document id list !
+2021-02-03 10:31:08,363 [WARN] DbBoards:128 - board NUCLEO-WL55JC1 has no document id list !
+2021-02-03 10:31:08,363 [WARN] DbBoards:128 - board NUCLEO-WL55JC2 has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board STEVAL-BFA001V1B has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board STEVAL-BFA001V2B has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board STEVAL-IDP005V1 has no document id list !
+2021-02-03 10:31:08,364 [WARN] DbBoards:128 - board STEVAL-IDP005V2 has no document id list !
+2021-02-03 10:31:08,365 [WARN] DbBoards:128 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-02-03 10:31:08,365 [WARN] DbBoards:128 - board STEVAL-STWINKT1 has no document id list !
+2021-02-03 10:31:08,366 [WARN] DbBoards:128 - board STM32F401C-DISCO has no document id list !
+2021-02-03 10:31:08,367 [WARN] DbBoards:128 - board STM32F769I-DISC1 has no document id list !
+2021-02-03 10:31:08,367 [WARN] DbBoards:128 - board STM32G0C1E-EV has no document id list !
+2021-02-03 10:31:08,368 [WARN] DbBoards:128 - board STM32G474E-EVAL1 has no document id list !
+2021-02-03 10:31:08,368 [WARN] DbBoards:128 - board STM32H743I-EVAL2 has no document id list !
+2021-02-03 10:31:08,369 [WARN] DbBoards:128 - board STM32H747I-DISC1 has no document id list !
+2021-02-03 10:31:08,369 [WARN] DbBoards:128 - board STM32H753I-EVAL2 has no document id list !
+2021-02-03 10:31:08,369 [WARN] DbBoards:128 - board STM32L-DISCOVERY has no document id list !
+2021-02-03 10:31:08,370 [WARN] DbBoards:128 - board STM32MP157A-DK1 has no document id list !
+2021-02-03 10:31:08,371 [WARN] DbBoards:128 - board STM32MP157F-DK2 has no document id list !
+2021-02-03 10:31:08,371 [WARN] DbBoards:128 - board STM32MP157F-EV1 has no document id list !
+2021-02-03 10:31:10,432 [INFO] ApiDb:238 - Load user favorites file C:\Users\trocache/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2021-02-03 10:31:10,433 [INFO] ApiDb:242 - User favorites Boards=[]
+2021-02-03 10:31:10,433 [INFO] DbBoards:207 - Set 0 / 0 favorites Boards
+2021-02-03 10:32:44,646 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 10:32:44,647 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 10:32:44,717 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-02-03 10:32:44,718 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-02-03 10:32:44,718 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2021-02-03 10:32:44,718 [INFO] ThirdParty:785 - entering critical section [close project]
+2021-02-03 10:32:44,719 [INFO] ThirdParty:796 - exiting critical section [close project]
+2021-02-03 10:32:44,725 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 10:32:44,727 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 464237824 Bytes (678428672)
+2021-02-03 10:32:44,730 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-02-03 10:32:44,730 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-02-03 10:32:44,730 [INFO] OpenFileManager:274 - Change cursor
+2021-02-03 10:32:44,736 [WARN] ThirdParty:204 - Use empty third party IP manager
+2021-02-03 10:32:44,804 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-02-03 10:32:44,804 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-02-03 10:32:44,841 [INFO] ThirdParty:887 - Integrity check success = true
+2021-02-03 10:32:44,842 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-02-03 10:32:44,842 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-02-03 10:32:54,280 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-02-03 10:32:54,281 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-02-03 10:32:54,281 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-02-03 10:32:54,281 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-02-03 10:32:54,283 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-02-03 10:32:54,287 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,287 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,288 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,288 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,288 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,288 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,288 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,289 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,289 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,289 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,289 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,289 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,290 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,290 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,290 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,290 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,291 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,291 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,291 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,291 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,292 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,292 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,292 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,292 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,292 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,293 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,293 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,293 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,293 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,293 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,294 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,295 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,295 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 10:32:54,311 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-02-03 10:32:54,314 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (32000000)
+2021-02-03 10:32:55,704 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 495464616 Bytes (678428672)
+2021-02-03 10:32:55,708 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2021-02-03 10:32:55,708 [INFO] ThirdParty:751 - entering critical section [change project]
+2021-02-03 10:32:55,708 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-02-03 10:32:55,709 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-02-03 10:32:55,710 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-02-03 10:32:55,710 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-02-03 10:32:55,710 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-02-03 10:32:55,710 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-02-03 10:32:55,710 [INFO] ThirdParty:757 - exiting critical section [change project]
+2021-02-03 10:32:56,264 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 10:32:56,266 [INFO] PinOutPanel:1434 - setPackage(STM32L476RGTx,LQFP64)
+2021-02-03 10:32:57,399 [INFO] UtilMem:74 - Before build in PCC Used Memory: 435976848 Bytes (678428672)
+2021-02-03 10:32:58,222 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 10:32:58,310 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 10:32:58,477 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 10:32:58,499 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 10:32:58,801 [INFO] UtilMem:74 - After build in PCC Used Memory: 527725208 Bytes (678428672)
+2021-02-03 10:32:58,842 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,842 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,842 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,843 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,843 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,843 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,843 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,844 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,844 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,844 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,844 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,844 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,845 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,845 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,845 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,845 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,846 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,846 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,847 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,847 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,848 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,849 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,850 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,851 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,851 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,852 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,852 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,853 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,854 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,855 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,855 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,856 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,857 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,858 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,859 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,860 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,860 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,861 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,862 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,863 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,864 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,865 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,866 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,867 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,868 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,869 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,872 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,875 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,876 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,877 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,878 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,879 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,880 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,881 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,882 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 10:32:58,945 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2021-02-03 10:32:59,087 [INFO] OpenFileManager:294 - Restore cursor
+2021-02-03 10:32:59,713 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 386539672 Bytes (678428672)
+2021-02-03 10:32:59,884 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 397025432 Bytes (678428672)
+2021-02-03 10:33:00,656 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 10:33:00,657 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 10:33:00,657 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 10:33:00,657 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 10:33:00,657 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 10:33:00,657 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 10:33:00,658 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 10:33:00,660 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 10:33:01,634 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 10:33:02,409 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 10:33:02,635 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 10:33:03,048 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 10:33:03,138 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 10:33:03,141 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 10:33:03,536 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:33:03,540 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:33:03,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:33:03,575 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 10:33:03,801 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 10:33:03,817 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 10:33:03,954 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 10:33:03,974 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 10:33:04,234 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 10:33:04,240 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 10:33:04,398 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 10:33:04,414 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 10:33:04,610 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 10:33:04,697 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 10:33:04,699 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 10:33:04,713 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 10:33:04,892 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 10:33:04,900 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 10:33:05,154 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 10:33:06,459 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 189mS.
+2021-02-03 10:33:06,474 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 10:33:07,560 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 10:33:07,579 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2021-02-03 10:33:07,587 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2021-02-03 10:33:07,608 [INFO] ApiDbMcu:456 - Load IP Config File for TOUCHSENSING
+2021-02-03 10:33:07,617 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2021-02-03 10:33:07,624 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2021-02-03 10:33:16,077 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 9603mS.
+2021-02-03 10:33:16,078 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-02-03 10:33:16,084 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-02-03 10:33:17,345 [INFO] ApiDb:263 - Save user favorites file C:\Users\trocache/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-02-03 10:33:17,346 [INFO] ApiDb:267 - User favorites MCUs=[]
+2021-02-03 10:34:37,531 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 644606368 Bytes (993001472)
+2021-02-03 10:34:38,017 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 10:34:38,017 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 10:34:38,017 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 10:34:38,018 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 10:34:38,018 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 10:34:38,018 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 10:34:38,018 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 10:34:38,023 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 10:34:38,631 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 10:34:38,742 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 10:34:38,806 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 10:34:38,928 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 10:34:38,944 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 10:34:38,946 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 10:34:39,219 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:34:39,222 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:34:39,225 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:34:39,253 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 10:34:39,414 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 10:34:39,425 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 10:34:39,571 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 10:34:39,596 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 10:34:39,814 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 10:34:39,822 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 10:34:39,933 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 10:34:39,951 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 10:34:40,120 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 10:34:40,159 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 10:34:40,160 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 10:34:40,177 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 10:34:40,329 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 10:34:40,339 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 10:34:40,580 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 10:34:42,246 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 217mS.
+2021-02-03 10:34:42,256 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 10:34:42,852 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 10:34:46,910 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 4654mS.
+2021-02-03 10:34:46,911 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 10:34:46,917 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 10:36:15,108 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 446542376 Bytes (1033895936)
+2021-02-03 10:36:15,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 10:36:15,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 10:36:15,495 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 10:36:15,495 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 10:36:15,495 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 10:36:15,495 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 10:36:15,495 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 10:36:15,496 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 10:36:15,857 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 10:36:15,918 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 10:36:15,962 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 10:36:16,028 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 10:36:16,048 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 10:36:16,049 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 10:36:16,311 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:36:16,315 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:36:16,318 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 10:36:16,349 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 10:36:16,525 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 10:36:16,536 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 10:36:16,806 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 10:36:16,830 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 10:36:17,087 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 10:36:17,095 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 10:36:17,235 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 10:36:17,255 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 10:36:17,422 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 10:36:17,462 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 10:36:17,463 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 10:36:17,484 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 10:36:17,647 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 10:36:17,658 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 10:36:18,009 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 10:36:19,470 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 268mS.
+2021-02-03 10:36:19,479 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 10:36:20,126 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 10:36:23,612 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 4133mS.
+2021-02-03 10:36:23,613 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 10:36:23,628 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 11:00:13,004 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 11:00:13,005 [INFO] MainUpdater:2644 - connection check result : 10
+2021-02-03 11:00:13,365 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-02-03 11:00:13,365 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-02-03 11:00:13,365 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2021-02-03 11:00:13,366 [INFO] ThirdParty:785 - entering critical section [close project]
+2021-02-03 11:00:13,366 [INFO] ThirdParty:796 - exiting critical section [close project]
+2021-02-03 11:00:13,368 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 11:00:13,372 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 415358048 Bytes (1048576000)
+2021-02-03 11:00:13,372 [INFO] MicroXplorer:385 - Change Database Path : 
+2021-02-03 11:00:13,373 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2021-02-03 11:00:13,373 [INFO] OpenFileManager:274 - Change cursor
+2021-02-03 11:00:13,375 [WARN] ThirdParty:204 - Use empty third party IP manager
+2021-02-03 11:00:13,396 [INFO] RulesReader:52 - Compatibility file has been processed (228 Rules)
+2021-02-03 11:00:24,411 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-02-03 11:00:24,411 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-02-03 11:00:24,412 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-02-03 11:00:24,412 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-02-03 11:00:24,412 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-02-03 11:00:24,413 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,413 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,413 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,413 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,414 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,414 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,414 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,414 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,414 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,415 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,415 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,415 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,415 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,415 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,416 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,416 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,416 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,416 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,416 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,417 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,418 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,418 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,418 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,418 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,418 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,419 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,419 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,419 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,419 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,419 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,420 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,420 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,420 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-02-03 11:00:24,429 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-02-03 11:00:24,432 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (32000000)
+2021-02-03 11:00:27,056 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 835310680 Bytes (1048576000)
+2021-02-03 11:00:27,058 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2021-02-03 11:00:27,058 [INFO] ThirdParty:751 - entering critical section [change project]
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-02-03 11:00:27,058 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-02-03 11:00:27,059 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-02-03 11:00:27,059 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-02-03 11:00:27,059 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-02-03 11:00:27,059 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-02-03 11:00:27,059 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-02-03 11:00:27,059 [INFO] ThirdParty:757 - exiting critical section [change project]
+2021-02-03 11:00:27,375 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2021-02-03 11:00:27,376 [INFO] PinOutPanel:1434 - setPackage(STM32L476RGTx,LQFP64)
+2021-02-03 11:00:28,037 [INFO] UtilMem:74 - Before build in PCC Used Memory: 421404224 Bytes (1048576000)
+2021-02-03 11:00:28,272 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 11:00:28,329 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 11:00:28,403 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 11:00:28,417 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/trocache/.stm32cubemx/plugins/power
+2021-02-03 11:00:28,505 [INFO] UtilMem:74 - After build in PCC Used Memory: 500573752 Bytes (1048576000)
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,525 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,527 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,528 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,528 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,528 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,530 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,530 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,530 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,531 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,531 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,531 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,532 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,532 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,532 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,533 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,533 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,534 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,534 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,534 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,535 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,535 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,536 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,536 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,537 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,537 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,538 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,538 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,539 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,539 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,540 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,540 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,541 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,541 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,543 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,543 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,544 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,545 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,546 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,547 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,548 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-02-03 11:00:28,565 [INFO] OpenFileManager:294 - Restore cursor
+2021-02-03 11:10:31,800 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 553902640 Bytes (1048576000)
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 11:10:32,135 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 11:10:32,136 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 11:10:32,137 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 11:10:32,571 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 11:10:32,653 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 11:10:32,710 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 11:10:32,817 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 11:10:32,833 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 11:10:32,835 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 11:10:33,103 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:10:33,106 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:10:33,109 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:10:33,138 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 11:10:33,274 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 11:10:33,284 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 11:10:33,418 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 11:10:33,449 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 11:10:33,797 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 11:10:33,805 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 11:10:33,900 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 11:10:33,935 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 11:10:34,048 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 11:10:34,082 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 11:10:34,083 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 11:10:34,097 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 11:10:34,211 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 11:10:34,237 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 11:10:34,413 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 11:10:35,616 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 291mS.
+2021-02-03 11:10:35,625 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 11:10:36,750 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 11:10:36,754 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2021-02-03 11:10:36,761 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2021-02-03 11:10:36,786 [INFO] ApiDbMcu:456 - Load IP Config File for TOUCHSENSING
+2021-02-03 11:10:36,794 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2021-02-03 11:10:36,801 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2021-02-03 11:10:39,460 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3835mS.
+2021-02-03 11:10:39,694 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 233mS.
+2021-02-03 11:10:39,699 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 11:11:17,097 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,805 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,807 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,808 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,808 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,809 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,810 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,811 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,812 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,813 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,814 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,815 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,815 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,816 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,816 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,817 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,817 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,817 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,818 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,818 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,818 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:11:24,859 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:03,283 [INFO] SpinnerEditor:79 - is string kkkk
+2021-02-03 11:12:04,509 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,512 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,512 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,513 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,513 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,514 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,514 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,515 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,515 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,515 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,516 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,516 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,516 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,516 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,516 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,517 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,517 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,518 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,518 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,518 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,574 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:04,577 [INFO] SpinnerEditor:79 - is string kkkk
+2021-02-03 11:12:14,322 [INFO] ParamManager:816 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2021-02-03 11:12:14,470 [INFO] ParamManager:816 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2021-02-03 11:12:14,885 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,889 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,890 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,891 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,891 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,892 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,892 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,893 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,893 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,894 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,894 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,894 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,894 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,895 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,896 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,943 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,944 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:14,945 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,823 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,823 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,829 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,829 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,829 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,830 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,830 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,831 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,831 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,831 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,832 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,832 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,833 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,833 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,834 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,834 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,834 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,835 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,835 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,836 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,836 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,836 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,837 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,837 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,837 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,838 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,838 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,838 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,839 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,839 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,840 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,841 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,841 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,841 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,842 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,842 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,842 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,843 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,843 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,843 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,844 [INFO] ADCParametersView:97 -        *      Rank 2 : false
+2021-02-03 11:12:18,888 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,889 [INFO] ADCParametersView:97 -                Rank 1 : false
+2021-02-03 11:12:18,889 [INFO] ADCParametersView:97 -                Rank 2 : false
+2021-02-03 11:12:35,379 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:12:35,380 [INFO] ADCParametersView:97 -                Rank 2 : false
+2021-02-03 11:12:39,052 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:12:39,053 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,745 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,745 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,747 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,748 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,748 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,748 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,748 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,749 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,750 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,750 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,750 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,750 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,750 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,751 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,752 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,753 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,754 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,754 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,754 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,754 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,755 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,755 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,755 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,755 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,755 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:32,946 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,947 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:32,947 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,063 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,063 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,064 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,064 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,064 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,064 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,065 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,065 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,065 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,066 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,066 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,066 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,067 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,067 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,067 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,067 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,068 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,068 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,068 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,068 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,069 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,069 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,069 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,069 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,070 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,070 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,070 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,071 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,071 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,071 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,071 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,071 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,072 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,073 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,073 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,077 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,078 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,078 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,079 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,079 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,079 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,080 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,080 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,080 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,081 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,081 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,082 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,082 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,082 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,083 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,083 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,083 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,084 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,084 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,085 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,085 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,086 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,086 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,086 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,087 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,087 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,088 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,088 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,089 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,091 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,091 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,092 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,092 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,093 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,093 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,094 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,094 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,095 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,095 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,096 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,096 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,097 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,097 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,098 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,098 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,099 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,100 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,100 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,100 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,101 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,314 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,314 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,315 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,315 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,317 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,317 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,317 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,319 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,319 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,319 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,320 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,320 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,320 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,321 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,321 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,321 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,322 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,322 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,322 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,322 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,323 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,324 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,325 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,326 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,327 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,328 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,329 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,329 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,329 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,329 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,330 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,330 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,330 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,330 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,331 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,331 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,331 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,331 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,331 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,332 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,332 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,332 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,332 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,333 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,334 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,334 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,334 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,335 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,336 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,337 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,338 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,339 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,340 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,341 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:33,387 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,388 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:33,388 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,172 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,172 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,175 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,175 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,176 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,176 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,176 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,177 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,177 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,178 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,178 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,178 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,179 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,179 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,179 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,180 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,180 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,180 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,181 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,181 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,181 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,181 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,182 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,182 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,182 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,183 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,183 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,183 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,184 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,184 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,184 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,184 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,185 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,185 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,185 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,186 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,186 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,186 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,186 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,186 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,187 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:38,239 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,240 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:38,240 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,426 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,426 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,432 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,433 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,434 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,434 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,434 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,434 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,435 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,435 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,435 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,435 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,435 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,436 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,436 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,436 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,436 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,437 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,437 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,437 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,437 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,437 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,438 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,438 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,438 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,438 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,439 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,439 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,439 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,439 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,440 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,440 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,440 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,441 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,441 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,441 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,442 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,442 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,442 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,442 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,443 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,455 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,455 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,456 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,551 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,551 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,553 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,554 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,555 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,555 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,556 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,557 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,557 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,557 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,558 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,558 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,559 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,559 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,559 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,560 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,560 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,560 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,561 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,561 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,562 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,563 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,563 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,563 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,564 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,565 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,566 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,566 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,566 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,566 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,566 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:13:42,607 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,608 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:13:42,608 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:14:34,050 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,492x273,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-02-03 11:14:56,104 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 678356168 Bytes (1048576000)
+2021-02-03 11:14:58,736 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 691465408 Bytes (1048576000)
+2021-02-03 11:15:02,726 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 724493512 Bytes (1048576000)
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 11:15:03,016 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 11:15:03,018 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 11:15:03,409 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 11:15:03,480 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 11:15:03,533 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 11:15:03,651 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 11:15:03,666 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 11:15:03,667 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 11:15:03,864 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:15:03,866 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:15:03,868 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:15:03,893 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 11:15:04,011 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 11:15:04,022 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 11:15:04,115 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 11:15:04,138 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 11:15:04,293 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 11:15:04,300 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 11:15:04,387 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 11:15:04,404 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 11:15:04,501 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 11:15:04,544 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 11:15:04,545 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 11:15:04,559 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 11:15:04,631 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 11:15:04,641 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 11:15:04,782 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 11:15:06,150 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 229mS.
+2021-02-03 11:15:06,162 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 11:15:06,805 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 11:15:09,476 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3314mS.
+2021-02-03 11:15:09,478 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-02-03 11:15:09,485 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-02-03 11:16:16,236 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,237 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,238 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,238 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,239 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,239 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,239 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,239 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,240 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,241 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,242 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,242 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,242 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,242 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,243 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,243 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,243 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,243 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,244 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,244 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,244 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,244 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,244 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,245 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,245 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,245 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,245 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,246 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,246 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,246 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,246 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:16,287 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,287 [INFO] ADCParametersView:97 -                Rank 1 : true
+2021-02-03 11:16:16,287 [INFO] ADCParametersView:97 -                Rank 2 : true
+2021-02-03 11:16:51,929 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,492x273,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-02-03 11:16:56,240 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 662830856 Bytes (1053818880)
+2021-02-03 11:16:58,560 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 675413768 Bytes (1053818880)
+2021-02-03 11:16:59,283 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 699531016 Bytes (1053818880)
+2021-02-03 11:16:59,622 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM6_7L4
+2021-02-03 11:16:59,622 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-02-03 11:16:59,623 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-02-03 11:16:59,623 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-02-03 11:16:59,623 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-02-03 11:16:59,623 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-02-03 11:16:59,623 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-02-03 11:16:59,625 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-02-03 11:17:00,212 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp_save
+2021-02-03 11:17:00,288 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\license.tmp
+2021-02-03 11:17:00,328 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp_save
+2021-02-03 11:17:00,416 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\gpio.tmp
+2021-02-03 11:17:00,430 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2021-02-03 11:17:00,431 [ERROR] IPConfigManager:1476 - ERROR: the RefConfig ADC_EnableInternalRegulator is not available in your config.xml file
+2021-02-03 11:17:00,628 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:17:00,632 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:17:00,634 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-02-03 11:17:00,651 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c_save
+2021-02-03 11:17:00,835 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_it.c
+2021-02-03 11:17:00,850 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h_save
+2021-02-03 11:17:00,947 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_it.h
+2021-02-03 11:17:00,970 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c_save
+2021-02-03 11:17:01,105 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\stm32l4xx_hal_msp.c
+2021-02-03 11:17:01,111 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp_save
+2021-02-03 11:17:01,201 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\MXTmpFiles\system.tmp
+2021-02-03 11:17:01,217 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-02-03 11:17:01,313 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\stm32l4xx_hal_conf.h
+2021-02-03 11:17:01,353 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-02-03 11:17:01,354 [WARN] CodeGenerator:3177 - IP not found : null
+2021-02-03 11:17:01,368 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h_save
+2021-02-03 11:17:01,463 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Inc\main.h
+2021-02-03 11:17:01,474 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c_save
+2021-02-03 11:17:01,623 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\Core\Src\main.c
+2021-02-03 11:17:02,881 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 236mS.
+2021-02-03 11:17:02,891 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-02-03 11:17:03,385 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-02-03 11:17:05,632 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2741mS.
+2021-02-03 11:17:05,633 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-02-03 11:17:05,638 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
