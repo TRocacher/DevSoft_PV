@@ -21,7 +21,22 @@ NB : un mode debug permet d'indiquer des pulses au moment des acquisitions analo
 
 
 =================================================================================================================================
+git ref : 6f66fc5 
 Service fourni actuellement :
 - DMA sur n voies en mode scan rafales
 Exemple proposé :
 HAL = TIM6 en TRGO Event overflow = 4µs; ADC en trigg sur TIM6, Scan, pas d'IT ni de DMA, 2 voies 5 et 6 (PA0 et PA1)
+
+=================================================================================================================================
+DMA en IT OK
+Test 1 : filtre 0 activé float: voie 0 filtrée connectée au 3.3V
+Resultat : la sortie filtrée se fige à 4088, oscille très peu, alors que l'entrée oui.
+Tps d'exec mesurée au scope (entrée / sortie IT DMA) = 1.8µs
+
+Codage filtre 1 en entier (32bits * 32bits en 64bits)
+Test 2 : idem, filtre comme la version float.
+Tps d'exec très décevant = 2.2µs. Le code ASM est curieux, utilise 2 fois MUL au lieu d'une Mul longue.
+-> Validation de la FPU. Pas de concurrence en langage C. Si on voulait améiorer les choses, il faudrait
+coder les filtres en ASM format fractionnaire...ne vaut pas le coup du tout.
+
+

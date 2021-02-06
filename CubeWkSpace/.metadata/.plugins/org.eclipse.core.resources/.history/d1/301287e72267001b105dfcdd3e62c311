@@ -1,0 +1,33 @@
+Comment copier un projet proprement ?
+- préparer un rep d'accueil 
+- créer un nouveau proj à partir d'un .ioc (cube)
+- choisir le rep d'accueil + nom du projet
+- ajouter les SRC avec les lignes de codes personnelles.
+- tester le clone pour voir si OK
+
+=================================================================================================================================
+DESCRIPTION GENERALE:
+Développement du module MyAnalog.c/.h initié dans C:\Users\trocache\Documents\Thierry\2013_2016\Formation_Perso\Cube_IDE\Dev_ADC
+et repris ici avec suivi ici avec git
+
+Le principe visé est une configuration avec HAL pour l'essentiel, puis le module MyAnalog fait le reste.
+Objectif : disposer d'un système autonome d'acquisition analogique jusqu'à 10 canaux, filtré ou pas.
+Chaque filtre est paramétrable
+
+De cette manière, un utilisateur pourra venir chercher à la volée des grandeurs analogiques, depuis un système d'IT totalement indépendant
+ou même via du freeRTOS. 
+MyAnalog doit permettre une utilisation minimale du CPU. Son système d'IT est au maximum (0). Prioritaire sur tout.
+NB : un mode debug permet d'indiquer des pulses au moment des acquisitions analog (sur Led2 Nucléo = PA5). A n'utiliser qu'en débug
+
+
+=================================================================================================================================
+Service fourni actuellement :
+- DMA sur n voies en mode scan rafales
+Exemple proposé :
+HAL = TIM6 en TRGO Event overflow = 4µs; ADC en trigg sur TIM6, Scan, pas d'IT ni de DMA, 2 voies 5 et 6 (PA0 et PA1)
+
+=================================================================================================================================
+DMA en IT OK
+Test 1 filtre 0 activé float: voie 0 filtrée connectée au 3.3V.
+Resultat : la sortie filtrée se fige à 4088, oscille très peu, alors que l'entrée oui.
+Tps d'exec mesurée au scope (entrée / sortie IT DMA) = 
