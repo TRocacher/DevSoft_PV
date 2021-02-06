@@ -254,6 +254,7 @@ void DMA1_Channel1_IRQHandler (void)
    GPIOA->BSRR=GPIO_PIN_5;  //-- set IO
    DMA1->IFCR|=DMA_IFCR_CTCIF1; //-- release flag DMA
 
+
 #ifdef Filter_0_On
     // récupération en
     en_0=(float)MyAnalog_DMA_Buffer[0];
@@ -288,6 +289,9 @@ void DMA1_Channel1_IRQHandler (void)
 	MyAnalog_Sn_Filter[1]=(short int)(sn_long>>44);// remise en format 16.0 (déclage de 44-0 = >>44)
 #endif
 
+
+	// sortie DAC
+    DAC1->DHR12R1=MyAnalog_Sn_Filter[0];
 
    GPIOA->BRR=GPIO_PIN_5; //-- reset IO
 

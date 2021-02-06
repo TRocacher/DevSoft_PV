@@ -1,7 +1,7 @@
-14:50:01 **** Clean-only build of configuration Debug for project analog ****
+18:44:46 **** Clean-only build of configuration Debug for project analog ****
 make -j4 clean 
 rm -rf *
  
 
-14:50:02 Build Finished. 0 errors, 0 warnings. (took 689ms)
+18:44:48 Build Finished. 0 errors, 0 warnings. (took 1s.157ms)
 

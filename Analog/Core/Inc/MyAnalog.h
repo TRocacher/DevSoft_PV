@@ -150,7 +150,7 @@ Rank 2 = ADC_in6
   * Activation des 10 filtres
   */
 #define Filter_0_On
-#define Filter_1_On
+//#define Filter_1_On
 #define Filter_2_On
 #define Filter_3_On
 #define Filter_4_On

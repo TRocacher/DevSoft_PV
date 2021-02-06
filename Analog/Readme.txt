@@ -28,7 +28,8 @@ Exemple proposé :
 HAL = TIM6 en TRGO Event overflow = 4µs; ADC en trigg sur TIM6, Scan, pas d'IT ni de DMA, 2 voies 5 et 6 (PA0 et PA1)
 
 =================================================================================================================================
-DMA en IT OK
+git ref : 9fbe058
+DMA en IT OK, FPU validée !!
 Test 1 : filtre 0 activé float: voie 0 filtrée connectée au 3.3V
 Resultat : la sortie filtrée se fige à 4088, oscille très peu, alors que l'entrée oui.
 Tps d'exec mesurée au scope (entrée / sortie IT DMA) = 1.8µs
@@ -38,5 +39,12 @@ Test 2 : idem, filtre comme la version float.
 Tps d'exec très décevant = 2.2µs. Le code ASM est curieux, utilise 2 fois MUL au lieu d'une Mul longue.
 -> Validation de la FPU. Pas de concurrence en langage C. Si on voulait améiorer les choses, il faudrait
 coder les filtres en ASM format fractionnaire...ne vaut pas le coup du tout.
+
+=================================================================================================================================
+git ref :
+Validation du filtre 0 en float, à fc = 500Hz, fe = 250kHz.
+utilisation du DAC channel 1(conf HAL + use dans MyAnalog.c)
+Test : GBF avec Analog discovery + scope
+Résultat : PARFAIT, Bode nickel, rep indicielle aussi, repliement de spectre ...
 
 
