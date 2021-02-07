@@ -2079,3 +2079,804 @@ Finished building: default.size.stdout
 make -j4 clean 
 rm -rf *
  
+21:02:07 **** Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l476rgtx.d" -MT"Core/Startup/startup_stm32l476rgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32l476rgtx.o" "../Core/Startup/startup_stm32l476rgtx.s"
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+../Core/Src/MyAnalog.c: In function 'MyAnalog_Filter_Init':
+../Core/Src/MyAnalog.c:167:17: warning: unused variable 'tampon' [-Wunused-variable]
+ float a0,b,wnTe,tampon;
+                 ^~~~~~
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-size   analog.elf 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22380	     20	   2096	  24496	   5fb0	analog.elf
+Finished building: default.size.stdout
+ 
+Finished building: analog.bin
+ 
+Finished building: analog.list
+ 
+21:03:01 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22380	     20	   2096	  24496	   5fb0	analog.elf
+Finished building: default.size.stdout
+ 
+15:03:30 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/MyAnalog.c: In function 'MyAnalog_Filter_Init':
+../Core/Src/MyAnalog.c:177:1: error: expected expression before '}' token
+ }
+ ^
+../Core/Src/MyAnalog.c: In function 'DMA1_Channel1_IRQHandler':
+../Core/Src/MyAnalog.c:216:37: warning: unused variable 'F1_sn' [-Wunused-variable]
+    static float F1_en,F1_en1,F1_en2,F1_sn,F1_sn1,F1_sn2;
+                                     ^~~~~
+At top level:
+../Core/Src/MyAnalog.c:216:37: warning: 'F1_sn' defined but not used [-Wunused-variable]
+make: *** [Core/Src/subdir.mk:36: Core/Src/MyAnalog.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:03:45 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+../Core/Src/MyAnalog.c: In function 'MyAnalog_Filter_Init':
+../Core/Src/MyAnalog.c:177:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [Core/Src/subdir.mk:36: Core/Src/MyAnalog.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:04:00 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19536	     20	   2084	  21640	   5488	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+15:04:30 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19536	     20	   2084	  21640	   5488	analog.elf
+Finished building: default.size.stdout
+ 
+16:06:52 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19536	     20	   2084	  21640	   5488	analog.elf
+Finished building: default.size.stdout
+ 
+17:22:53 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22380	     20	   2084	  24484	   5fa4	analog.elf
+Finished building: default.size.stdout
+ 
+Finished building: analog.list
+Finished building: analog.bin
+ 
+ 
+17:23:02 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22380	     20	   2084	  24484	   5fa4	analog.elf
+Finished building: default.size.stdout
+ 
+17:48:48 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+../Core/Src/MyAnalog.c:215:52: warning: 'F10_sn2' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+                                                    ^~~~~~~
+../Core/Src/MyAnalog.c:215:44: warning: 'F10_sn1' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+                                            ^~~~~~~
+../Core/Src/MyAnalog.c:215:37: warning: 'F10_sn' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+                                     ^~~~~~
+../Core/Src/MyAnalog.c:215:29: warning: 'F10_en2' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+                             ^~~~~~~
+../Core/Src/MyAnalog.c:215:21: warning: 'F10_en1' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+                     ^~~~~~~
+../Core/Src/MyAnalog.c:215:14: warning: 'F10_en' defined but not used [-Wunused-variable]
+ static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+              ^~~~~~
+../Core/Src/MyAnalog.c:214:42: warning: 'F10_b2' defined but not used [-Wunused-variable]
+ static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+                                          ^~~~~~
+../Core/Src/MyAnalog.c:214:35: warning: 'F10_b1' defined but not used [-Wunused-variable]
+ static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+                                   ^~~~~~
+../Core/Src/MyAnalog.c:214:28: warning: 'F10_a2' defined but not used [-Wunused-variable]
+ static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+                            ^~~~~~
+../Core/Src/MyAnalog.c:214:21: warning: 'F10_a1' defined but not used [-Wunused-variable]
+ static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+                     ^~~~~~
+../Core/Src/MyAnalog.c:214:14: warning: 'F10_a0' defined but not used [-Wunused-variable]
+ static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+              ^~~~~~
+../Core/Src/MyAnalog.c:207:47: warning: 'F9_sn2' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:207:40: warning: 'F9_sn1' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:207:34: warning: 'F9_sn' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:207:27: warning: 'F9_en2' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:207:20: warning: 'F9_en1' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:207:14: warning: 'F9_en' defined but not used [-Wunused-variable]
+ static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:206:38: warning: 'F9_b2' defined but not used [-Wunused-variable]
+ static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:206:32: warning: 'F9_b1' defined but not used [-Wunused-variable]
+ static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:206:26: warning: 'F9_a2' defined but not used [-Wunused-variable]
+ static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:206:20: warning: 'F9_a1' defined but not used [-Wunused-variable]
+ static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:206:14: warning: 'F9_a0' defined but not used [-Wunused-variable]
+ static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+              ^~~~~
+../Core/Src/MyAnalog.c:199:47: warning: 'F8_sn2' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:199:40: warning: 'F8_sn1' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:199:34: warning: 'F8_sn' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:199:27: warning: 'F8_en2' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:199:20: warning: 'F8_en1' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:199:14: warning: 'F8_en' defined but not used [-Wunused-variable]
+ static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:198:38: warning: 'F8_b2' defined but not used [-Wunused-variable]
+ static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:198:32: warning: 'F8_b1' defined but not used [-Wunused-variable]
+ static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:198:26: warning: 'F8_a2' defined but not used [-Wunused-variable]
+ static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:198:20: warning: 'F8_a1' defined but not used [-Wunused-variable]
+ static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:198:14: warning: 'F8_a0' defined but not used [-Wunused-variable]
+ static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+              ^~~~~
+../Core/Src/MyAnalog.c:191:47: warning: 'F7_sn2' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:191:40: warning: 'F7_sn1' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:191:34: warning: 'F7_sn' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:191:27: warning: 'F7_en2' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:191:20: warning: 'F7_en1' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:191:14: warning: 'F7_en' defined but not used [-Wunused-variable]
+ static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:190:38: warning: 'F7_b2' defined but not used [-Wunused-variable]
+ static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:190:32: warning: 'F7_b1' defined but not used [-Wunused-variable]
+ static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:190:26: warning: 'F7_a2' defined but not used [-Wunused-variable]
+ static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:190:20: warning: 'F7_a1' defined but not used [-Wunused-variable]
+ static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:190:14: warning: 'F7_a0' defined but not used [-Wunused-variable]
+ static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+              ^~~~~
+../Core/Src/MyAnalog.c:183:47: warning: 'F6_sn2' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:183:40: warning: 'F6_sn1' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:183:34: warning: 'F6_sn' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:183:27: warning: 'F6_en2' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:183:20: warning: 'F6_en1' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:183:14: warning: 'F6_en' defined but not used [-Wunused-variable]
+ static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:182:38: warning: 'F6_b2' defined but not used [-Wunused-variable]
+ static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:182:32: warning: 'F6_b1' defined but not used [-Wunused-variable]
+ static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:182:26: warning: 'F6_a2' defined but not used [-Wunused-variable]
+ static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:182:20: warning: 'F6_a1' defined but not used [-Wunused-variable]
+ static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:182:14: warning: 'F6_a0' defined but not used [-Wunused-variable]
+ static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+              ^~~~~
+../Core/Src/MyAnalog.c:175:47: warning: 'F5_sn2' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:175:40: warning: 'F5_sn1' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:175:34: warning: 'F5_sn' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:175:27: warning: 'F5_en2' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:175:20: warning: 'F5_en1' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:175:14: warning: 'F5_en' defined but not used [-Wunused-variable]
+ static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:174:38: warning: 'F5_b2' defined but not used [-Wunused-variable]
+ static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:174:32: warning: 'F5_b1' defined but not used [-Wunused-variable]
+ static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:174:26: warning: 'F5_a2' defined but not used [-Wunused-variable]
+ static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:174:20: warning: 'F5_a1' defined but not used [-Wunused-variable]
+ static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:174:14: warning: 'F5_a0' defined but not used [-Wunused-variable]
+ static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+              ^~~~~
+../Core/Src/MyAnalog.c:167:47: warning: 'F4_sn2' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+                                               ^~~~~~
+../Core/Src/MyAnalog.c:167:40: warning: 'F4_sn1' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+                                        ^~~~~~
+../Core/Src/MyAnalog.c:167:34: warning: 'F4_sn' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+                                  ^~~~~
+../Core/Src/MyAnalog.c:167:27: warning: 'F4_en2' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+                           ^~~~~~
+../Core/Src/MyAnalog.c:167:20: warning: 'F4_en1' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+                    ^~~~~~
+../Core/Src/MyAnalog.c:167:14: warning: 'F4_en' defined but not used [-Wunused-variable]
+ static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+              ^~~~~
+../Core/Src/MyAnalog.c:166:38: warning: 'F4_b2' defined but not used [-Wunused-variable]
+ static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+                                      ^~~~~
+../Core/Src/MyAnalog.c:166:32: warning: 'F4_b1' defined but not used [-Wunused-variable]
+ static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+                                ^~~~~
+../Core/Src/MyAnalog.c:166:26: warning: 'F4_a2' defined but not used [-Wunused-variable]
+ static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+                          ^~~~~
+../Core/Src/MyAnalog.c:166:20: warning: 'F4_a1' defined but not used [-Wunused-variable]
+ static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+                    ^~~~~
+../Core/Src/MyAnalog.c:166:14: warning: 'F4_a0' defined but not used [-Wunused-variable]
+ static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+              ^~~~~
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23364	     20	   2172	  25556	   63d4	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+17:56:34 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26832	     20	   2484	  29336	   7298	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+17:58:11 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26832	     20	   2484	  29336	   7298	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:05:35 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28800	     20	   2484	  31304	   7a48	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:12:36 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+../Core/Src/MyAnalog.c: In function 'MyAnalog_Filter_Init':
+../Core/Src/MyAnalog.c:224:11: warning: unused variable 'wnTe' [-Wunused-variable]
+ float a,b,wnTe;
+           ^~~~
+../Core/Src/MyAnalog.c:224:9: warning: unused variable 'b' [-Wunused-variable]
+ float a,b,wnTe;
+         ^
+../Core/Src/MyAnalog.c:224:7: warning: unused variable 'a' [-Wunused-variable]
+ float a,b,wnTe;
+       ^
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19680	     20	   2036	  21736	   54e8	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:15:07 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19680	     20	   2036	  21736	   54e8	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:15:16 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19680	     20	   2036	  21736	   54e8	analog.elf
+Finished building: default.size.stdout
+ 
+18:26:46 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19680	     20	   2036	  21736	   54e8	analog.elf
+Finished building: default.size.stdout
+ 
+18:28:53 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22576	     20	   2084	  24680	   6068	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:29:03 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22576	     20	   2084	  24680	   6068	analog.elf
+Finished building: default.size.stdout
+ 
+18:31:27 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22576	     20	   2084	  24680	   6068	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:31:32 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22576	     20	   2084	  24680	   6068	analog.elf
+Finished building: default.size.stdout
+ 
+18:38:47 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23268	     20	   2132	  25420	   634c	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+Finished building: analog.list
+ 
+ 
+18:39:12 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23268	     20	   2132	  25420	   634c	analog.elf
+Finished building: default.size.stdout
+ 
+18:41:07 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23996	     20	   2172	  26188	   664c	analog.elf
+Finished building: default.size.stdout
+ 
+Finished building: analog.bin
+Finished building: analog.list
+ 
+ 
+18:41:17 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23996	     20	   2172	  26188	   664c	analog.elf
+Finished building: default.size.stdout
+ 
+18:43:32 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24700	     20	   2220	  26940	   693c	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:43:37 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24700	     20	   2220	  26940	   693c	analog.elf
+Finished building: default.size.stdout
+ 
+18:44:37 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25436	     20	   2260	  27716	   6c44	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:44:44 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25436	     20	   2260	  27716	   6c44	analog.elf
+Finished building: default.size.stdout
+ 
+18:46:49 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26144	     20	   2308	  28472	   6f38	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:46:56 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26144	     20	   2308	  28472	   6f38	analog.elf
+Finished building: default.size.stdout
+ 
+18:48:07 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26868	     20	   2348	  29236	   7234	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:48:12 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26868	     20	   2348	  29236	   7234	analog.elf
+Finished building: default.size.stdout
+ 
+18:50:10 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27572	     20	   2396	  29988	   7524	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:50:16 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27572	     20	   2396	  29988	   7524	analog.elf
+Finished building: default.size.stdout
+ 
+18:52:39 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28316	     20	   2436	  30772	   7834	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:52:46 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28316	     20	   2436	  30772	   7834	analog.elf
+Finished building: default.size.stdout
+ 
+18:54:26 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "analog.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\Analog\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="analog.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: analog.elf
+ 
+arm-none-eabi-objdump -h -S  analog.elf  > "analog.list"
+arm-none-eabi-objcopy  -O binary  analog.elf  "analog.bin"
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29024	     20	   2484	  31528	   7b28	analog.elf
+Finished building: default.size.stdout
+Finished building: analog.bin
+ 
+ 
+Finished building: analog.list
+ 
+18:54:32 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29024	     20	   2484	  31528	   7b28	analog.elf
+Finished building: default.size.stdout
+ 
+18:56:25 **** Clean-only build of configuration Debug for project analog ****
+make -j4 clean 
+rm -rf *
+ 

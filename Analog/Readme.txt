@@ -41,10 +41,17 @@ Tps d'exec très décevant = 2.2µs. Le code ASM est curieux, utilise 2 fois MUL
 coder les filtres en ASM format fractionnaire...ne vaut pas le coup du tout.
 
 =================================================================================================================================
-git ref :
+git ref : 28501ce
 Validation du filtre 0 en float, à fc = 500Hz, fe = 250kHz.
 utilisation du DAC channel 1(conf HAL + use dans MyAnalog.c)
 Test : GBF avec Analog discovery + scope
 Résultat : PARFAIT, Bode nickel, rep indicielle aussi, repliement de spectre ...
 
+=================================================================================================================================
+git ref : 
+Validation des 10 filtres d'ordre 2. Le Timer 6 pédale à 40µs, soit 25kHz de fréquence éch.
+utilisation du DAC channel 1(conf HAL + use dans MyAnalog.c)
+Test : Avec Cube, on définit scan sur 10 voies, la même. Les filtres sont testés les uns après les autres pour 10 Fc de 100 à 1000Hz
+A chaque nouveau filtre, on garde l'ancien pour vérifier les tps d'exéc. Le test se fait à Fc, attente de -3dB
 
+Résultat : Parfait. Tps d'exec total pour 10 filtres = 18µs, sans surprise

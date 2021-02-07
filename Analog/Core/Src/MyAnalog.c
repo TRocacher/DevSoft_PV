@@ -99,9 +99,9 @@ void MyAnalog_Init(int Chan_Nb)
 	  ADC1->CFGR|=ADC_CFGR_DISCEN;       // validation mode discontinu (non raffale)
 #endif
 
-#if defined(Filter_0_On)||defined(Filter_1_On)||defined(Filter_2_On)||defined(Filter_3_On)\
- ||defined(Filter_4_On)||defined(Filter_5_On)||defined(Filter_6_On)\
- ||defined(Filter_7_On)||defined(Filter_8_On)||defined(Filter_9_On)
+#if defined(Filter_Rank_1)||defined(Filter_Rank_2)||defined(Filter_Rank_3)||defined(Filter_Rank_4)\
+ ||defined(Filter_Rank_5)||defined(Filter_Rank_6)||defined(Filter_Rank_7)\
+ ||defined(Filter_Rank_8)||defined(Filter_Rank_9)||defined(Filter_Rank_10)
 
 	  // Initialisation des filtres
       MyAnalog_Filter_Init();
@@ -133,92 +133,321 @@ void MyAnalog_Init(int Chan_Nb)
 ******************************************************************************/
 #define pi 3.14159265358979323
 #define m 0.707106781
-#define Fract_28 (1<<28)
 
 
 /*
- * Filter _0
+ * Filter Rank 1
  */
-#ifdef Filter_0_On
-static float a0_0,a1_0,a2_0,b1_0,b2_0;
-static float en_0,en1_0,en2_0,sn_0,sn1_0,sn2_0;
+#ifdef Filter_Rank_1
+static float F1_a0,F1_a1,F1_a2,F1_b1,F1_b2;
+static float F1_en,F1_en1,F1_en2,F1_sn,F1_sn1,F1_sn2;
 #endif
 
 /*
- * Filter _1
+ * Filter Rank 2
  */
-#ifdef Filter_1_On
-static int64_t a0_1,a1_1,a2_1,b1_1,b2_1;
-static int64_t en_1,en1_1,en2_1,sn_1,sn1_1,sn2_1;
+#ifdef Filter_Rank_2
+static float F2_a0,F2_a1,F2_a2,F2_b1,F2_b2;
+static float F2_en,F2_en1,F2_en2,F2_sn,F2_sn1,F2_sn2;
 #endif
 
-/*static float a0_1,a1_1,a2_1,b1_1,b2_1;
-static float a0_2,a1_2,a2_2,b1_2,b2_2;
-static float a0_3,a1_3,a2_3,b1_3,b2_3;
-static float a0_4,a1_4,a2_4,b1_4,b2_4;
-static float a0_5,a1_5,a2_5,b1_5,b2_5;
-static float a0_6,a1_6,a2_6,b1_6,b2_6;
-static float a0_7,a1_7,a2_7,b1_7,b2_7;
-static float a0_8,a1_8,a2_8,b1_8,b2_8;
-static float a0_9,a1_9,a2_9,b1_9,b2_9;
-*/
+/*
+ * Filter Rank 3
+ */
+#ifdef Filter_Rank_3
+static float F3_a0,F3_a1,F3_a2,F3_b1,F3_b2;
+static float F3_en,F3_en1,F3_en2,F3_sn,F3_sn1,F3_sn2;
+#endif
+
+/*
+ * Filter Rank 4
+ */
+#ifdef Filter_Rank_4
+static float F4_a0,F4_a1,F4_a2,F4_b1,F4_b2;
+static float F4_en,F4_en1,F4_en2,F4_sn,F4_sn1,F4_sn2;
+#endif
+
+/*
+ * Filter Rank 5
+ */
+#ifdef Filter_Rank_5
+static float F5_a0,F5_a1,F5_a2,F5_b1,F5_b2;
+static float F5_en,F5_en1,F5_en2,F5_sn,F5_sn1,F5_sn2;
+#endif
+
+/*
+ * Filter Rank 6
+ */
+#ifdef Filter_Rank_6
+static float F6_a0,F6_a1,F6_a2,F6_b1,F6_b2;
+static float F6_en,F6_en1,F6_en2,F6_sn,F6_sn1,F6_sn2;
+#endif
+
+/*
+ * Filter Rank 7
+ */
+#ifdef Filter_Rank_7
+static float F7_a0,F7_a1,F7_a2,F7_b1,F7_b2;
+static float F7_en,F7_en1,F7_en2,F7_sn,F7_sn1,F7_sn2;
+#endif
+
+/*
+ * Filter Rank 8
+ */
+#ifdef Filter_Rank_8
+static float F8_a0,F8_a1,F8_a2,F8_b1,F8_b2;
+static float F8_en,F8_en1,F8_en2,F8_sn,F8_sn1,F8_sn2;
+#endif
+
+/*
+ * Filter Rank 9
+ */
+#ifdef Filter_Rank_9
+static float F9_a0,F9_a1,F9_a2,F9_b1,F9_b2;
+static float F9_en,F9_en1,F9_en2,F9_sn,F9_sn1,F9_sn2;
+#endif
+
+/*
+ * Filter Rank 10
+ */
+#ifdef Filter_Rank_10
+static float F10_a0,F10_a1,F10_a2,F10_b1,F10_b2;
+static float F10_en,F10_en1,F10_en2,F10_sn,F10_sn1,F10_sn2;
+#endif
+
+
+/*
+ * Fonction d'initialisation des filtres
+ */
 void MyAnalog_Filter_Init(void)
 {
-float a0,b,wnTe,tampon;
+#if defined(Filter_Rank_1)||defined(Filter_Rank_2)||defined(Filter_Rank_3)||defined(Filter_Rank_4)\
+ ||defined(Filter_Rank_5)||defined(Filter_Rank_6)||defined(Filter_Rank_7)\
+ ||defined(Filter_Rank_8)||defined(Filter_Rank_9)||defined(Filter_Rank_10)
 
-#ifdef Filter_0_On
+float a,b,wnTe;
+
+#endif
+
+#ifdef Filter_Rank_1
 	wnTe=2*(pi)*(Fc1)*(Te);
-	a0=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
-	a0_0=1.0/a0;
-	a1_0=2.0/a0;
-	a2_0=a0_0;
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F1_a0=1.0/a;
+	F1_a1=2.0/a;
+	F1_a2=F1_a0;
 
 	b=2.0-8.0/(wnTe*wnTe);
-	b1_0=b/a0;
+	F1_b1=b/a;
 	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
-	b2_0=b/a0;
+	F1_b2=b/a;
 
 	 // mise à 0 des mémoires
 	 MyAnalog_Sn_Filter[0]=0;
-	 en_0=0.0;
-	 en1_0=0.0;
-	 en2_0=0.0;
-	 sn_0=0.0;
-	 sn1_0=0.0;
-	 sn2_0=0.0;
+	 F1_en=0.0;
+	 F1_en1=0.0;
+	 F1_en2=0.0;
+	 F1_sn=0.0;
+	 F1_sn1=0.0;
+	 F1_sn2=0.0;
 #endif
 
-#ifdef Filter_1_On // !!!!!!!!!!!!!!!!!!!!!! test en format fractionnaire
-	/*
-	 * entrée / sortie 16.16.
-	 * coeff 4.28 ( +/-8 partie entière, réso 2^-28 = 3.7e-9
-	 * Produit en 20.44.
-	 * sn en 20.44 doit être déclaré en long
-	 * sn remis en format 16.16 pour mémorisation
-	 *
-	 */
-	wnTe=2*(pi)*(Fc1)*(Te);
-	a0=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
-	a0_1=(int)((1.0/a0)*(float)(Fract_28)); // passage en fract 4.28
-	a1_1=(int)((2.0/a0)*(float)(Fract_28));
-	a2_1=a0_1;
+#ifdef Filter_Rank_2
+	wnTe=2*(pi)*(Fc2)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F2_a0=1.0/a;
+	F2_a1=2.0/a;
+	F2_a2=F2_a0;
 
-	tampon=2.0-8.0/(wnTe*wnTe);
-	b1_1=(int)((tampon/a0)*(float)(Fract_28));
-	tampon=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
-	b2_1=(int)((tampon/a0)*(float)(Fract_28));
+	b=2.0-8.0/(wnTe*wnTe);
+	F2_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F2_b2=b/a;
 
 	 // mise à 0 des mémoires
 	 MyAnalog_Sn_Filter[1]=0;
-	 en_1=0;
-	 en1_1=0;
-	 en2_1=0;
-	 sn_1=0;
-	 sn1_1=0;
-	 sn2_1=0;
+	 F2_en=0.0;
+	 F2_en1=0.0;
+	 F2_en2=0.0;
+	 F2_sn=0.0;
+	 F2_sn1=0.0;
+	 F2_sn2=0.0;
 #endif
 
+#ifdef Filter_Rank_3
+	wnTe=2*(pi)*(Fc3)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F3_a0=1.0/a;
+	F3_a1=2.0/a;
+	F3_a2=F3_a0;
 
+	b=2.0-8.0/(wnTe*wnTe);
+	F3_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F3_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[2]=0;
+	 F3_en=0.0;
+	 F3_en1=0.0;
+	 F3_en2=0.0;
+	 F3_sn=0.0;
+	 F3_sn1=0.0;
+	 F3_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_4
+	wnTe=2*(pi)*(Fc4)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F4_a0=1.0/a;
+	F4_a1=2.0/a;
+	F4_a2=F4_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F4_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F4_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[3]=0;
+	 F4_en=0.0;
+	 F4_en1=0.0;
+	 F4_en2=0.0;
+	 F4_sn=0.0;
+	 F4_sn1=0.0;
+	 F4_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_5
+	wnTe=2*(pi)*(Fc5)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F5_a0=1.0/a;
+	F5_a1=2.0/a;
+	F5_a2=F5_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F5_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F5_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[4]=0;
+	 F5_en=0.0;
+	 F5_en1=0.0;
+	 F5_en2=0.0;
+	 F5_sn=0.0;
+	 F5_sn1=0.0;
+	 F5_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_6
+	wnTe=2*(pi)*(Fc6)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F6_a0=1.0/a;
+	F6_a1=2.0/a;
+	F6_a2=F6_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F6_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F6_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[5]=0;
+	 F6_en=0.0;
+	 F6_en1=0.0;
+	 F6_en2=0.0;
+	 F6_sn=0.0;
+	 F6_sn1=0.0;
+	 F6_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_7
+	wnTe=2*(pi)*(Fc7)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F7_a0=1.0/a;
+	F7_a1=2.0/a;
+	F7_a2=F7_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F7_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F7_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[6]=0;
+	 F7_en=0.0;
+	 F7_en1=0.0;
+	 F7_en2=0.0;
+	 F7_sn=0.0;
+	 F7_sn1=0.0;
+	 F7_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_8
+	wnTe=2*(pi)*(Fc8)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F8_a0=1.0/a;
+	F8_a1=2.0/a;
+	F8_a2=F8_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F8_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F8_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[7]=0;
+	 F8_en=0.0;
+	 F8_en1=0.0;
+	 F8_en2=0.0;
+	 F8_sn=0.0;
+	 F8_sn1=0.0;
+	 F8_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_9
+	wnTe=2*(pi)*(Fc9)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F9_a0=1.0/a;
+	F9_a1=2.0/a;
+	F9_a2=F9_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F9_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F9_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[8]=0;
+	 F9_en=0.0;
+	 F9_en1=0.0;
+	 F9_en2=0.0;
+	 F9_sn=0.0;
+	 F9_sn1=0.0;
+	 F9_sn2=0.0;
+#endif
+
+#ifdef Filter_Rank_10
+	wnTe=2*(pi)*(Fc10)*(Te);
+	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
+	F10_a0=1.0/a;
+	F10_a1=2.0/a;
+	F10_a2=F10_a0;
+
+	b=2.0-8.0/(wnTe*wnTe);
+	F10_b1=b/a;
+	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
+	F10_b2=b/a;
+
+	 // mise à 0 des mémoires
+	 MyAnalog_Sn_Filter[9]=0;
+	 F10_en=0.0;
+	 F10_en1=0.0;
+	 F10_en2=0.0;
+	 F10_sn=0.0;
+	 F10_sn1=0.0;
+	 F10_sn2=0.0;
+#endif
 }
 
 
@@ -229,7 +458,7 @@ float a0,b,wnTe,tampon;
 
 
 /******************************************************************************
-*  PRIVATE FUNCTION (IT fct)
+*  IT FUNCTIONS
 *  Handler IT ADC pour debug sur la LED2 (PA5)
 ******************************************************************************/
 
@@ -244,9 +473,13 @@ void ADC1_2_IRQHandler(void)
   GPIOA->BRR=GPIO_PIN_5; //-- reset IO
 }
 
-float sn;
-int64_t sn_long;
 
+
+
+float sn;
+/**
+  * @brief Traitement des filtres, appel callback
+  */
 
 void DMA1_Channel1_IRQHandler (void)
 {
@@ -255,43 +488,127 @@ void DMA1_Channel1_IRQHandler (void)
    DMA1->IFCR|=DMA_IFCR_CTCIF1; //-- release flag DMA
 
 
-#ifdef Filter_0_On
+#ifdef Filter_Rank_1
     // récupération en
-    en_0=(float)MyAnalog_DMA_Buffer[0];
-	sn=a0_0*en_0+a1_0*en1_0+a2_0*en2_0-b1_0*sn1_0-b2_0*sn2_0;
-	sn2_0=sn1_0;
-	sn1_0=sn;
-	en2_0=en1_0;
-	en1_0=en_0;
+    F1_en=(float)MyAnalog_DMA_Buffer[0];
+	sn=F1_a0*F1_en+F1_a1*F1_en1+F1_a2*F1_en2-F1_b1*F1_sn1-F1_b2*F1_sn2;
+	F1_sn2=F1_sn1;
+	F1_sn1=sn;
+	F1_en2=F1_en1;
+	F1_en1=F1_en;
 	// stockage
 	MyAnalog_Sn_Filter[0]=(int)sn;
 #endif
 
-#ifdef Filter_1_On
+#ifdef Filter_Rank_2
     // récupération en
-	/*
-	a0_1=-1;
-	en_1=0x7FFFFFFF;
-	sn_long=a0_1*en_1;
-	a0_1=2;
-	en_1=0x7FFFFFFF;
-	sn_long=(int64_t)a0_1*(int64_t)en_1;
-*/
-
-
-    en_1=MyAnalog_DMA_Buffer[1]<<16; // 16.16 32 bits
-    sn_long=a0_1*en_1+a1_1*en1_1+a2_1*en2_1-b1_1*sn1_1-b2_1*sn2_1; // resultat 64 bits 20.44
-	sn2_1=sn1_1;
-	sn1_1=(int)(sn_long>>28); // remise en format 16.16 (déclage de 44-16 = >>28)
-	en2_1=en1_1;
-	en1_1=en_1;
+    F2_en=(float)MyAnalog_DMA_Buffer[1];
+	sn=F2_a0*F2_en+F2_a1*F2_en1+F2_a2*F2_en2-F2_b1*F2_sn1-F2_b2*F2_sn2;
+	F2_sn2=F2_sn1;
+	F2_sn1=sn;
+	F2_en2=F2_en1;
+	F2_en1=F2_en;
 	// stockage
-	MyAnalog_Sn_Filter[1]=(short int)(sn_long>>44);// remise en format 16.0 (déclage de 44-0 = >>44)
+	MyAnalog_Sn_Filter[1]=(int)sn;
 #endif
 
+#ifdef Filter_Rank_3
+    // récupération en
+    F3_en=(float)MyAnalog_DMA_Buffer[2];
+	sn=F3_a0*F3_en+F3_a1*F3_en1+F3_a2*F3_en2-F3_b1*F3_sn1-F3_b2*F3_sn2;
+	F3_sn2=F3_sn1;
+	F3_sn1=sn;
+	F3_en2=F3_en1;
+	F3_en1=F3_en;
+	// stockage
+	MyAnalog_Sn_Filter[2]=(int)sn;
+#endif
 
+#ifdef Filter_Rank_4
+    // récupération en
+    F4_en=(float)MyAnalog_DMA_Buffer[3];
+	sn=F4_a0*F4_en+F4_a1*F4_en1+F4_a2*F4_en2-F4_b1*F4_sn1-F4_b2*F4_sn2;
+	F4_sn2=F4_sn1;
+	F4_sn1=sn;
+	F4_en2=F4_en1;
+	F4_en1=F4_en;
+	// stockage
+	MyAnalog_Sn_Filter[3]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_5
+    // récupération en
+    F5_en=(float)MyAnalog_DMA_Buffer[4];
+	sn=F5_a0*F5_en+F5_a1*F5_en1+F5_a2*F5_en2-F5_b1*F5_sn1-F5_b2*F5_sn2;
+	F5_sn2=F5_sn1;
+	F5_sn1=sn;
+	F5_en2=F5_en1;
+	F5_en1=F5_en;
+	// stockage
+	MyAnalog_Sn_Filter[4]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_6
+    // récupération en
+    F6_en=(float)MyAnalog_DMA_Buffer[5];
+	sn=F6_a0*F6_en+F6_a1*F6_en1+F6_a2*F6_en2-F6_b1*F6_sn1-F6_b2*F6_sn2;
+	F6_sn2=F6_sn1;
+	F6_sn1=sn;
+	F6_en2=F6_en1;
+	F6_en1=F6_en;
+	// stockage
+	MyAnalog_Sn_Filter[5]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_7
+    // récupération en
+    F7_en=(float)MyAnalog_DMA_Buffer[6];
+	sn=F7_a0*F7_en+F7_a1*F7_en1+F7_a2*F7_en2-F7_b1*F7_sn1-F7_b2*F7_sn2;
+	F7_sn2=F7_sn1;
+	F7_sn1=sn;
+	F7_en2=F7_en1;
+	F7_en1=F7_en;
+	// stockage
+	MyAnalog_Sn_Filter[6]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_8
+    // récupération en
+    F8_en=(float)MyAnalog_DMA_Buffer[7];
+	sn=F8_a0*F8_en+F8_a1*F8_en1+F8_a2*F8_en2-F8_b1*F8_sn1-F8_b2*F8_sn2;
+	F8_sn2=F8_sn1;
+	F8_sn1=sn;
+	F8_en2=F8_en1;
+	F8_en1=F8_en;
+	// stockage
+	MyAnalog_Sn_Filter[7]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_9
+    // récupération en
+    F9_en=(float)MyAnalog_DMA_Buffer[8];
+	sn=F9_a0*F9_en+F9_a1*F9_en1+F9_a2*F9_en2-F9_b1*F9_sn1-F9_b2*F9_sn2;
+	F9_sn2=F9_sn1;
+	F9_sn1=sn;
+	F9_en2=F9_en1;
+	F9_en1=F9_en;
+	// stockage
+	MyAnalog_Sn_Filter[8]=(int)sn;
+#endif
+
+#ifdef Filter_Rank_10
+    // récupération en
+    F10_en=(float)MyAnalog_DMA_Buffer[9];
+	sn=F10_a0*F10_en+F10_a1*F10_en1+F10_a2*F10_en2-F10_b1*F10_sn1-F10_b2*F10_sn2;
+	F10_sn2=F10_sn1;
+	F10_sn1=sn;
+	F10_en2=F10_en1;
+	F10_en1=F10_en;
+	// stockage
+	MyAnalog_Sn_Filter[9]=(int)sn;
+#endif
 	// sortie DAC
-    DAC1->DHR12R1=MyAnalog_Sn_Filter[0];
+    DAC1->DHR12R1=MyAnalog_Sn_Filter[9];
 
    GPIOA->BRR=GPIO_PIN_5; //-- reset IO
 

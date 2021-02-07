@@ -115,10 +115,13 @@ Rank 2 = ADC_in6
 
 /**
   * @brief
-  * si défini, PA5 reçoit un pulse lorsqu'un channel est converti
+  * si défini, PA5 émet un pulse lorsqu'un channel est converti
+  * utilisé notamment pour mettre au point l'acquisition lors de la
+  * mise au point du programme
   * (validation IT ADC et récupération handler dans MyAnalog.c)
   */
 //#define DebugLED2
+
 
 
 
@@ -143,57 +146,65 @@ Rank 2 = ADC_in6
   * Te = période Timer qui trigge l'ADC si AllChan_In_One_Trig activé
   * Te = N * période Timer qui trigge l'ADC si pas AllChan_In_One_Trig. N = nbre de voies
   */
-#define Te 4e-6
+#define Te 40e-6
 
 /**
   * @brief
-  * Activation des 10 filtres
+  * Activation des 10 filtres sur chacune des voies si défini
   */
-#define Filter_0_On
-//#define Filter_1_On
-#define Filter_2_On
-#define Filter_3_On
-#define Filter_4_On
-#define Filter_5_On
-#define Filter_6_On
-#define Filter_7_On
-#define Filter_8_On
-#define Filter_9_On
+
+#define Filter_Rank_1
+#define Filter_Rank_2
+#define Filter_Rank_3
+#define Filter_Rank_4
+#define Filter_Rank_5
+#define Filter_Rank_6
+#define Filter_Rank_7
+#define Filter_Rank_8
+#define Filter_Rank_9
+#define Filter_Rank_10
+
 
 /**
   * @brief
-  * Ordre des filtres (par défaut ordre 2. Si non défini, ordre 1)
+  * Ordre des filtres (par défaut ordre 1 : défini = ordre 1, non défini = ordre 2)
   * Pour les ordres 2, m=0.707 (butterworth)
   */
-#define SecondOrderFilt_0
-#define SecondOrderFilt_1
-#define SecondOrderFilt_2
-#define SecondOrderFilt_3
-#define SecondOrderFilt_4
-#define SecondOrderFilt_5
-#define SecondOrderFilt_6
-#define SecondOrderFilt_7
-#define SecondOrderFilt_8
-#define SecondOrderFilt_9
-
+#define FirstOrder_Rank1
+#define FirstOrder_Rank2
+#define FirstOrder_Rank3
+#define FirstOrder_Rank4
+#define FirstOrder_Rank5
+#define FirstOrder_Rank6
+#define FirstOrder_Rank7
+#define FirstOrder_Rank8
+#define FirstOrder_Rank9
+#define FirstOrder_Rank10
 
 /**
   * @brief
-  * frequence de coupure des filtres en Hz (fn =fc ordre 2)
+  * frequence de coupure des filtres en Hz (fn =fc pour ordre 2)
   */
-#define Fc0 500.0
-#define Fc1 500.0
-#define Fc2 500.0
-#define Fc3 500.0
-#define Fc4 500.0
+#define Fc1 100.0
+#define Fc2 200.0
+#define Fc3 300.0
+#define Fc4 400.0
 #define Fc5 500.0
-#define Fc6 500.0
-#define Fc7 500.0
-#define Fc8 500.0
-#define Fc9 500.0
+#define Fc6 600.0
+#define Fc7 700.0
+#define Fc8 800.0
+#define Fc9 900.0
+#define Fc10 1000.0
+
+
+/******************************************************************************
+*  Public Functions
+******************************************************************************/
 
 
 void MyAnalog_Init(int Chan_Nb);
 
+void MyAnalog_Init_WithCallback(int Chan_Nb,void (*CallBack_EO_DMA_function) (void));
+// à faire
 
 #endif /* INC_MYANALOG_H_ */
