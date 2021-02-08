@@ -48,10 +48,20 @@ Test : GBF avec Analog discovery + scope
 Résultat : PARFAIT, Bode nickel, rep indicielle aussi, repliement de spectre ...
 
 =================================================================================================================================
-git ref : 
+git ref : 0db344a
 Validation des 10 filtres d'ordre 2. Le Timer 6 pédale à 40µs, soit 25kHz de fréquence éch.
 utilisation du DAC channel 1(conf HAL + use dans MyAnalog.c)
 Test : Avec Cube, on définit scan sur 10 voies, la même. Les filtres sont testés les uns après les autres pour 10 Fc de 100 à 1000Hz
 A chaque nouveau filtre, on garde l'ancien pour vérifier les tps d'exéc. Le test se fait à Fc, attente de -3dB
 
 Résultat : Parfait. Tps d'exec total pour 10 filtres = 18µs, sans surprise
+
+=================================================================================================================================
+git ref : 
+Filtre d'ordre 1 validé pour le premier filtre, à faire pour les autres.
+Validation : filtre rank 1, avec la sonde analog device mode Bode.
+Tps d'execution : 1.4µs (400ns gagné sur le filtre d'ordre 2 soit 22% (pas mal de tps passé pour caster, pour mémoriser ... = tps fixe).
+Compilation OK sans warning pour ordre 1 ou ordre 2
+
+A poursuivre sur les autres filtres + tests
+

@@ -154,15 +154,15 @@ Rank 2 = ADC_in6
   */
 
 #define Filter_Rank_1
-#define Filter_Rank_2
-#define Filter_Rank_3
-#define Filter_Rank_4
-#define Filter_Rank_5
-#define Filter_Rank_6
-#define Filter_Rank_7
-#define Filter_Rank_8
-#define Filter_Rank_9
-#define Filter_Rank_10
+//#define Filter_Rank_2
+//#define Filter_Rank_3
+//#define Filter_Rank_4
+//#define Filter_Rank_5
+//#define Filter_Rank_6
+//#define Filter_Rank_7
+//#define Filter_Rank_8
+//#define Filter_Rank_9
+//#define Filter_Rank_10
 
 
 /**
@@ -185,7 +185,7 @@ Rank 2 = ADC_in6
   * @brief
   * frequence de coupure des filtres en Hz (fn =fc pour ordre 2)
   */
-#define Fc1 100.0
+#define Fc1 400.0
 #define Fc2 200.0
 #define Fc3 300.0
 #define Fc4 400.0

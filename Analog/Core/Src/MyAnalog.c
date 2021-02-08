@@ -139,9 +139,14 @@ void MyAnalog_Init(int Chan_Nb)
  * Filter Rank 1
  */
 #ifdef Filter_Rank_1
-static float F1_a0,F1_a1,F1_a2,F1_b1,F1_b2;
-static float F1_en,F1_en1,F1_en2,F1_sn,F1_sn1,F1_sn2;
+static float F1_a0,F1_a1,F1_b1;
+static float F1_en,F1_en1,F1_sn1;
+#ifndef FirstOrder_Rank1
+static float F1_a2,F1_b2;
+static float F1_en2,F1_sn2;
 #endif
+#endif
+
 
 /*
  * Filter Rank 2
@@ -230,6 +235,19 @@ float a,b,wnTe;
 #endif
 
 #ifdef Filter_Rank_1
+	#ifdef FirstOrder_Rank1
+	b=1.0/(2.0*pi*Fc1); // b est utilisé pour Tau
+	a=1.0+2.0*b/Te; // a0
+	F1_a0=1.0/a;
+	F1_a1=1.0/a;
+
+
+	b=1.0-2.0*b/Te;;
+	wnTe=1.0; // affectation pour éviter un warning si ordre 1
+	F1_b1=(wnTe*b)/a;
+
+
+	#else
 	wnTe=2*(pi)*(Fc1)*(Te);
 	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
 	F1_a0=1.0/a;
@@ -246,9 +264,9 @@ float a,b,wnTe;
 	 F1_en=0.0;
 	 F1_en1=0.0;
 	 F1_en2=0.0;
-	 F1_sn=0.0;
 	 F1_sn1=0.0;
 	 F1_sn2=0.0;
+	#endif
 #endif
 
 #ifdef Filter_Rank_2
@@ -490,12 +508,18 @@ void DMA1_Channel1_IRQHandler (void)
 
 #ifdef Filter_Rank_1
     // récupération en
-    F1_en=(float)MyAnalog_DMA_Buffer[0];
+   	F1_en=(float)MyAnalog_DMA_Buffer[0];
+	#ifdef FirstOrder_Rank1
+   	sn=F1_a0*F1_en+F1_a1*F1_en1-F1_b1*F1_sn1;
+	F1_sn1=sn;
+	F1_en1=F1_en;
+	#else
 	sn=F1_a0*F1_en+F1_a1*F1_en1+F1_a2*F1_en2-F1_b1*F1_sn1-F1_b2*F1_sn2;
 	F1_sn2=F1_sn1;
 	F1_sn1=sn;
 	F1_en2=F1_en1;
 	F1_en1=F1_en;
+	#endif
 	// stockage
 	MyAnalog_Sn_Filter[0]=(int)sn;
 #endif
@@ -608,7 +632,7 @@ void DMA1_Channel1_IRQHandler (void)
 	MyAnalog_Sn_Filter[9]=(int)sn;
 #endif
 	// sortie DAC
-    DAC1->DHR12R1=MyAnalog_Sn_Filter[9];
+    DAC1->DHR12R1=MyAnalog_Sn_Filter[0];
 
    GPIOA->BRR=GPIO_PIN_5; //-- reset IO
 
