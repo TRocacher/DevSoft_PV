@@ -230,6 +230,14 @@ float a,b,wnTe;
 #endif
 
 #ifdef Filter_Rank_1
+#ifdef FirstOrder_Rank1
+   a=1.0/(2.0*(pi)*(Fc1)); // a = tau
+   F1_b2=1.0+2.0*a/(Te); // nb ici on devrait avoir b0 et non b2, question de déclaration var...
+   F1_b2=1.0/F1_b2; // inversion b0 pour faire une multi et non une div dans la récur.
+   F1_b1=1.0-2.0*a/(Te);
+   // a0 = a1 = 1
+   // sn = (en + en-1-b1*sn-1)/b0
+#else
 	wnTe=2*(pi)*(Fc1)*(Te);
 	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
 	F1_a0=1.0/a;
@@ -240,7 +248,7 @@ float a,b,wnTe;
 	F1_b1=b/a;
 	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
 	F1_b2=b/a;
-
+#endif
 	 // mise à 0 des mémoires
 	 MyAnalog_Sn_Filter[0]=0;
 	 F1_en=0.0;
@@ -254,14 +262,14 @@ float a,b,wnTe;
 #ifdef Filter_Rank_2
 	wnTe=2*(pi)*(Fc2)*(Te);
 	a=1.0+(4.0*(m))/(wnTe) + 4.0/(wnTe*wnTe);
-	F2_a0=1.0/a;
-	F2_a1=2.0/a;
+	F2_a0=1.0/a; // mal nommé, 1/F2_b0 en fait
+	F2_a1=2.0;
 	F2_a2=F2_a0;
-
+    // sn = 1/b0*(en+2.0*en1+en2-b1sn1-b2sn2
 	b=2.0-8.0/(wnTe*wnTe);
-	F2_b1=b/a;
+	F2_b1=b;
 	b=1.0-(4.0*(m))/(wnTe)+4.0/(wnTe*wnTe);
-	F2_b2=b/a;
+	F2_b2=b;
 
 	 // mise à 0 des mémoires
 	 MyAnalog_Sn_Filter[1]=0;
@@ -484,11 +492,31 @@ float sn;
 void DMA1_Channel1_IRQHandler (void)
 {
 
-   GPIOA->BSRR=GPIO_PIN_5;  //-- set IO
-   DMA1->IFCR|=DMA_IFCR_CTCIF1; //-- release flag DMA
 
+   DMA1->IFCR|=DMA_IFCR_CTCIF1; //-- release flag DMA
+	 GPIOA->BSRR=GPIO_PIN_5;  //-- set IO
 
 #ifdef Filter_Rank_1
+#ifdef FirstOrder_Rank1
+   // récupération en
+   F1_en=(float)MyAnalog_DMA_Buffer[0];
+   GPIOA->BRR=GPIO_PIN_5; //-- reset IO
+   // calcul sn ordre 1, nb : b0 (b2) est inversé pour un multi et non une div
+   // a0 = a1 = 1
+   // sn = (en + en-1-b1*sn-1)/b0
+
+   sn=F1_b2*(F1_en+F1_en1-F1_b1*F1_sn1);
+
+
+	F1_sn1=sn;
+	F1_en1=F1_en;
+
+	// stockage
+
+	MyAnalog_Sn_Filter[0]=(int)sn;
+
+
+#else
     // récupération en
     F1_en=(float)MyAnalog_DMA_Buffer[0];
 	sn=F1_a0*F1_en+F1_a1*F1_en1+F1_a2*F1_en2-F1_b1*F1_sn1-F1_b2*F1_sn2;
@@ -499,17 +527,28 @@ void DMA1_Channel1_IRQHandler (void)
 	// stockage
 	MyAnalog_Sn_Filter[0]=(int)sn;
 #endif
+#endif
 
 #ifdef Filter_Rank_2
     // récupération en
+	 GPIOA->BSRR=GPIO_PIN_5;  //-- set IO
     F2_en=(float)MyAnalog_DMA_Buffer[1];
+
+
+    //sn=F2_a0*(F2_en+2.0f*F2_en1+F2_en2-F2_b1*F2_sn1-F2_b2*F2_sn2);
 	sn=F2_a0*F2_en+F2_a1*F2_en1+F2_a2*F2_en2-F2_b1*F2_sn1-F2_b2*F2_sn2;
+
 	F2_sn2=F2_sn1;
 	F2_sn1=sn;
 	F2_en2=F2_en1;
 	F2_en1=F2_en;
+
 	// stockage
+
 	MyAnalog_Sn_Filter[1]=(int)sn;
+
+    GPIOA->BRR=GPIO_PIN_5; //-- reset IO
+
 #endif
 
 #ifdef Filter_Rank_3
@@ -607,10 +646,11 @@ void DMA1_Channel1_IRQHandler (void)
 	// stockage
 	MyAnalog_Sn_Filter[9]=(int)sn;
 #endif
-	// sortie DAC
-    DAC1->DHR12R1=MyAnalog_Sn_Filter[9];
 
-   GPIOA->BRR=GPIO_PIN_5; //-- reset IO
+	// sortie DAC
+    DAC1->DHR12R1=MyAnalog_Sn_Filter[0];
+
+
 
 }
 

@@ -1,7 +1,10 @@
-18:56:25 **** Clean-only build of configuration Debug for project analog ****
-make -j4 clean 
-rm -rf *
+18:20:12 **** Incremental Build of configuration Debug for project analog ****
+make -j4 all 
+arm-none-eabi-size   analog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22940	     20	   2116	  25076	   61f4	analog.elf
+Finished building: default.size.stdout
  
 
-18:56:25 Build Finished. 0 errors, 0 warnings. (took 765ms)
+18:20:13 Build Finished. 0 errors, 0 warnings. (took 671ms)
 

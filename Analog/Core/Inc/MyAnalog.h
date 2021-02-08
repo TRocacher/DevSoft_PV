@@ -155,14 +155,14 @@ Rank 2 = ADC_in6
 
 #define Filter_Rank_1
 #define Filter_Rank_2
-#define Filter_Rank_3
-#define Filter_Rank_4
-#define Filter_Rank_5
-#define Filter_Rank_6
-#define Filter_Rank_7
-#define Filter_Rank_8
-#define Filter_Rank_9
-#define Filter_Rank_10
+//#define Filter_Rank_3
+//#define Filter_Rank_4
+//#define Filter_Rank_5
+//#define Filter_Rank_6
+//#define Filter_Rank_7
+//#define Filter_Rank_8
+//#define Filter_Rank_9
+//#define Filter_Rank_10
 
 
 /**
@@ -171,15 +171,15 @@ Rank 2 = ADC_in6
   * Pour les ordres 2, m=0.707 (butterworth)
   */
 #define FirstOrder_Rank1
-#define FirstOrder_Rank2
-#define FirstOrder_Rank3
-#define FirstOrder_Rank4
-#define FirstOrder_Rank5
-#define FirstOrder_Rank6
-#define FirstOrder_Rank7
-#define FirstOrder_Rank8
-#define FirstOrder_Rank9
-#define FirstOrder_Rank10
+//#define FirstOrder_Rank2
+//#define FirstOrder_Rank3
+//#define FirstOrder_Rank4
+//#define FirstOrder_Rank5
+//#define FirstOrder_Rank6
+//#define FirstOrder_Rank7
+//#define FirstOrder_Rank8
+//#define FirstOrder_Rank9
+//#define FirstOrder_Rank10
 
 /**
   * @brief
@@ -194,7 +194,7 @@ Rank 2 = ADC_in6
 #define Fc7 700.0
 #define Fc8 800.0
 #define Fc9 900.0
-#define Fc10 1000.0
+#define Fc10 50.0
 
 
 /******************************************************************************

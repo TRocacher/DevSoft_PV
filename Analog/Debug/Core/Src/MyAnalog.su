@@ -1,0 +1,7 @@
+core_cm4.h:1679:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+core_cm4.h:1809:22:__NVIC_SetPriority	16	static
+MyAnalog.c:42:6:MyAnalog_DMAInit	16	static
+MyAnalog.c:76:6:MyAnalog_Init	16	static
+MyAnalog.c:222:6:MyAnalog_Filter_Init	32	static
+MyAnalog.c:477:6:ADC1_2_IRQHandler	4	static
+MyAnalog.c:492:6:DMA1_Channel1_IRQHandler	4	static
