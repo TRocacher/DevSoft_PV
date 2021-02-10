@@ -2,7 +2,7 @@
  * MyAnalog.h
  *
  *  Created on: 1 févr. 2021
- *      Author: trocache
+ *      Author: Thierry Rocacher
  *
  *  ======= CONTEXTE DU LOGICIEL ===================
  *  CIBLE : stm32L476RG (Nucléo board)
@@ -23,19 +23,20 @@
  *  réglage des horloges RCC et dédiées ADC1
  *  configuration d'un timer pour le déclenchement périodique en
  *  raffale ou non
+ *  Pour des situation de débuggage, configurer le DAC1 (PA4), au plus simple
  *
  *  MyAnalog fait le reste, à savoir :
  *  - configurer la DMA avec son propre buffer (privé)
- *  - mise en oeuvre de filtre ou pas (filtre à moyenne glissante, format fract.)
- *  - réglage du nombre de coeff de filtre
+ *  - mise en oeuvre de filtre ou pas (filtre au choix ordre 1 /2, format float)
+ *  - réglage de la fréquence de coupure
  *  - possibilité de lancer un callback en fin de DMA
  *  - Handler d'IT ADC privé au module, en option pour lancer des pulses sur
- *  LED2 (PA5) lors des acquisitions. Permet de débugger les acq ADC
+ *  LED2 (PA5) lors des acquisitions. A utiliser pour la mise au point
  *
  *
  *  ======= CHRONOGRAMMES TYPE (exemple 3 voies) ===================
  *
- *  Timer overflow = Trig ADC :
+ *  Timer overflow => Trig ADC :
  *  ^          ^          ^          ^          ^          ^
  *  Acq en mode raffale (AllChan_In_One_Trig):
  *   |||(1,2,3) |||(1,2,3) |||(1,2,3) |||(1,2,3) |||(1,2,3) |||(1,2,3)
@@ -57,6 +58,8 @@
  *  représenter qu'une faible proportion de la période de déclenchement de l'ADC
  *  via le Timer (max 10 %?). L'idée est de laisser du temps pour un autre système
  *  par exemple un logiciel type FreeRTOS
+ *  Il est donc important de mesurer les durées d'IT de DMA en activant
+ *  l'option de débugage LED2 et de procéder à des mesures à l'oscilloscope
  */
 
 
@@ -103,7 +106,24 @@ Rank 2 = ADC_in6
 
 /******************************************************************************
 *  #define généraux du module
+*
 ******************************************************************************/
+
+/**
+  * @brief
+  * Période d'échantillonnage en seconde.
+  * ATTENTION !!! doit être la même que la valeur réelle:
+  * Te = période Timer qui trigge l'ADC si AllChan_In_One_Trig activé
+  * Te = N * période Timer qui trigge l'ADC si pas AllChan_In_One_Trig. N = nbre de voies
+  */
+#define Te 40e-6
+
+/**
+  * @brief
+  * Nbre de canaux DMA (doit correspondre à la configuration Hal de l'ADC !!
+  */
+#define Chan_Nb 10
+
 
 /**
   * @brief
@@ -111,18 +131,6 @@ Rank 2 = ADC_in6
   * l'ADC prend l'échantillon à chaque trig
   */
 #define AllChan_In_One_Trig
-
-
-/**
-  * @brief
-  * si défini, PA5 émet un pulse lorsqu'un channel est converti
-  * utilisé notamment pour mettre au point l'acquisition lors de la
-  * mise au point du programme
-  * (validation IT ADC et récupération handler dans MyAnalog.c)
-  */
-//#define DebugLED2
-
-
 
 
 /**
@@ -135,18 +143,47 @@ Rank 2 = ADC_in6
 
 
 
+
 /******************************************************************************
-*  Partie filrage
+*  #define relatifs au débuggage
+*  si aucune définition, mode normal.
+*  A n'utiliser que dans des phase de mise au point
+*
 ******************************************************************************/
 
 /**
   * @brief
-  * Période d'échantillonnage en seconde.
-  * ATTENTION !!! doit être la même que la valeur réelle:
-  * Te = période Timer qui trigge l'ADC si AllChan_In_One_Trig activé
-  * Te = N * période Timer qui trigge l'ADC si pas AllChan_In_One_Trig. N = nbre de voies
+  * si défini, PA5 émet un pulse lorsqu'un channel est converti
+  * utilisé notamment pour mettre au point l'acquisition lors de la
+  * mise au point du programme
+  * (validation IT ADC et récupération handler dans MyAnalog.c)
   */
-#define Te 40e-6
+#define DebugLED2_ADC
+
+/**
+  * @brief
+  * si défini, PA5 émet un pulse à l'état haut durant toute l'exécution du handler DMA,
+  * Callback compris (si défini)
+  */
+#define DebugLED2_DMA
+
+
+/**
+  * @brief
+  * Le #define DAC_Rank peut aller de 1 à 10.
+  * Permet de sortir sn du filtre 1 à 10 sur DAC1 (PA4)
+  */
+//#define DAC1_Rank 1 // valeur 1 -> Filter_Rank_1
+
+
+
+
+
+/******************************************************************************
+*  Partie filrage
+******************************************************************************/
+
+
 
 /**
   * @brief
@@ -185,7 +222,7 @@ Rank 2 = ADC_in6
   * @brief
   * frequence de coupure des filtres en Hz (fn =fc pour ordre 2)
   */
-#define Fc1 400.0
+#define Fc1 100.0
 #define Fc2 200.0
 #define Fc3 300.0
 #define Fc4 400.0
@@ -197,14 +234,25 @@ Rank 2 = ADC_in6
 #define Fc10 1000.0
 
 
+
+
 /******************************************************************************
 *  Public Functions
 ******************************************************************************/
 
+/**
+  * @brief Termine la configuration ADC en DMA, lance le processus (le timer qui déclenche
+  * l'ADC doit être fonctionnel (Hal). L'initialisation des filtres est faite.
+  */
+void MyAnalog_Init(void);
 
-void MyAnalog_Init(int Chan_Nb);
 
-void MyAnalog_Init_WithCallback(int Chan_Nb,void (*CallBack_EO_DMA_function) (void));
-// à faire
+/**
+  * @brief Termine la configuration ADC en DMA, lance le processus (le timer qui déclenche
+  * l'ADC doit être fonctionnel (Hal). L'initialisation des filtres est faite.
+  * -> en plus lance un callback en fin de DMA si besoin.
+  */
+void MyAnalog_Init_WithCallback(void (*CallBack_EO_DMA_function) (void));
+
 
 #endif /* INC_MYANALOG_H_ */

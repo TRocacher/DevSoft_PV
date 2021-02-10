@@ -59,8 +59,12 @@ static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_DAC1_Init(void);
-/* USER CODE BEGIN PFP */
 
+/* USER CODE BEGIN PFP */
+void MyIT_Fct(void)
+{
+
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -73,6 +77,7 @@ int a,b,c;
   * @brief  The application entry point.
   * @retval int
   */
+
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -110,9 +115,9 @@ int main(void)
   // ---- validation DAC
   HAL_DAC_Start(&hdac1, DAC_CHANNEL_1);
 
-  //---- Config Analog part on 2 channels
-  MyAnalog_Init(10);
-
+  //---- Config Analog part (voir MyAnalog.h)
+  //MyAnalog_Init();
+  MyAnalog_Init_WithCallback(MyIT_Fct);
 
 
   //---- Lancement Timer 6

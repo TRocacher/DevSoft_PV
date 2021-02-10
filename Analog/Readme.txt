@@ -57,11 +57,15 @@ A chaque nouveau filtre, on garde l'ancien pour vérifier les tps d'exéc. Le te
 Résultat : Parfait. Tps d'exec total pour 10 filtres = 18µs, sans surprise
 
 =================================================================================================================================
-git ref : 
+git ref : a0a2919 
 Filtre d'ordre 1 validé pour le premier filtre, à faire pour les autres.
 Validation : filtre rank 1, avec la sonde analog device mode Bode.
 Tps d'execution : 1.4µs (400ns gagné sur le filtre d'ordre 2 soit 22% (pas mal de tps passé pour caster, pour mémoriser ... = tps fixe).
 Compilation OK sans warning pour ordre 1 ou ordre 2
 
-A poursuivre sur les autres filtres + tests
+=================================================================================================================================
+git ref : 
+Tous les filtres (les 10, ordre 1 et ordre 2) sont testés. Tout est validé.
+Le projet est finalisé.
+Resterait à faire un pdf...
 
