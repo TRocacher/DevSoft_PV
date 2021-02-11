@@ -64,8 +64,12 @@ Tps d'execution : 1.4µs (400ns gagné sur le filtre d'ordre 2 soit 22% (pas mal
 Compilation OK sans warning pour ordre 1 ou ordre 2
 
 =================================================================================================================================
-git ref : 
+git ref : 15ea08a
 Tous les filtres (les 10, ordre 1 et ordre 2) sont testés. Tout est validé.
 Le projet est finalisé.
 Resterait à faire un pdf...
+
+=================================================================================================================================
+git ref : V1.0
+Ajout des fonction get
 

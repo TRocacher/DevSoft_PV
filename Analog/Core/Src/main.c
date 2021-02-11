@@ -59,25 +59,39 @@ static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_TIM6_Init(void);
 static void MX_DAC1_Init(void);
-
 /* USER CODE BEGIN PFP */
+int a,b,c;
 void MyIT_Fct(void)
 {
-
+a=MyAnalog_GetVakue(1);
+b=MyAnalog_GetFilteredVakue(1);
 }
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-HAL_TIM_StateTypeDef  etat;
-int a,b,c;
+/*
+* ==> HAL :
+* Ck interne
+* TIM6 déclenche ADC (autoreload TIM6=40µs, soit Fe=25kHz)
+* ADC scan 10 voies (pour tester le max d'input)
+* Rank 1 à Rank 10 toutes reliées à Ain5 (PA0)
+* DAC activé pour pouvoir débugger les filtres
+* AUCUNE interruptions programmées
+*
+* ==> MyAnalog (configure la DMA, les IT, les filtres):
+* Code de test. Le filtre 1 est activé, ordre 1, fc=100Hz (voir MyAnalog.h)
+* un callback sur IT DMA est demandé, juste pour vérifier que ça fonctionne.
+*/
+
 /* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
+  *
+  *
   * @retval int
   */
-
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -150,12 +164,13 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLM = 1;
-  RCC_OscInitStruct.PLL.PLLN = 20;
+  RCC_OscInitStruct.PLL.PLLN = 10;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV7;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;

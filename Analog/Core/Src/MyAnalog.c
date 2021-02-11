@@ -150,8 +150,22 @@ void MyAnalog_Init_WithCallback(void (*CallBack_EO_DMA_function) (void))
 
 
 
+short int MyAnalog_GetVakue(int Rank)
+{
+return MyAnalog_DMA_Buffer[Rank-1];
+}
 
 
+#if defined(Filter_Rank_1)||defined(Filter_Rank_2)||defined(Filter_Rank_3)||defined(Filter_Rank_4)\
+ ||defined(Filter_Rank_5)||defined(Filter_Rank_6)||defined(Filter_Rank_7)\
+ ||defined(Filter_Rank_8)||defined(Filter_Rank_9)||defined(Filter_Rank_10)
+
+short int MyAnalog_GetFilteredVakue(int Rank)
+{
+return MyAnalog_Sn_Filter[Rank-1];
+}
+
+#endif
 
 /******************************************************************************
 *  PRIVATE FUNCTION

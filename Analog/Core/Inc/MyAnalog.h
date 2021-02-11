@@ -251,8 +251,31 @@ void MyAnalog_Init(void);
   * @brief Termine la configuration ADC en DMA, lance le processus (le timer qui déclenche
   * l'ADC doit être fonctionnel (Hal). L'initialisation des filtres est faite.
   * -> en plus lance un callback en fin de DMA si besoin.
+  * @param : nom de la fonction Callback
+  *
   */
 void MyAnalog_Init_WithCallback(void (*CallBack_EO_DMA_function) (void));
+
+
+/**
+  * @brief récupère la dernière donnée brute reçue par en fin de DMA
+  * @param : indice du rang d'acquisition (de 1 à 10)
+  */
+short int MyAnalog_GetVakue(int Rank);
+
+
+
+/**
+  * @brief récupère la dernière donnée filtrée en fin de DMA
+  * Disponible que si un au moins des filtres est sélectionné
+  * @param : indice du rang d'acquisition (de 1 à 10)
+  */
+
+#if defined(Filter_Rank_1)||defined(Filter_Rank_2)||defined(Filter_Rank_3)||defined(Filter_Rank_4)\
+ ||defined(Filter_Rank_5)||defined(Filter_Rank_6)||defined(Filter_Rank_7)\
+ ||defined(Filter_Rank_8)||defined(Filter_Rank_9)||defined(Filter_Rank_10)
+short int MyAnalog_GetFilteredVakue(int Rank);
+#endif
 
 
 #endif /* INC_MYANALOG_H_ */
