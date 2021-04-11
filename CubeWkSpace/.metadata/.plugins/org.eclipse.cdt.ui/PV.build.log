@@ -1,0 +1,7 @@
+21:34:56 **** Clean-only build of configuration Debug for project PV ****
+make -j4 clean 
+rm -rf *
+ 
+
+21:34:57 Build Finished. 0 errors, 0 warnings. (took 830ms)
+

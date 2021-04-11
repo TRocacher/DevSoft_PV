@@ -73,3 +73,54 @@ Resterait à faire un pdf...
 git ref : V1.0
 Ajout des fonction get
 
+========================== MAIL COLLEGUES ====================
+Je viens de finaliser un projet qui prend en main une grande partie de l'analogique sur STM32L476. Le développement c'est CubeIDE. J'ai pensé que cela pourrait vous intéresser et pourquoi pas vous être utile.
+
+Ma motivation : jouer avec CubeIDE + Hal pour éventuellement mettre en suivant du FreeRTOS sur autre chose que le 103.
+
+Déception : la partie analogique Hal est pourrie, prend 20 plombes pour faire un opération de base (start ADC...). Ce n'est pas acceptable dans plein d'applications de régulation rapide.
+
+-> mon besoin est non seulement d'aller vite avec l'ADC mais aussi de mettre en place des filtres numériques en amont des régulations.
+
+Mon idée a donc été de développer un module MyAnalog.c/.h qui vient dans un projet Cubeide et qui prend le relais de la conf cubemx, sur les aspects délicats ou Hal est à la rue (interruption, DMA). Le but est que le user ne s'occupe de RIEN au niveau analogique, il vient piocher à la volée jusqu'à dix valeurs (10 canaux) non filtrés, ou filtrés. Les interruptions DMA sont prioritaire sur tout.
+
+On imagine alors un programme de haut niveau qui n'a même pas à lancer d'ADC : il suffit de venir lire la dernière valeur traitée. Tout est en masqué.
+
+
+En gros je vous dis comment on y joue si ça vous intéresse :
+
+Config HAL (vous avez une exemple dans le projet, mais si on part de 0) : Cubemx (lancement du .ioc)
+
+- Préconfiguré pour la nucléo L476 (LED, BP user...)
+
+- Horloge interne (elle est relativement précise et évite les configurations à la con des nucléo, bypass ou pas...), donc 80MHz au CPU et 20MHz pour l'adc (on pourrait aller moins vite).
+
+- ADC triggé par un timer  dont on règle la périodicité à une valeur Te
+
+-ADC en scan sur 10 voies maximum
+
+- éventuellement DAC1 en conf de base (si on veut étudier les filtres à la mise au point)
+
+Config MyAnalog.h
+
+- choix de Te (période d'échantillonnage) = mettre la même que l'overlow timer !!!)
+
+- filtrage 1 à 10 activé ou pas, calcul flottant (performant grâce à la FPU du M4)
+
+-fréquence de coupure  réglable en Hz pour chaque filtre
+
+- ordre 1 ou ordre 2 pour chacun des filtre (tps d'exécution 1.5µs pour ordre 1, 1.8µs pour ordre 2)
+
+- possibilité d'associer ou non un callback à l'IT DMA
+
+- une seule fonction d'init (deux en fait si on veut jouer avec un callback)
+
+- un .h de config générale
+
+- deux fonctions get (data filtrée ou non filtrée).
+
+
+Voila pour la présentation. Si vous jouez avec, n'hésitez pas à me faire des retours si la mise en oeuvre est obscure.
+
+
+
