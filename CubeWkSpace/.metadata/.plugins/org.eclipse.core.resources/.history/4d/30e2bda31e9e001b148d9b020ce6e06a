@@ -1,0 +1,170 @@
+/*
+ * MyAnalog.c
+ *
+ *  Created on: 15 Avril. 2021
+ *      Author: trocache
+ *
+ *  CIBLE : stm32L476RG (Nucléo board)
+ *  IDE : Cube IDE vers 1.5.1
+ *  CONTEXTE : gestion soft système PV
+ *  DEPENDENCES :
+ *
+ *
+ */
+
+
+#include "Menu.h"
+
+/******************************************************************************
+*  PRIVATE Variables
+*
+******************************************************************************/
+
+enum {M_Demarrage, M_MPPT_main, M_BattCharg_main};
+enum {Entry, Do, Exit};
+#define NbMenu 3
+
+struct MenuStatusTypedef {
+	 int  ActualMenu;
+  	 void (*MenuPtrFct[NbMenu])(void);
+	 int ActualMenuState; // {Entry, Do, Exit}
+	 float InputValue;
+	 char NewInputValueFlag;
+	 float ValueToPrint[10];
+} MenuStatus;
+
+
+struct MenuScreenTypedef {
+	// Menu Input Menu
+	char InputValueDigits[10]; // pour input menu, c'est les digits de l'input Value (non utilisé 			    // directement pour l'affichage)
+	char LineColToHighLight[2];// contient la coordonnée du caractère actif
+	// Menu Navigation et Information
+	char * PtrLine[10]; // ce sont 10 pointeurs vers 10 strings maximum
+	char FirstLineToPrint; // utile pour le scrolling, on affiche la première ligne puis 3 suivantes en 		                 //partant de  FirstLineToPrint
+	char ActiveLine;         // la ligne à mettre en surbrillance
+} MenuScreenData;
+
+
+// pour tester
+#define Up 24
+#define Dwn 25
+#define Right 26
+#define Left 27
+char Touch;
+
+char table[20]="coucou"; ////////////////////
+
+/******************************************************************************
+*  PRIVATE declaration
+
+******************************************************************************/
+void Fct_Demarrage(void);
+void Fct_MPPT_main(void);
+void Fct_BattCharg_main(void);
+
+
+
+
+/******************************************************************************
+*  PUBLIC FUNCTION
+
+******************************************************************************/
+
+void Start_Menu(void)
+{
+	/*************************************
+	 * init attribut MenuStatus
+	 *************************************/
+	MenuStatus.ActualMenu=M_Demarrage;
+	MenuStatus.ActualMenuState=Entry;
+	MenuStatus.InputValue=12.5;
+	MenuStatus.NewInputValueFlag=0;
+	// chargement du tableau de pointeur de fonction
+	MenuStatus.MenuPtrFct[M_Demarrage]=Fct_Demarrage;
+	MenuStatus.MenuPtrFct[M_MPPT_main]=Fct_MPPT_main;
+	MenuStatus.MenuPtrFct[M_BattCharg_main]=Fct_BattCharg_main;
+	// valeurs à imprimer à 0.0
+	for (int i=0 ;i<=9 ;i++)
+	{
+		MenuStatus.ValueToPrint[i]=0.0;
+	}
+
+
+}
+
+
+
+
+
+/******************************************************************************
+*  PRIVATE functions
+
+******************************************************************************/
+
+void MenuPrintNavInfoScreen(void)
+{
+	// - afficher les 4 lignes : la première et les 3 autres à partir de la ligne
+	// FirstLineToPrint
+	// mettre en surbrillance la ligne indiquée
+}
+
+
+const char M_DemarrageItem0[]="Systeme eteint      ";
+const char M_DemarrageItem1[]="1> Demarrage...     ";
+const char M_DemarrageItem2[]="2> Parametres ...   ";
+char Space[]="                    ";
+
+void Fct_Demarrage(void){
+	switch(MenuStatus.ActualMenuState)
+	{
+	case Entry:
+		{
+			MenuStatus.ActualMenuState=Do;
+			MenuScreenData.ActiveLine=1;
+			MenuScreenData.FirstLineToPrint=1;
+			MenuScreenData.PtrLine[0]="Systeme eteint      ";
+			MenuScreenData.PtrLine[2]="1> Demarrage...     ";
+			MenuScreenData.PtrLine[2]="2> Parametres ...   ";
+			MenuScreenData.PtrLine[3]=Space;
+
+
+			MenuPrintNavInfoScreen();
+			break;
+		}
+	case Do:
+			{
+				switch(Touch)
+				{
+					case Up :
+						break;
+				}
+				break;
+			}
+	case Exit:
+			{
+				break;
+			}
+
+	}
+
+}
+
+void Fct_MPPT_main(void){
+
+}
+
+void Fct_BattCharg_main(void){
+
+}
+
+
+void MenuProgress(void)
+{
+	MenuStatus.MenuPtrFct[MenuStatus.ActualMenu]();
+}
+
+
+
+/**
+  * @brief
+  */

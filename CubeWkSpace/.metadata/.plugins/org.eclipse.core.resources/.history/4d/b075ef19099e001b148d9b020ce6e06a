@@ -1,0 +1,109 @@
+/*
+ * MyAnalog.c
+ *
+ *  Created on: 15 Avril. 2021
+ *      Author: trocache
+ *
+ *  CIBLE : stm32L476RG (Nucléo board)
+ *  IDE : Cube IDE vers 1.5.1
+ *  CONTEXTE : gestion soft système PV
+ *  DEPENDENCES :
+ *
+ *
+ */
+
+
+#include "Menu.h"
+
+/******************************************************************************
+*  PRIVATE Variables
+*
+******************************************************************************/
+
+enum {M_Demarrage, M_MPPT_main, M_BattCharg_main};
+enum {Entry, Do, Exit};
+#define NbMenu 3
+
+struct MenuStatusTypedef {
+	 int  ActualMenu;
+  	 void (*MenuPtrFct[NbMenu])(void);
+	 int ActualMenuState; // {Entry, Do, Exit}
+	 float InputValue;
+	 char NewInputValueFlag;
+	 float ValueToPrint[10];
+} MenuStatus;
+
+
+struct MenuScreenTypedef {
+	// Menu Input Menu
+	char NbLineToPrint;  // utile pour les imput menu
+	char InputValueDigits[10]; // pour input menu, c'est les digits de l'input Value (non utilisé 			    // directement pour l'affichage)
+	char LineColToHighLight[2];// contient la coordonnée du caractère actif
+	// Menu Navigation et Information
+	char TabLine[10][20]; // ce sont 10 strings de 20 caractères, les 20 lignes
+	char FirstLineToPrint; // utile pour le scrolling, on affiche la première ligne puis 3 suivantes en 		                 //partant de  FirstLineToPrint
+	char ActiveLine;         // la ligne à mettre en surbrillance
+} MenuScreenData;
+
+
+// pour tester
+#define up 24
+#define Dwn 25
+#define Right 26
+#define Left 27
+char Touch;
+
+
+/******************************************************************************
+*  PRIVATE declaration
+
+******************************************************************************/
+void Fct_Demarrage(void);
+void Fct_MPPT_main(void);
+void Fct_BattCharg_main(void);
+
+
+
+void Fct_Demarrage(void){
+
+}
+
+
+/******************************************************************************
+*  PUBLIC FUNCTION
+
+******************************************************************************/
+
+void Start_Menu(void)
+{
+	MenuStatus.ActualMenu=M_Demarrage;
+	MenuStatus.ActualMenuState=Entry;
+	MenuStatus.InputValue=12.5;
+	MenuStatus.MenuPtrFct[M_Demarrage]=Fct_Demarrage;
+	MenuStatus.MenuPtrFct[M_MPPT_main]=Fct_MPPT_main;
+	MenuStatus.MenuPtrFct[M_BattCharg_main]=Fct_BattCharg_main;
+}
+
+
+/******************************************************************************
+*  PRIVATE functions
+
+******************************************************************************/
+
+void Fct_Demarrage(void){
+
+}
+
+void Fct_MPPT_main(void){
+
+}
+
+void Fct_BattCharg_main(void){
+
+}
+
+
+
+/**
+  * @brief
+  */

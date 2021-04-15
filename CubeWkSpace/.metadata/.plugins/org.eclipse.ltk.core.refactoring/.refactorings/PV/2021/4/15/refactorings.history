@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PV/Core/Menu/MyAnalog.c&apos; to &apos;Menu.c&apos;" description="Rename resource &apos;MyAnalog.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Menu/MyAnalog.c" name="Menu.c" stamp="1618497490732" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;PV/Core/Menu/MyAnalog.h&apos; to &apos;Menu.h&apos;" description="Rename resource &apos;MyAnalog.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Menu/MyAnalog.h" name="Menu.h" stamp="1618497510995" updateReferences="true"/>
+</session>
