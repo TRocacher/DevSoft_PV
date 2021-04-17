@@ -20,7 +20,7 @@
 *
 ******************************************************************************/
 
-enum {M_Demarrage, M_MPPT_main, M_BattCharg_main};
+
 enum {Entry, Do, Exit};
 #define NbMenu 3
 
@@ -33,6 +33,7 @@ struct MenuStatusTypedef {
 	 float InputValue;
 	 char NewInputValueFlag;
 	 float ValueToPrint[10];
+	 char NewValueToPrint[10];
 } MenuStatus;
 
 
@@ -61,10 +62,11 @@ char Touch;
 *  PRIVATE declaration
 
 ******************************************************************************/
-void Fct_Demarrage(void);
-void Fct_MPPT_main(void);
-void Fct_BattCharg_main(void);
-
+enum {M_Demarrage, M_DemarrageMPPT, M_DemarrageBattChg, M_Param};
+void MenuFct_Demarrage(void);
+void MenuFct_DemarrageMPPT(void);
+void MenuFct_DemarrageBattChg(void);
+void MenuFct_Param(void);
 
 
 
@@ -73,7 +75,7 @@ void Fct_BattCharg_main(void);
 
 ******************************************************************************/
 
-void Start_Menu(void)
+void Init_Menu(void)
 {
 	/*************************************
 	 * init attribut MenuStatus
@@ -83,13 +85,15 @@ void Start_Menu(void)
 	MenuStatus.InputValue=12.5;
 	MenuStatus.NewInputValueFlag=0;
 	// chargement du tableau de pointeur de fonction
-	MenuStatus.MenuPtrFct[M_Demarrage]=Fct_Demarrage;
-	MenuStatus.MenuPtrFct[M_MPPT_main]=Fct_MPPT_main;
-	MenuStatus.MenuPtrFct[M_BattCharg_main]=Fct_BattCharg_main;
+	MenuStatus.MenuPtrFct[M_Demarrage]=MenuFct_Demarrage;
+	MenuStatus.MenuPtrFct[M_DemarrageMPPT]=MenuFct_DemarrageMPPT;
+	MenuStatus.MenuPtrFct[M_DemarrageBattChg]=MenuFct_DemarrageBattChg;
+	MenuStatus.MenuPtrFct[M_Param]=MenuFct_Param;
 	// valeurs à imprimer à 0.0
 	for (int i=0 ;i<=9 ;i++)
 	{
 		MenuStatus.ValueToPrint[i]=0.0;
+		MenuStatus.NewValueToPrint[i]=0;
 	}
 
 
@@ -112,8 +116,7 @@ void MenuPrintNavInfoScreen(void)
 				if 	(MenuScreenData.ActiveItem!=1)
 				{
 					// besoin de scroller vers le haut ?
-					if (MenuScreenData.ActiveItem==MenuScreenData.FirstItemToPrint)
-						MenuScreenData.FirstItemToPrint--;
+					if (MenuScreenData.ActiveItem==MenuScreenData.FirstItemToPrint) MenuScreenData.FirstItemToPrint--;
 					MenuScreenData.ActiveItem--;
 				}
 				break;
@@ -121,8 +124,7 @@ void MenuPrintNavInfoScreen(void)
 				if 	(MenuScreenData.ActiveItem!=MenuScreenData.NbItemsToPrint)
 				{
 					// besoin de scroller vers le bas ?
-					if ((MenuScreenData.ActiveItem-MenuScreenData.FirstItemToPrint)==3)
-						MenuScreenData.FirstItemToPrint++;
+					if ((MenuScreenData.ActiveItem-MenuScreenData.FirstItemToPrint)==3)	MenuScreenData.FirstItemToPrint++;
 					MenuScreenData.ActiveItem++;
 				}
 				break;
@@ -143,9 +145,22 @@ void MenuPrintNavInfoScreen(void)
 }
 
 
+/*==========================================================================================
+ *
+ * 		LES MENNU DECRITS A TRAVERS LES "MENU FUNCTIONS"
+ *
+ *
+ ==========================================================================================*/
 
+/*      **********************
+ * 		*Systeme eteint      *
+ * 		*1> Demarrage MPPT	 *
+ * 		*2> Demarrage Bat Ch *
+ * 		*3> Parametres >	 *
+ * 		**********************
+ */
 
-void Fct_Demarrage(void)
+void MenuFct_Demarrage(void)
 {
 	switch(MenuStatus.ActualMenuState)
 	{
@@ -156,10 +171,9 @@ void Fct_Demarrage(void)
 			MenuScreenData.NbItemsToPrint=2;
 			MenuScreenData.FirstItemToPrint=1;
 			MenuScreenData.PtrLine[0]="Systeme eteint      ";
-			MenuScreenData.PtrLine[2]="1> Demarrage...     ";
+			MenuScreenData.PtrLine[1]="1> Demarrage...     ";
 			MenuScreenData.PtrLine[2]="2> Parametres ...   ";
 			MenuScreenData.PtrLine[3]=Space;
-
 
 			MenuPrintNavInfoScreen();
 			break;
@@ -175,12 +189,16 @@ void Fct_Demarrage(void)
 			{
 			case 1:
 				{
-					MenuStatus.ActualMenu=M_MPPT_main;
+					MenuStatus.ActualMenu=M_DemarrageMPPT;
 					break;
 				}
 			case 2:
 				{
-						MenuStatus.ActualMenu=M_BattCharg_main;
+					MenuStatus.ActualMenu=M_DemarrageBattChg;
+				}
+			case 3:
+				{
+					MenuStatus.ActualMenu=M_Param;
 				}
 			case 255:
 				{
@@ -196,11 +214,26 @@ void Fct_Demarrage(void)
 }
 
 
-void Fct_MPPT_main(void){
+
+/*      **********************
+ * 		*Demarrage	         *
+ * 		*1> MPPT  			 *
+ * 		*2> Batt Charger	 *
+ * 		*					 *
+ * 		**********************
+ */
+
+void MenuFct_DemarrageMPPT(void)
+{
+
 
 }
+void MenuFct_DemarrageBattChg(void)
+{
 
-void Fct_BattCharg_main(void){
+}
+void MenuFct_Param(void)
+{
 
 }
 

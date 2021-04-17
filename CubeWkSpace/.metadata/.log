@@ -1475,3 +1475,127 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-15 16:22:33.681
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-04-16 15:47:03.115 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-16 15:47:18.129
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-16 15:47:18.230
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-04-16 15:47:24.199
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.map (Le chemin d’accès spécifié est introuvable)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:401)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-04-16 15:47:24.415
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.map (Le chemin d’accès spécifié est introuvable)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:409)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-16 15:47:33.830
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-16 15:47:35.511
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-04-16 15:48:12.327
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$14(StackAnalyzerView.java:1185)
+	at java.lang.Thread.run(Thread.java:748)
+!SESSION 2021-04-17 14:36:33.504 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-17 14:36:47.597
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-17 14:36:47.690
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-04-17 14:36:53.611
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.map (Le chemin d’accès spécifié est introuvable)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:401)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-04-17 14:36:53.861
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.map (Le chemin d’accès spécifié est introuvable)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:409)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-17 14:37:00.981
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-17 14:37:02.825
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-04-17 14:39:33.983
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\Debug\PV.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$14(StackAnalyzerView.java:1185)
+	at java.lang.Thread.run(Thread.java:748)
