@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "MyAnalog.h"
+#include "Menu.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -129,7 +130,7 @@ int main(void)
 
   //---- Config Analog part (voir MyAnalog.h)
   //MyAnalog_Init();
-  MyAnalog_Init_WithCallback(MyIT_Fct);
+  //MyAnalog_Init_WithCallback(MyIT_Fct);
 
 
   //---- Lancement Timer 6
@@ -140,10 +141,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  Init_Menu();
   while (1)
   {
     /* USER CODE END WHILE */
-
+	Menu_NodeUpdate();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

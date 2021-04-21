@@ -1,20 +1,7 @@
-15:20:44 **** Incremental Build of configuration Debug for project PV ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
-arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PV.elf
- 
-arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
-arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
-arm-none-eabi-size   PV.elf 
-   text	   data	    bss	    dec	    hex	filename
-  22448	     20	   2068	  24536	   5fd8	PV.elf
-Finished building: default.size.stdout
-Finished building: PV.bin
- 
- 
-Finished building: PV.list
+18:21:25 **** Clean-only build of configuration Debug for project PV ****
+make -j4 clean 
+rm -rf *
  
 
-15:20:46 Build Finished. 0 errors, 0 warnings. (took 2s.70ms)
+18:21:25 Build Finished. 0 errors, 0 warnings. (took 633ms)
 

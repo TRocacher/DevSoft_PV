@@ -20,21 +20,36 @@
 *
 ******************************************************************************/
 
+// type Menu_Node
+enum {First, Middle, Last};
+typedef struct Menu_Node Menu_Node;
+struct Menu_Node {
+	Menu_Node *  NextNode;
+	Menu_Node *  PreviousNode;
+	Menu_Node *  UpNode;
+	Menu_Node *  DownNode;
+	char * Title;
+	char MenuPosition;
+	char * ItemToPrint;
+	void (*NodeExecFct)(void);
+};
 
-enum {Entry, Do, Exit};
-#define NbMenu 3
+Menu_Node Item_Menu1, Item_Menu2, Item_Menu3, Item_Menu4,  Item_Null;
 
-char Space[]="                    ";
 
-struct MenuStatusTypedef {
-	 int  ActualMenu;
-  	 void (*MenuPtrFct[NbMenu])(void);
-	 int ActualMenuState; // {Entry, Do, Exit}
-	 float InputValue;
-	 char NewInputValueFlag;
-	 float ValueToPrint[10];
-	 char NewValueToPrint[10];
-} MenuStatus;
+//Variable Menu_Status
+
+struct {
+	Menu_Node *  ActualNode;
+	float UserInput;
+	char NewUserInputFlag;
+	char DigitUserInput[10];
+} Menu_Status;
+
+
+
+
+
 
 
 struct MenuScreenTypedef {
@@ -47,6 +62,8 @@ struct MenuScreenTypedef {
 	char FirstItemToPrint; // utile pour le scrolling, on affiche la première ligne puis 3 suivantes en 		                 //partant de  FirstLineToPrint
 	char ActiveItem;         // l'item à mettre en surbrillance, -1 pour retour en arrière
 } MenuScreenData;
+
+
 
 
 // pour tester
@@ -62,11 +79,8 @@ char Touch;
 *  PRIVATE declaration
 
 ******************************************************************************/
-enum {M_Demarrage, M_DemarrageMPPT, M_DemarrageBattChg, M_Param};
-void MenuFct_Demarrage(void);
-void MenuFct_DemarrageMPPT(void);
-void MenuFct_DemarrageBattChg(void);
-void MenuFct_Param(void);
+
+void Menu_Node_Init(void);
 
 
 
@@ -75,30 +89,57 @@ void MenuFct_Param(void);
 
 ******************************************************************************/
 
+
 void Init_Menu(void)
 {
 	/*************************************
 	 * init attribut MenuStatus
+	 *
 	 *************************************/
-	MenuStatus.ActualMenu=M_Demarrage;
-	MenuStatus.ActualMenuState=Entry;
-	MenuStatus.InputValue=12.5;
-	MenuStatus.NewInputValueFlag=0;
-	// chargement du tableau de pointeur de fonction
-	MenuStatus.MenuPtrFct[M_Demarrage]=MenuFct_Demarrage;
-	MenuStatus.MenuPtrFct[M_DemarrageMPPT]=MenuFct_DemarrageMPPT;
-	MenuStatus.MenuPtrFct[M_DemarrageBattChg]=MenuFct_DemarrageBattChg;
-	MenuStatus.MenuPtrFct[M_Param]=MenuFct_Param;
-	// valeurs à imprimer à 0.0
+	Menu_Status.ActualNode=&Item_Menu1;
+	Menu_Status.NewUserInputFlag=0;
+	Menu_Status.UserInput=0.0;
+
 	for (int i=0 ;i<=9 ;i++)
 	{
-		MenuStatus.ValueToPrint[i]=0.0;
-		MenuStatus.NewValueToPrint[i]=0;
+		Menu_Status.DigitUserInput[i]=0;
+	}
+
+	//Initialisation des maillons de la châine
+	Menu_Node_Init();
+}
+
+
+
+
+void Menu_NodeUpdate(void)
+{
+	switch(Touch)
+	{
+	case Up:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
+		break;
+		}
+	case Down:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
+		break;
+		}
+	case Left:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+		break;
+		}
+	case Right:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
+		break;
+		}
 	}
 
 
 }
-
 
 
 
@@ -108,140 +149,113 @@ void Init_Menu(void)
 
 ******************************************************************************/
 
-void MenuPrintNavInfoScreen(void)
-{
-	switch(Touch)
-			{
-			case Up:
-				if 	(MenuScreenData.ActiveItem!=1)
-				{
-					// besoin de scroller vers le haut ?
-					if (MenuScreenData.ActiveItem==MenuScreenData.FirstItemToPrint) MenuScreenData.FirstItemToPrint--;
-					MenuScreenData.ActiveItem--;
-				}
-				break;
-			case Down:
-				if 	(MenuScreenData.ActiveItem!=MenuScreenData.NbItemsToPrint)
-				{
-					// besoin de scroller vers le bas ?
-					if ((MenuScreenData.ActiveItem-MenuScreenData.FirstItemToPrint)==3)	MenuScreenData.FirstItemToPrint++;
-					MenuScreenData.ActiveItem++;
-				}
-				break;
-			case Right:
-				MenuStatus.ActualMenuState=Exit;
-				break;
-			case Left:
-				MenuStatus.ActualMenuState=Exit;
-				MenuScreenData.ActiveItem=255;
-				break;
-			}
 
-	// TO DO
-	// - afficher les 4 lignes : la première et les 3 autres à partir de l'item actif
-	// mettre en surbrillance la ligne indiquée
-
-
-}
 
 
 /*==========================================================================================
  *
- * 		LES MENNU DECRITS A TRAVERS LES "MENU FUNCTIONS"
+ * 		Chargement des maillons MenuNodes
  *
  *
  ==========================================================================================*/
 
-/*      **********************
- * 		*Systeme eteint      *
- * 		*1> Demarrage MPPT	 *
- * 		*2> Demarrage Bat Ch *
- * 		*3> Parametres >	 *
- * 		**********************
- */
 
-void MenuFct_Demarrage(void)
+void NullFct(void) {}
+
+void Menu_Node_Init(void)
 {
-	switch(MenuStatus.ActualMenuState)
-	{
-	case Entry:
-		{
-			MenuStatus.ActualMenuState=Do;
-			MenuScreenData.ActiveItem=1;
-			MenuScreenData.NbItemsToPrint=2;
-			MenuScreenData.FirstItemToPrint=1;
-			MenuScreenData.PtrLine[0]="Systeme eteint      ";
-			MenuScreenData.PtrLine[1]="1> Demarrage...     ";
-			MenuScreenData.PtrLine[2]="2> Parametres ...   ";
-			MenuScreenData.PtrLine[3]=Space;
 
-			MenuPrintNavInfoScreen();
-			break;
-		}
-	case Do:
-		{   // Test et action ds 4 flèches, affichage
-			MenuPrintNavInfoScreen();
-			break;
-		}
-	case Exit:
-		{
-			switch(MenuScreenData.ActiveItem)
-			{
-			case 1:
-				{
-					MenuStatus.ActualMenu=M_DemarrageMPPT;
-					break;
-				}
-			case 2:
-				{
-					MenuStatus.ActualMenu=M_DemarrageBattChg;
-				}
-			case 3:
-				{
-					MenuStatus.ActualMenu=M_Param;
-				}
-			case 255:
-				{
-					MenuStatus.ActualMenu=M_Demarrage; // on bouge pas
-				}
+	/*      **********************
+	 * 		*Menu principal      *
+	 * 		*1> Nenu 1			 *
+	 * 		*2> Menu 2			 *
+	 * 		*3> Menu 3			 *
+	 * 		*4> Menu 4			 *
+	 * 		**********************
+	 */
+	Item_Menu1.DownNode=&Item_Menu2;
+	Item_Menu1.NextNode=& Item_Null;
+	Item_Menu1.UpNode=&Item_Menu1;  // lui même
+	Item_Menu1.PreviousNode=&Item_Menu1;  // lui même
+	Item_Menu1.MenuPosition=First;
+	Item_Menu1.Title="Menu principal      ";
+	Item_Menu1.ItemToPrint ="1> Nenu 1			 ";
+	Item_Menu1.NodeExecFct=NullFct;
 
-			MenuStatus.ActualMenuState=Entry;
-			break;
-			}
+	Item_Menu2.DownNode=&Item_Menu3;
+	Item_Menu2.NextNode=& Item_Null;
+	Item_Menu2.UpNode=&Item_Menu1;
+	Item_Menu2.PreviousNode=&Item_Menu2;  // lui même
+	Item_Menu2.MenuPosition=Middle;
+	Item_Menu2.Title="Menu principal      ";
+	Item_Menu2.ItemToPrint ="2> Menu 2			 ";
+	Item_Menu2.NodeExecFct=NullFct;
 
-		}
-	}
+	Item_Menu3.DownNode=&Item_Menu4;
+	Item_Menu3.NextNode=& Item_Null;
+	Item_Menu3.UpNode=&Item_Menu2;
+	Item_Menu3.PreviousNode=&Item_Menu3;  // lui même
+	Item_Menu3.MenuPosition=Middle;
+	Item_Menu3.Title="Menu principal      ";
+	Item_Menu3.ItemToPrint ="3> Menu 3			 ";
+	Item_Menu3.NodeExecFct=NullFct;
+
+	Item_Menu4.DownNode=&Item_Menu4; // lui même
+	Item_Menu4.NextNode=& Item_Null;
+	Item_Menu4.UpNode=&Item_Menu3;
+	Item_Menu4.PreviousNode=&Item_Menu4;  // lui même
+	Item_Menu4.MenuPosition=Last;
+	Item_Menu4.Title="Menu principal      ";
+	Item_Menu4.ItemToPrint ="3> Menu 4			 ";
+	Item_Menu4.NodeExecFct=NullFct;
+
+	/*      **********************
+	 * 		*Menu 1			     *
+	 * 		*1> Nenu 1_1		 *
+	 * 		*2> Menu 1_2		 *
+	 * 		*3> Menu 1_3		 *
+	 * 		**********************
+	 */
+
+	/*      **********************
+	 * 		*Menu 2			     *
+	 * 		*1> Nenu 2_1		 *
+	 * 		*2> Menu 2_2		 *
+	 * 		**********************
+	 */
+
+
+	/*      **********************
+	 * 		*Menu 2_1			 *
+	 * 		*1> Nenu 2_1_1		 *
+	 * 		*2> Menu 2_1_2		 *
+	 * 		*3> Menu 2_1_3		 *
+	 * 		*3> Menu 2_1_4		 *
+	 * 		**********************
+	 */
+
+	/*      **********************
+	 * 		*Menu 4			     *
+	 * 		*1> Nenu 4_1		 *
+	 * 		*2> Menu 4_2		 *
+	 * 		**********************
+	 */
+
+	/*      **********************
+	 * 		*Menu 5			     *
+	 * 		*1> Nenu 5_1		 *
+	 * 		*2> Menu 5_2		 *
+	 * 		*3> Menu 5_3		 *
+	 * 		**********************
+	 */
 }
 
 
 
-/*      **********************
- * 		*Demarrage	         *
- * 		*1> MPPT  			 *
- * 		*2> Batt Charger	 *
- * 		*					 *
- * 		**********************
- */
-
-void MenuFct_DemarrageMPPT(void)
-{
 
 
-}
-void MenuFct_DemarrageBattChg(void)
-{
-
-}
-void MenuFct_Param(void)
-{
-
-}
 
 
-void MenuProgress(void)
-{
-	MenuStatus.MenuPtrFct[MenuStatus.ActualMenu]();
-}
 
 
 

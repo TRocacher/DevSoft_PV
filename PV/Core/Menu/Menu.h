@@ -26,9 +26,8 @@
 
 //#include "stm32l4xx_hal.h"
 
-
-
-
+void Init_Menu(void);
+void Menu_NodeUpdate(void);
 
 
 #endif /* INC_MYANALOG_H_ */
