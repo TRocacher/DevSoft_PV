@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ComUART.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,6 +63,10 @@ static void MX_USART2_UART_Init(void);
   * @brief  The application entry point.
   * @retval int
   */
+volatile int i;
+char a;
+void toto(void)
+{i++;}
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -88,8 +92,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
 
+  /* USER CODE BEGIN 2 */
+  ComUART_Init(&huart2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,6 +102,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	if (ComUART_IsNewCmde())
+	{
+		ComUART_ClrReceptFlag();
+		a=ComUART_GetCmd();
+	}
 
     /* USER CODE BEGIN 3 */
   }
@@ -173,7 +183,7 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
+  huart2.Init.BaudRate = 9800;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;

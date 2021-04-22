@@ -1,0 +1,54 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+// UART2 utilisé par CubeMx. Si autre UART, reprendre depuis CubeMx
+
+#include "ComUART.h"
+
+enum {Polling, Interupt};
+struct {
+	char RecepMode; // Polling/Interrupt
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+
+void ComUART_Callback_Fct_Null(void){}
+
+
+void ComUART_Init(UART_HandleTypeDef * UsedUSART, char ModeRecep, int BaudRate,char RecepMode,void (*Callback)(void) )
+{
+	ComUART_Status.Cmde=0; // aucune cmde valide
+	if (ModeRecep==Interupt) ComUART_Status.ComUART_Callback=Callback;
+	else ComUART_Status.ComUART_Callback=ComUART_Callback_Fct_Null;
+	ComUART_Status.RecepMode=ModeRecep;
+	ComUART_Status.RecepFlag=0;
+	ComUART_Status.TransmFlag=0;
+
+	// on annule le travail fait par Hal pour réajuster la ligne avec le bon débit
+	// L'init qui suit est donc le copier coller de Hal sauf le débit.
+	HAL_UART_DeInit(UsedUSART);
+	UsedUSART->Instance = USART2;
+	UsedUSART->Init.BaudRate =BaudRate;
+	UsedUSART->Init.WordLength = UART_WORDLENGTH_8B;
+	UsedUSART->Init.StopBits = UART_STOPBITS_1;
+	UsedUSART->Init.Parity = UART_PARITY_NONE;
+	UsedUSART->Init.Mode = UART_MODE_TX_RX;
+	UsedUSART->Init.HwFlowCtl = UART_HWCONTROL_NONE;
+	UsedUSART->Init.OverSampling = UART_OVERSAMPLING_16;
+	UsedUSART->Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+	UsedUSART->AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+	  if (HAL_UART_Init(UsedUSART) != HAL_OK)
+	  {
+	    Error_Handler();
+	  }
+
+}
+
+

@@ -1,0 +1,65 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+// CubeIDE : choix de l'USART et choix du débit
+// surtout ne pas valider les IT, on gère au niveau du module
+// Réglage à la main sur le NVIC :
+// 		  NVIC_EnableIRQ
+//		  NVIC_SetPriority dans core_cm4.h
+//      Les numéros IRQ sont donnés dans stm32l476xx.h
+
+#include "ComUART.h"
+
+enum {Polling, Interupt};
+struct {
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+
+
+
+
+void ComUART_Init_IT(UART_HandleTypeDef * UsedUSART, void (*Callback)(void))
+{
+	ComUART_Status.Cmde=0; // aucune cmde valide
+    ComUART_Status.ComUART_Callback=Callback;
+	ComUART_Status.RecepFlag=0;
+	ComUART_Status.TransmFlag=0;
+
+	// Configuration NVIC
+	if ((UsedUSART->Instance)==USART1)
+	{
+		NVIC_EnableIRQ(USART1_IRQn);
+		NVIC_SetPriority(USART1_IRQn,ComUART_Prio);
+	}
+	else if ((UsedUSART->Instance)==USART2)
+	{
+		NVIC_EnableIRQ(USART2_IRQn);
+		NVIC_SetPriority(USART2_IRQn,ComUART_Prio);
+	}
+	else if ((UsedUSART->Instance)==USART3)
+	{
+		NVIC_EnableIRQ(USART3_IRQn);
+		NVIC_SetPriority(USART3_IRQn,ComUART_Prio);
+	}
+}
+
+
+
+void USART2_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART2_IRQn 0 */
+
+  /* USER CODE END USART2_IRQn 0 */
+ // HAL_UART_IRQHandler(&huart2);
+  /* USER CODE BEGIN USART2_IRQn 1 */
+
+  /* USER CODE END USART2_IRQn 1 */
+}

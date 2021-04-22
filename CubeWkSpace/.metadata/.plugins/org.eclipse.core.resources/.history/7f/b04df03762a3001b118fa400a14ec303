@@ -1,0 +1,17 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+enum {Polling, Interupt};
+struct {
+	char RecepMode; // Polling/Interrupt
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+

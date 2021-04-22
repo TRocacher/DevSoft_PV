@@ -1,0 +1,17 @@
+/*
+ * ComUART.h
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+#ifndef COMUART_COMUART_H_
+#define COMUART_COMUART_H_
+
+#include "stm32l4xx_hal.h"
+
+void ComUART_Init_IT(UART_HandleTypeDef * UsedUSART, void (*Callback)(void));
+
+#define ComUART_Prio 6
+
+#endif /* COMUART_COMUART_H_ */

@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="LED2_ADC"/>
+		<item key="selection" value="USART2_IRQHandler"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="USART2_IRQHandler"/>
+			<item value="#inc"/>
+			<item value="NVIC_EnableIRQ"/>
+			<item value="IRQn_Type IRQn"/>
+			<item value="__NVIC_EnableIRQ"/>
+			<item value="HAL_UART_IRQHandler"/>
+			<item value="UART_HandleTypeDef"/>
+			<item value="stm32l4xx.h"/>
+			<item value="UART"/>
 			<item value="LED2_ADC"/>
 			<item value="F1"/>
 			<item value="F2"/>
 			<item value="Fc1"/>
 			<item value="F1_sn"/>
 			<item value="F9"/>
-			<item value="F8"/>
-			<item value="F7"/>
-			<item value="F6"/>
-			<item value="F5"/>
-			<item value="F4"/>
-			<item value="F3"/>
-			<item value="ADC_CFGR_DISCNUM_Msk"/>
 		</list>
 		<list key="replacehistory">
 			<item value="F10"/>

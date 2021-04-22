@@ -7801,3 +7801,72 @@
 2021-04-22 13:03:20,984 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3641mS.
 2021-04-22 13:03:20,984 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
 2021-04-22 13:03:20,984 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-04-22 14:49:29,821 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,637x273,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-04-22 14:49:47,305 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 529341472 Bytes (1073741824)
+2021-04-22 14:49:49,160 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 542972960 Bytes (1073741824)
+2021-04-22 14:49:50,085 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 571284512 Bytes (1073741824)
+2021-04-22 14:49:50,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-04-22 14:49:50,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-04-22 14:49:50,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-04-22 14:49:50,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-04-22 14:49:50,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-04-22 14:49:50,517 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-04-22 14:49:50,764 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\license.tmp_save
+2021-04-22 14:49:50,833 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\license.tmp
+2021-04-22 14:49:50,864 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\gpio.tmp_save
+2021-04-22 14:49:50,933 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\gpio.tmp
+2021-04-22 14:49:51,034 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-22 14:49:51,049 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_it.c_save
+2021-04-22 14:49:51,180 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_it.c
+2021-04-22 14:49:51,190 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_it.h_save
+2021-04-22 14:49:51,260 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_it.h
+2021-04-22 14:49:51,280 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_hal_msp.c_save
+2021-04-22 14:49:51,391 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_hal_msp.c
+2021-04-22 14:49:51,401 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\system.tmp_save
+2021-04-22 14:49:51,491 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\system.tmp
+2021-04-22 14:49:51,510 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-04-22 14:49:51,813 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_hal_conf.h
+2021-04-22 14:49:51,874 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\main.h_save
+2021-04-22 14:49:51,964 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\main.h
+2021-04-22 14:49:51,974 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\main.c_save
+2021-04-22 14:49:52,103 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\main.c
+2021-04-22 14:49:52,908 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 231mS.
+2021-04-22 14:49:52,910 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-04-22 14:49:53,283 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-04-22 14:49:58,849 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 5939mS.
+2021-04-22 14:49:58,851 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 2mS.
+2021-04-22 14:49:58,851 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-04-22 15:01:37,869 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 483043432 Bytes (1073741824)
+2021-04-22 15:01:39,257 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 497197168 Bytes (1073741824)
+2021-04-22 15:01:41,164 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 661823600 Bytes (1073741824)
+2021-04-22 15:01:41,427 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-04-22 15:01:41,427 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-04-22 15:01:41,427 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-04-22 15:01:41,427 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-04-22 15:01:41,427 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-04-22 15:01:41,427 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.2.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-04-22 15:01:41,696 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\license.tmp_save
+2021-04-22 15:01:41,750 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\license.tmp
+2021-04-22 15:01:41,928 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\gpio.tmp_save
+2021-04-22 15:01:42,023 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\gpio.tmp
+2021-04-22 15:01:42,113 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-04-22 15:01:42,141 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_it.c_save
+2021-04-22 15:01:42,244 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_it.c
+2021-04-22 15:01:42,254 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_it.h_save
+2021-04-22 15:01:42,373 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_it.h
+2021-04-22 15:01:42,385 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_hal_msp.c_save
+2021-04-22 15:01:42,556 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\stm32l4xx_hal_msp.c
+2021-04-22 15:01:42,556 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\system.tmp_save
+2021-04-22 15:01:42,645 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\MXTmpFiles\system.tmp
+2021-04-22 15:01:42,657 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_hal_conf.h_save
+2021-04-22 15:01:42,747 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\stm32l4xx_hal_conf.h
+2021-04-22 15:01:42,796 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\main.h_save
+2021-04-22 15:01:42,908 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Inc\main.h
+2021-04-22 15:01:42,918 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\main.c_save
+2021-04-22 15:01:43,069 [INFO] CodeEngine:247 - Generated code: C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\ComUART\Core\Src\main.c
+2021-04-22 15:01:43,754 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 181mS.
+2021-04-22 15:01:43,764 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-04-22 15:01:44,930 [INFO] ConfigFileManager:1238 - The Die is : DIE415
+2021-04-22 15:01:47,352 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3588mS.
+2021-04-22 15:01:47,360 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-04-22 15:01:47,362 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.

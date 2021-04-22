@@ -1401,3 +1401,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-04-22 12:56:27.014
 !MESSAGE Indexed 'ComUART' (29 sources, 90 headers) in 8.91 sec: 8,438 declarations; 68,004 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0026%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-22 16:36:07.771
+!MESSAGE Indexed 'ComUART' (26 sources, 84 headers) in 2.48 sec: 6,034 declarations; 36,531 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0047%)

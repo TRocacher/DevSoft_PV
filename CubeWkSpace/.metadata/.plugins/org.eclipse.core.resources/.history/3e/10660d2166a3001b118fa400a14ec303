@@ -1,0 +1,26 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+// UART2 utilisé par CubeMx. Si autre UART, reprendre depuis CubeMx
+
+#include "ComUART.h"
+
+enum {Polling, Interupt};
+struct {
+	char RecepMode; // Polling/Interrupt
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+
+
+void ComUART_Init(UART_HandleTypeDef UsedUSART, int BaudRate,char RecepMode,void (*Callback)(void) )
+{
+
+}

@@ -1,0 +1,51 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+// UART2 utilisé par CubeMx. Si autre UART, reprendre depuis CubeMx
+// Débit, IT à configurer avec CubeIDE
+
+#include "ComUART.h"
+
+enum {Polling, Interupt};
+struct {
+	char RecepMode; // Polling/Interrupt
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+
+void ComUART_Callback_Fct_Null(void){}
+
+
+void ComUART_Init(UART_HandleTypeDef * UsedUSART, char ModeRecep, int BaudRate,char RecepMode,void (*Callback)(void) )
+{
+	ComUART_Status.Cmde=0; // aucune cmde valide
+	if (ModeRecep==Interupt) ComUART_Status.ComUART_Callback=Callback;
+	else ComUART_Status.ComUART_Callback=ComUART_Callback_Fct_Null;
+	ComUART_Status.RecepMode=ModeRecep;
+	ComUART_Status.RecepFlag=0;
+	ComUART_Status.TransmFlag=0;
+
+	// Configuration NVIC
+	if ((UsedUSART->Instance)==USART2) ;
+
+}
+
+
+
+void USART2_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART2_IRQn 0 */
+
+  /* USER CODE END USART2_IRQn 0 */
+  HAL_UART_IRQHandler(&huart2);
+  /* USER CODE BEGIN USART2_IRQn 1 */
+
+  /* USER CODE END USART2_IRQn 1 */
+}

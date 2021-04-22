@@ -1,0 +1,53 @@
+/*
+ * ComUART.c
+ *
+ *  Created on: Apr 22, 2021
+ *      Author: trocache
+ */
+
+// CubeIDE : choix de l'USART et choix du débit
+// surtout ne pas valider les IT, on gère au niveau du module
+//
+
+#include "ComUART.h"
+
+enum {Polling, Interupt};
+struct {
+	char Cmde;      // le caractère filtré
+	char RecepFlag;  // indique qu'une commande est arrivée
+	char TransmFlag; // indique qu'un print est en cours
+	void (*ComUART_Callback)(void);
+}ComUART_Status;
+
+
+
+
+
+void ComUART_Init_IT(UART_HandleTypeDef * UsedUSART, void (*Callback)(void))
+{
+	ComUART_Status.Cmde=0; // aucune cmde valide
+    ComUART_Status.ComUART_Callback=Callback;
+	ComUART_Status.RecepFlag=0;
+	ComUART_Status.TransmFlag=0;
+
+	// Configuration NVIC
+	if ((UsedUSART->Instance)==USART2)
+	{
+		  NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+		  NVIC_SetPriority(DMA1_Channel1_IRQn,DMA_Prio);
+	}
+
+}
+
+
+
+void USART2_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART2_IRQn 0 */
+
+  /* USER CODE END USART2_IRQn 0 */
+  HAL_UART_IRQHandler(&huart2);
+  /* USER CODE BEGIN USART2_IRQn 1 */
+
+  /* USER CODE END USART2_IRQn 1 */
+}
