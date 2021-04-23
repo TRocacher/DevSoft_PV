@@ -24,10 +24,10 @@
 #ifndef MENU_H_
 #define MENU_H_
 
-//#include "stm32l4xx_hal.h"
+#include "stm32l4xx_hal.h"
 
-void Init_Menu(void);
-void Menu_NodeUpdate(void);
+void Init_Menu(UART_HandleTypeDef * UsedUSART);
+
 
 
 #endif /* INC_MYANALOG_H_ */

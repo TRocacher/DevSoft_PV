@@ -14,7 +14,7 @@
 
 
 #include "Menu.h"
-
+#include "ComUART.h"
 /******************************************************************************
 *  PRIVATE Variables
 *
@@ -66,12 +66,7 @@ struct MenuScreenTypedef {
 
 
 
-// pour tester
-#define Up 24
-#define Down 25
-#define Right 26
-#define Left 27
-char Touch;
+
 
 
 
@@ -81,7 +76,7 @@ char Touch;
 ******************************************************************************/
 
 void Menu_Node_Init(void);
-
+void Menu_NodeUpdate(void);
 
 
 /******************************************************************************
@@ -90,7 +85,7 @@ void Menu_Node_Init(void);
 ******************************************************************************/
 
 
-void Init_Menu(void)
+void Init_Menu(UART_HandleTypeDef * UsedUSART)
 {
 	/*************************************
 	 * init attribut MenuStatus
@@ -107,31 +102,58 @@ void Init_Menu(void)
 
 	//Initialisation des maillons de la châine
 	Menu_Node_Init();
+	// Initialisation ComUART en IT callback
+	ComUART_Init_IT(UsedUSART, Menu_NodeUpdate);
 }
 
 
-
+#define Uart_Up_R 'o'
+#define Uart_Down_R 'l'
+#define Uart_Left_R 'k'
+#define Uart_Right_R 'm'
 
 void Menu_NodeUpdate(void)
 {
+	char Touch;
+	Touch=ComUART_GetCmd();
 	switch(Touch)
 	{
-	case Up:
+	case Uart_Up_R:
 		{
 		Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
 		break;
 		}
-	case Down:
+	case Uart_Up_L:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
+		break;
+		}
+	case Uart_Down_R:
 		{
 		Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
 		break;
 		}
-	case Left:
+	case Uart_Down_L:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
+		break;
+		}
+	case Uart_Left_R:
 		{
 		Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
 		break;
 		}
-	case Right:
+	case Uart_Left_L:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+		break;
+		}
+	case Uart_Right_R:
+		{
+		Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
+		break;
+		}
+	case Uart_Right_L:
 		{
 		Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
 		break;

@@ -141,11 +141,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Init_Menu();
+  Init_Menu(&huart2);
   while (1)
   {
     /* USER CODE END WHILE */
-	Menu_NodeUpdate();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
