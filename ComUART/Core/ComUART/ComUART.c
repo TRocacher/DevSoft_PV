@@ -3,26 +3,43 @@
  *
  *  Created on: Apr 22, 2021
  *      Author: trocache
+ *  CIBLE : stm32L476RG (Nucléo board)
+ *  IDE : Cube IDE vers 1.5.1
+ *  CONTEXTE : pilotage, régulation de systèmes de puissance. Partie analogique
+ *  DEPENDENCES : Le code s'appuie sur les registres du stm32L476 donc
+ *  essentiellement sur stm32l476xx.h via stm32l4xx.h (voir Drivers/CMSIS/ST/STM324xx/Include
+ *
+ *
+ *  Notes sur les lib
+ *
+ *  PROGRAMMATION au niveau registres, .h utiles :
+ *  		stm32l476xx.h (pour les registres et  Irqn )
+ *  		core_cm4.h (pour les fct bas niveau du NVIC, enable, prio)
+ *
+ *  IMBRICATION des .h :
+ *
+ * stm32l4xx_hal.h
+ * -> stm32l4xx_hal_conf.h
+ * 		-> stm32l4xx_hal_xxperiphxx.h comme par ex stm32l4xx_hal_uart.h
+ *			-> stm32l4xx_hal_def.h
+ *				-> stm32l4xx.h
+ *					-> stm32l476xx.h (les Irqn les typedef niveau registres
+ *						-> core_cm4.h (les fct NVIC, reg du coeur, Systick, nvic...)
  */
 
-// CubeIDE : choix de l'USART et choix du débit
-// surtout ne pas valider les IT, on gère au niveau du module
-// Réglage à la main sur le NVIC :
-// 		  NVIC_EnableIRQ
-//		  NVIC_SetPriority dans core_cm4.h
-//      Les numéros IRQ sont donnés dans stm32l476xx.h
-// Les inclusions:
-// stm32l4xx_hal.h
-// -> stm32l4xx_hal_conf.h
-// 		-> stm32l4xx_hal_xxperiphxx.h comme par ex stm32l4xx_hal_uart.h
-//			-> stm32l4xx_hal_def.h
-//				-> stm32l4xx.h
-//					-> stm32l476xx.h (les Irqn les typedef niveau registres
-//						-> core_cm4.h (les fct NVIC, reg du coeur, Systick, nvic...)
-//  Recup handler it au niveau startup.
+
 #include "ComUART.h"
 
 
+/******************************************************************************
+*  PRIVATE Variables
+*
+******************************************************************************/
+
+/**
+  * @brief Variable d'état du module
+  * Cmde, RecepFlag, TransmFlag accessibles
+  **/
 struct {
 	char Cmde;      // le caractère filtré
 	char CurrentByte; // caractère effectivement reçu non filtré
@@ -32,9 +49,25 @@ struct {
 }ComUART_Status;
 
 
+
+
 static UART_HandleTypeDef * ComUART_HandlerPtr;
 static char Interrupt;
 
+
+
+/******************************************************************************
+*  PUBLIC FUNCTION
+*  Fonctions d'initialisation
+******************************************************************************/
+
+/**
+  * @brief  Initialise le module UARTCom en mode interruption avec
+  * 		callback sur la réception d'une commande (caractère reçu filtré)
+  * @param  UsedUSART = le handle de l'usart au sens de Hal
+  * @param  Callback = nom de la fonction appelé sur réception d'une commande
+  * @retval None
+  **/
 void ComUART_Init_IT(UART_HandleTypeDef * UsedUSART, void (*Callback)(void))
 {
 	ComUART_Status.Cmde=0; // aucune cmde valide
@@ -66,6 +99,12 @@ void ComUART_Init_IT(UART_HandleTypeDef * UsedUSART, void (*Callback)(void))
 
 }
 
+
+/**
+  * @brief  Initialise le module UARTCom en mode polling sur la réception
+  * @param  UsedUSART = le handle de l'usart au sens de Hal
+  * @retval None
+  **/
 void ComUART_Init(UART_HandleTypeDef * UsedUSART)
 {
 	ComUART_Status.Cmde=0; // aucune cmde valide
@@ -98,29 +137,97 @@ void ComUART_Init(UART_HandleTypeDef * UsedUSART)
 }
 
 
+/******************************************************************************
+*  PUBLIC FUNCTION
+*  Fonctions d'écriture (print)
+******************************************************************************/
 
-void ComUART_Print(char * Str)
+/**
+  * @brief  Renseigne sur l'état du module en terme de transmission
+  * @param  none
+  * @retval 1 si transmission en cours, 0 si Tx libre
+  **/
+char ComUART_IsTansmitting(void)
 {
-
+	return ComUART_Status.TransmFlag;
 }
 
 
-void ComUART_ClrReceptFlag(void)
+/**
+  * @brief  Printe une chaîne de caractère sur l'USART (Tx)
+  * @note : utilise fct HAL_UART_Transmit, timing testé à 9600Bds,
+  * 		correspond au débit attendu
+  * @param  char * str adresse de la châine à envoyer
+  * @param  Lenght longueur de la chaîne à transmettre
+  * @retval none
+  **/
+void ComUART_Print(char * Str, char Lenght)
+// testé avec IO set/reset entrée et sortie de fct.
+// la durée est parfaitement respectée.
 {
-	ComUART_Status.RecepFlag=0;
+	ComUART_Status.TransmFlag=1;
+	HAL_UART_Transmit(ComUART_HandlerPtr,(uint8_t *) Str, Lenght, HAL_MAX_DELAY);
+	ComUART_Status.TransmFlag=0;
 }
 
-char ComUART_GetCmd(void)
-{
-	return ComUART_Status.Cmde;
-}
 
+/******************************************************************************
+*  PUBLIC FUNCTION
+*  Fonctions de lecture ComUART
+******************************************************************************/
+
+/**
+  * @brief  Renseigne sur l'arrivée d'une nouvelle commande
+  * @note  : Ne pas utiliser si init avec ComUART_Init_IT.
+  * 		prévu en mode polling pour savoir si une cmde est arrivée
+  * 	    Les cmdes sont définies dans le .h
+  * @param  none
+  * @retval 1 si réception d'une Cmde
+  **/
 char ComUART_IsNewCmde(void)
 {
 	return ComUART_Status.RecepFlag;
 }
 
+/**
+  * @brief  Efface le drapeau de réception commande
+  * @note  : Ne pas utiliser si init avec ComUART_Init_IT
+  *          Doit être appelé immédiatement après lecture de la Cmde
+  * @param  none
+  * @retval none
+  **/
+void ComUART_ClrReceptFlag(void)
+{
+	ComUART_Status.RecepFlag=0;
+}
 
+/**
+  * @brief  Lit la Cmde contenu dans la variable d'état
+  * @note   à utiliser quelque soit le mode d'init.
+  * @param  none
+  * @retval char, la Cmde.
+  **/
+char ComUART_GetCmd(void)
+{
+	return ComUART_Status.Cmde;
+}
+
+
+
+/******************************************************************************
+*  Private Interrupt FUNCTION
+*  Fonction associée exclusivement à la réception d'un caractère quelconque
+******************************************************************************/
+
+/**
+  * @brief  IT déclenchée quelque soit le mode d'init, sur réception d'un byte
+  * @note   filtre les commandes
+  * 		met à jour le Flag de réception en mode init non interruptif.
+  * 		ne gère pas le flag en mode interruptif.
+  * 		lance le callback si Cmde détectée et en mode init interruptif
+  * @param  none
+  * @retval char, la Cmde.
+  **/
 void USART2_IRQHandler(void)
 {
 	char Byte;

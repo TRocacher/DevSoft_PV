@@ -102,10 +102,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
 	if (ComUART_IsNewCmde())
 	{
 		ComUART_ClrReceptFlag();
 		a=ComUART_GetCmd();
+		ComUART_Print("coucou  ",7);
 	}
 
     /* USER CODE BEGIN 3 */

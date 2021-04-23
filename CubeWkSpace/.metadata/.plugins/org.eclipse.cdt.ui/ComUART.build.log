@@ -1,7 +1,7 @@
-18:42:34 **** Clean-only build of configuration Debug for project ComUART ****
+14:54:57 **** Clean-only build of configuration Debug for project ComUART ****
 make -j4 clean 
 rm -rf *
  
 
-18:42:34 Build Finished. 0 errors, 0 warnings. (took 531ms)
+14:54:58 Build Finished. 0 errors, 0 warnings. (took 539ms)
 
