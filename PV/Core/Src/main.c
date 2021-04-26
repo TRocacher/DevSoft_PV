@@ -50,6 +50,7 @@ TIM_HandleTypeDef htim6;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+Menu_ParamValTypedef Voltage, Current, Power;
 
 /* USER CODE END PV */
 
@@ -94,6 +95,7 @@ b=MyAnalog_GetFilteredVakue(1);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	// chargement des paramètres modifiables pour les menus
 
   /* USER CODE END 1 */
 
@@ -141,7 +143,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Init_Menu(&huart2);
+  Menu_Init(&huart2);
   while (1)
   {
     /* USER CODE END WHILE */

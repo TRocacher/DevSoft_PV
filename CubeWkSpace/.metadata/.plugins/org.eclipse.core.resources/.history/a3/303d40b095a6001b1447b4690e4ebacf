@@ -1,0 +1,13 @@
+/*
+ * StrinFct.h
+ *
+ *  Created on: 26 avr. 2021
+ *      Author: trocache
+ */
+
+#ifndef MENU_STRINFCT_H_
+#define MENU_STRINFCT_H_
+
+void StringFct_Float2Str(float Value,char * Str, char DgitNb, char Frac);
+
+#endif /* MENU_STRINFCT_H_ */

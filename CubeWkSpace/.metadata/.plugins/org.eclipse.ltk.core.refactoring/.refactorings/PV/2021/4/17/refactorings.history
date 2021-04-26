@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PV/Core/Menu/StrinFct.h&apos; to &apos;StringFct.h&apos;" description="Rename resource &apos;StrinFct.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Menu/StrinFct.h" name="StringFct.h" stamp="1619445871443" updateReferences="true"/>
+</session>

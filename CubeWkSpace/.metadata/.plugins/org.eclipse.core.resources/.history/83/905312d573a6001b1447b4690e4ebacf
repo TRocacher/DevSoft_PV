@@ -1,0 +1,58 @@
+/*
+ * MyAnalog.h
+ *
+ *  Created on: 15 Avril. 2021
+ *      Author: Thierry Rocacher
+ *
+ *  ======= CONTEXTE DU LOGICIEL ===================
+ *  CIBLE : stm32L476RG (Nucléo board)
+ *  IDE : Cube IDE vers 1.5.1
+ *  CONTEXTE : gestion soft système PV
+ *  DEPENDENCES :
+ *
+ *
+ *  ======= GENERALITE  ===================
+ *
+
+ *
+ *
+ */
+
+
+
+
+#ifndef MENU_H_
+#define MENU_H_
+
+#include "stm32l4xx_hal.h"
+
+
+typedef struct Menu_Node Menu_Node;
+struct Menu_Node {
+	Menu_Node *  NextNode;
+	Menu_Node *  PreviousNode;
+	Menu_Node *  UpNode;
+	Menu_Node *  DownNode;
+	char * Title;
+	char MenuPosition;
+	char * ItemToPrint;
+	void (*NodeExecFct)(void);
+};
+
+#define ParamNb 10
+
+typedef struct
+{
+	float Val;
+	float MinVal;
+	float MaxVal;
+	char ValDigitNb;
+} Menu_ParamValTypedef;
+
+
+void Menu_LoadParam(int ParamId,  Menu_ParamValTypedef * ParamValues);
+void Menu_Init(UART_HandleTypeDef * UsedUSART);
+
+
+
+#endif /* INC_MYANALOG_H_ */

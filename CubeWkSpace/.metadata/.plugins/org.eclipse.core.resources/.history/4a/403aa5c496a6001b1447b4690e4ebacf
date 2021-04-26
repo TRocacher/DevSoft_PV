@@ -1,0 +1,29 @@
+/*
+ * StringFct.c
+ *
+ *  Created on: 26 avr. 2021
+ *      Author: trocache
+ */
+
+
+int Val; // à mettre en local après debug
+void StringFct_Float2Str(float Value,char * Str, char DigitNb, char Frac)
+{
+
+	switch (Frac)
+	{
+	case 0:Val=Value;break;
+	case 1:Val=10.0*Value;break;
+	case 2:Val=100.0*Value;break;
+	case 3:Val=1000.0*Value;break;
+	default : while(1);
+	}
+
+	switch (DigitNb)
+	{
+	case 6:*(Str+6)=Val/100000;Val=Val%100000;
+
+	default : while(1);
+	}
+
+}

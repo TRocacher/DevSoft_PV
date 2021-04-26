@@ -1,0 +1,44 @@
+/*
+ * StringFct.c
+ *
+ *  Created on: 26 avr. 2021
+ *      Author: trocache
+ */
+
+#include "StringFct.h"
+
+
+int Val; // à mettre en local après debug
+void StringFct_Float2Digit(float Value,char * DigitTab, char DigitNb, char Frac)
+{
+
+	switch (Frac)
+	{
+	case 0:Val=Value;break;
+	case 1:Val=10.0*Value;break;
+	case 2:Val=100.0*Value;break;
+	case 3:Val=1000.0*Value;break;
+	default : while(1); // erreur fatale si Frac>3
+	}
+
+	switch (DigitNb)
+	{
+	case 6:*(Str+5)=Val/100000;Val=Val%100000;
+	case 5:*(Str+4)=Val/10000;Val=Val%10000;
+	case 4:*(Str+3)=Val/1000;Val=Val%1000;
+	case 3:*(Str+2)=Val/100;Val=Val%100;
+	case 2:*(Str+1)=Val/10;Val=Val%10;
+	case 1:*(Str)=Val;
+	// resultat dans la chaîne (7 car) :
+	// |x 6 5 4 3 2 1| avec 6 les centtaines de mille, 5 les dizaines ...etc..
+
+	default : while(1);// erreur fatale si NbDigit>6
+	}
+
+	for (int i=DigitNb ; i>=(Frac+1); i-- )
+	{
+		*(Str+i)=*(Str+i-1);
+	}
+	*(Str+Frac)='.';
+
+}
