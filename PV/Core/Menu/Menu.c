@@ -314,25 +314,18 @@ void Menu_Node_Init(void)
 -------------------------------------------------*/
 
 typedef enum  {Menu_Up, Menu_Down, Menu_Left, Menu_Right } Menu_Cmd;
+typedef enum  {Entry, SetValue, Discard} NodeState;
 struct {
 	Menu_Node *  ActualNode;
 	Menu_Cmd Cmde;
-	char DigitUserInput[10];
-} Menu_Status;
 
-
-/*------------------------------------------------
-*  VARIABLE STRUCTUREE User_Input
-*  elle contient les champs nécessaire à la saisie
--------------------------------------------------*/
-typedef enum  {MenuOnEntry, MenuDo, MenuExit} Menu_ItemState;
-struct {
-	Menu_ItemState State;
-	Menu_Node *  LinkActualNode;
-	float BuiltInValue;
+	NodeState InNode_State;
+	Menu_Node * LinkPreviousNode;
 	char StringInputValue[8]; // max 6 digit + '.' + Null
 	int DigitPos; // 0 sur le premier digit , 6 maxi.
-} Menu_UserInput;
+
+} Menu_Status;
+
 
 
 
@@ -361,10 +354,7 @@ void Menu_Init(UART_HandleTypeDef * UsedUSART)
 	Menu_Status.ActualNode=&Item_Menu1;
 
 
-	for (int i=0 ;i<=9 ;i++)
-	{
-		Menu_Status.DigitUserInput[i]=0;
-	}
+
 
 	//Initialisation des maillons de la châine
 	Menu_Node_Init();
@@ -377,8 +367,8 @@ void Menu_Init(UART_HandleTypeDef * UsedUSART)
 	ParamNull.NewUserInputFlag=0;
 	ParamNull.DigitNb=0;
 
-	Menu_UserInput.BuiltInValue=0.0;
-	Menu_UserInput.State=MenuOnEntry;
+
+	Menu_Status.InNode_State=Entry;
 }
 
 
@@ -405,59 +395,67 @@ void Menu_NodeUpdate(void)
 		{
 		Menu_Status.Cmde=Menu_Up;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Up_L:
 		{
 		Menu_Status.Cmde=Menu_Up;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Down_R:
 		{
 		Menu_Status.Cmde=Menu_Down;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Down_L:
 		{
 		Menu_Status.Cmde=Menu_Down;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Left_R:
 		{
 		Menu_Status.Cmde=Menu_Left;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Left_L:
 		{
 		Menu_Status.Cmde=Menu_Left;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Right_R:
 		{
 		Menu_Status.Cmde=Menu_Right;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	case Uart_Right_L:
 		{
 		Menu_Status.Cmde=Menu_Right;
 		Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
-		Menu_Status.ActualNode->NodeExecFct();
 		break;
 		}
 	}
+	// Spécifique menue saisie; Discard input en cours
+	if (Menu_Status.InNode_State==Discard)
+	{
+		if (Menu_Status.Cmde==Menu_Right)
+		{
+			Menu_Status.InNode_State=SetValue;
+			Menu_Status.DigitPos=-1; // pour anticiper la seconde prise en compte de Right
+		}
+		if (Menu_Status.Cmde==Menu_Left) // on abandonne la modif
+		{
+			Menu_Status.InNode_State=Entry;
+			Menu_Status.DigitPos=0;
+		}
+	}
+	Menu_Status.ActualNode->NodeExecFct();
+
 
 
 }
@@ -466,7 +464,7 @@ void Menu_NodeUpdate(void)
 
 
 /******************************************************************************
-*  PRIVATE functions : FONCTIONS D'AFFICHAGE
+*  PRIVATE functions : FONCTIONS D'AFFICHAGE PASSIF
 
 ******************************************************************************/
 void Menu_PassiveScreenPrint(void)
@@ -571,18 +569,14 @@ void Menu_PassiveScreenPrint(void)
 	}
 }
 
+/******************************************************************************
+*  PRIVATE functions : FONCTIONS D'AFFICHAGE TYPE SAISIE
 
+******************************************************************************/
 
-
-
-void Menu_InputScreenPrint(void)
+void Menu_PrintThreeLines(void)
 {
 	char MyString[8];
-	float Valeur;
-	char DigitNb, DecNb;
-	char Tamp;
-
-
 	// Line 1
 	ComUART_Print(Menu_Status.ActualNode->Title, 20);
 	ComUART_Print("\r\n", 2);
@@ -596,65 +590,159 @@ void Menu_InputScreenPrint(void)
 	StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb);
 	ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
 	ComUART_Print("\r\n", 2);
+}
 
 
-	switch(Menu_UserInput.State)
+void Menu_InputScreenPrint(void)
+{
+	//char MyString[8];
+	float Valeur;
+	char DigitNb, DecNb;
+	char Tamp;
+	int PosVirgule;
+	int PosMax;
+
+
+	switch(Menu_Status.InNode_State)
 	{
-		case  MenuOnEntry:
+
+		case  Entry:
 		{
-			Menu_UserInput.State=MenuDo;
-			Menu_UserInput.LinkActualNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
-			Menu_UserInput.DigitPos=0;
+			// prochaine étape, MenuDo forcément
+			Menu_Status.InNode_State=SetValue;
+			// link back
+			Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
+            // blocage dans cet item
+			Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
+			// prépa premier digit pour réglage
+			Menu_Status.DigitPos=0;
+
+
+			Menu_PrintThreeLines();
 			// Line 4
 			Valeur=Menu_Status.ActualNode->Param->Val;
 			DigitNb=Menu_Status.ActualNode->Param->DigitNb;
 			DecNb=Menu_Status.ActualNode->Param->DecimalNb;
 			ComUART_Print(" Actual: ", 9);
-			StringFct_Float2Str(Valeur,Menu_UserInput.StringInputValue, DigitNb, DecNb);
-			ComUART_Print(Menu_UserInput.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+			StringFct_Float2Str(Valeur,Menu_Status.StringInputValue, DigitNb, DecNb);
+			ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
 			ComUART_Print("\r\n", 2);
+			break;
 		}
-		case  MenuDo:
+
+
+
+
+		case  SetValue:
 		{
+
+			if (Menu_Status.ActualNode!=Menu_Status.ActualNode->PreviousNode) // back up
+			{
+				Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
+				// blocage dans cet item
+				Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
+			}
+
+			// calcule position Virgule
+			//|xx.xxx00| DigitNb=5, DecimalNb=2
+			//|x.xx0000| DigitNb=3, DecimalNb=2
+			//|x.000000| DigitNb=1, DecimalNb=0
+			PosVirgule= Menu_Status.ActualNode->Param->DigitNb-Menu_Status.ActualNode->Param->DecimalNb;
+			PosMax=Menu_Status.ActualNode->Param->DigitNb;
+
 			switch(Menu_Status.Cmde)
 			{
 			case Menu_Up:
 				{
-					Tamp=Menu_UserInput.StringInputValue[Menu_UserInput.DigitPos];
+					Menu_PrintThreeLines();
+					Tamp=Menu_Status.StringInputValue[Menu_Status.DigitPos];
 					Tamp++;
 					if (Tamp==0x3A) Tamp=0x30;
-					Menu_UserInput.StringInputValue[Menu_UserInput.DigitPos]=Tamp;
+					Menu_Status.StringInputValue[Menu_Status.DigitPos]=Tamp;
 					// Line 4
 					ComUART_Print(" Actual: ", 9);
-					ComUART_Print(Menu_UserInput.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+					ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
 					ComUART_Print("\r\n", 2);
 				}
 				break;
 
 			case Menu_Down:
 				{
-					Tamp=Menu_UserInput.StringInputValue[Menu_UserInput.DigitPos];
+					Menu_PrintThreeLines();
+					Tamp=Menu_Status.StringInputValue[Menu_Status.DigitPos];
 					Tamp--;
 					if (Tamp==0x2F) Tamp=0x39;
-					Menu_UserInput.StringInputValue[Menu_UserInput.DigitPos]=Tamp;
+					Menu_Status.StringInputValue[Menu_Status.DigitPos]=Tamp;
 					// Line 4
 					ComUART_Print(" Actual: ", 9);
-					ComUART_Print(Menu_UserInput.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+					ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
 					ComUART_Print("\r\n", 2);
 				}
 				break;
 
+			case Menu_Left:
+				{
+					if (Menu_Status.DigitPos==0) // Discard
+						{
+						ComUART_Print("Discard Changes ?   ",20);
+						ComUART_Print("\r\n", 2);
+						ComUART_Print("Back for yes...     ",20);
+						ComUART_Print("\r\n", 2);
+						ComUART_Print("Forward for no...   ",20);
+						ComUART_Print("\r\n", 2);
+						ComUART_Print("                    ",20); //clr
+						ComUART_Print("\r\n", 2);
+
+
+						// remise en place du back menu, libération de cet item
+						// si on retourne au menu précédent
+						Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+						Menu_Status.InNode_State=Discard;
+						Menu_Status.DigitPos=0;
+						}
+					else
+						{
+						Menu_Status.DigitPos--;
+						if (Menu_Status.DigitPos==PosVirgule) Menu_Status.DigitPos--;
+						Menu_PrintThreeLines();
+						// Line 4
+						ComUART_Print(" Actual: ", 9);
+						ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+						ComUART_Print("\r\n", 2);
+						}
+				}
+				break;
+
+			case Menu_Right:
+				{
+
+					if (Menu_Status.DigitPos==PosMax)
+						{
+						// Line 4
+						ComUART_Print("Please Confirm ...  ", 20);
+						ComUART_Print("\r\n", 2);
+						//Menu_Status.InNode_State=MenuExit;
+						}
+					else
+						{
+						Menu_Status.DigitPos++;
+						if (Menu_Status.DigitPos==PosVirgule) Menu_Status.DigitPos++;
+						Menu_PrintThreeLines();
+						// Line 4
+						ComUART_Print(" Actual: ", 9);
+						ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+						ComUART_Print("\r\n", 2);
+						}
+				}
+				break;
 			}
 			break;
 
 
 		}
-		case MenuExit:
+		case Discard:
 		{
-			Menu_Status.ActualNode->PreviousNode=Menu_UserInput.LinkActualNode;
-			Menu_UserInput.State=MenuOnEntry;
 			break;
-
 		}
 	}
 
