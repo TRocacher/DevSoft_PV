@@ -54,11 +54,11 @@ struct Menu_Node {
 	Menu_ParamValTypedef * Param;
 };
 
-extern Menu_Node Item_Menu1, Item_Menu2, Item_Menu3, Item_Menu4;
-extern Menu_Node Item_Menu1_1,Item_Menu1_2;
-extern Menu_Node Item_Menu2_1;
-extern Menu_Node Item_Menu3_1,Item_Menu3_2,Item_Menu3_3,Item_Menu3_4,Item_Menu3_5,Item_Menu3_6,Item_Menu3_7;
-extern Menu_Node ItemInput_VoltParam;
+extern Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, Item_Menu4;
+extern Menu_Node MenuNodePassive_1_1,MenuNodePassive_1_2;
+extern Menu_Node MenuNodePassive_2_1;
+extern Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
+extern Menu_Node MenuNodeInput_VoltParam;
 
 void Menu_Init(UART_HandleTypeDef * UsedUSART);
 

@@ -27,8 +27,8 @@
 *  -> user : remplir les menu nodes en fin de fichier
 -------------------------------------------------*/
 enum {First, Middle, Last};
-void Menu_PassiveScreenPrint(void);
-void Menu_InputScreenPrint(void);
+void Menu_PassivePrint(void);
+void Menu_InputStateMachine(void);
 
 
 /*==========================================================================================
@@ -43,11 +43,11 @@ void Menu_InputScreenPrint(void);
  *
 .............................................*/
 
-Menu_Node Item_Menu1, Item_Menu2, Item_Menu3, Item_Menu4;
-Menu_Node Item_Menu1_1,Item_Menu1_2;
-Menu_Node Item_Menu2_1;
-Menu_Node Item_Menu3_1,Item_Menu3_2,Item_Menu3_3,Item_Menu3_4,Item_Menu3_5,Item_Menu3_6,Item_Menu3_7;
-Menu_Node ItemInput_VoltParam;
+Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, Item_Menu4;
+Menu_Node MenuNodePassive_1_1,MenuNodePassive_1_2;
+Menu_Node MenuNodePassive_2_1;
+Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
+Menu_Node MenuNodeInput_VoltParam;
 
 /*............................................
  *
@@ -72,11 +72,13 @@ Menu_ParamValTypedef  VoltageParam;
 
 // test
 char Tab[8];
+float res;
 void Menu_Node_Init(void)
 {
 
 	// test
 	StringFct_Float2Str(12.36,Tab, 5, 3);
+	res=StringFct_Str2Float(Tab, 5, 3);
 
 	/*............................................
 	 *
@@ -94,42 +96,42 @@ void Menu_Node_Init(void)
 	 * 		* Nenu 4             *
 	 * 		**********************
 	 */
-	Item_Menu1.DownNode=&Item_Menu2;
-	Item_Menu1.NextNode=&Item_Menu1_1;
-	Item_Menu1.UpNode=&Item_Menu1;  // lui même
-	Item_Menu1.PreviousNode=&Item_Menu1;  // lui même
-	Item_Menu1.MenuPosition=First;
-	Item_Menu1.Title="Menu principal      ";
-	Item_Menu1.ItemToPrint =" Nenu 1             ";
-	Item_Menu1.NodeExecFct=Menu_PassiveScreenPrint;
-	Item_Menu1.Param=&ParamNull; //------------------------------------------------------------------
+	MenuNodePassive_1.DownNode=&MenuNodePassive_2;
+	MenuNodePassive_1.NextNode=&MenuNodePassive_1_1;
+	MenuNodePassive_1.UpNode=&MenuNodePassive_1;  // lui même
+	MenuNodePassive_1.PreviousNode=&MenuNodePassive_1;  // lui même
+	MenuNodePassive_1.MenuPosition=First;
+	MenuNodePassive_1.Title="Menu principal      ";
+	MenuNodePassive_1.ItemToPrint =" Nenu 1             ";
+	MenuNodePassive_1.NodeExecFct=Menu_PassivePrint;
+	MenuNodePassive_1.Param=&ParamNull; //------------------------------------------------------------------
 
-	Item_Menu2.DownNode=&Item_Menu3;
-	Item_Menu2.NextNode=&Item_Menu2_1;
-	Item_Menu2.UpNode=&Item_Menu1;
-	Item_Menu2.PreviousNode=&Item_Menu2;  // lui même
-	Item_Menu2.MenuPosition=Middle;
-	Item_Menu2.Title="Menu principal      ";
-	Item_Menu2.ItemToPrint =" Nenu 2             ";
-	Item_Menu2.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_2.DownNode=&MenuNodePassive_3;
+	MenuNodePassive_2.NextNode=&MenuNodePassive_2_1;
+	MenuNodePassive_2.UpNode=&MenuNodePassive_1;
+	MenuNodePassive_2.PreviousNode=&MenuNodePassive_2;  // lui même
+	MenuNodePassive_2.MenuPosition=Middle;
+	MenuNodePassive_2.Title="Menu principal      ";
+	MenuNodePassive_2.ItemToPrint =" Nenu 2             ";
+	MenuNodePassive_2.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3.DownNode=&Item_Menu4;
-	Item_Menu3.NextNode=&Item_Menu3_1;
-	Item_Menu3.UpNode=&Item_Menu2;
-	Item_Menu3.PreviousNode=&Item_Menu3;  // lui même
-	Item_Menu3.MenuPosition=Middle;
-	Item_Menu3.Title="Menu principal      ";
-	Item_Menu3.ItemToPrint =" Nenu 3             ";
-	Item_Menu3.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3.DownNode=&Item_Menu4;
+	MenuNodePassive_3.NextNode=&MenuNodePassive_3_1;
+	MenuNodePassive_3.UpNode=&MenuNodePassive_2;
+	MenuNodePassive_3.PreviousNode=&MenuNodePassive_3;  // lui même
+	MenuNodePassive_3.MenuPosition=Middle;
+	MenuNodePassive_3.Title="Menu principal      ";
+	MenuNodePassive_3.ItemToPrint =" Nenu 3             ";
+	MenuNodePassive_3.NodeExecFct=Menu_PassivePrint;
 
 	Item_Menu4.DownNode=&Item_Menu4; // lui même
 	Item_Menu4.NextNode=&Item_Menu4;
-	Item_Menu4.UpNode=&Item_Menu3;
+	Item_Menu4.UpNode=&MenuNodePassive_3;
 	Item_Menu4.PreviousNode=&Item_Menu4;  // lui même
 	Item_Menu4.MenuPosition=Last;
 	Item_Menu4.Title="Menu principal      ";
 	Item_Menu4.ItemToPrint =" Nenu 4             ";
-	Item_Menu4.NodeExecFct=Menu_PassiveScreenPrint;
+	Item_Menu4.NodeExecFct=Menu_PassivePrint;
 
 	/*      **********************
 	 * 		*Menu 1...           *
@@ -138,23 +140,23 @@ void Menu_Node_Init(void)
 	 * 		**********************
 	 */
 
-	Item_Menu1_1.DownNode=&Item_Menu1_2;
-	Item_Menu1_1.NextNode=&Item_Menu1_1;
-	Item_Menu1_1.UpNode=&Item_Menu1_1;
-	Item_Menu1_1.PreviousNode=&Item_Menu1;
-	Item_Menu1_1.MenuPosition=First;
-	Item_Menu1_1.Title="Menu 1...           ";
-	Item_Menu1_1.ItemToPrint =" Nenu 1_1           ";
-	Item_Menu1_1.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_1_1.DownNode=&MenuNodePassive_1_2;
+	MenuNodePassive_1_1.NextNode=&MenuNodePassive_1_1;
+	MenuNodePassive_1_1.UpNode=&MenuNodePassive_1_1;
+	MenuNodePassive_1_1.PreviousNode=&MenuNodePassive_1;
+	MenuNodePassive_1_1.MenuPosition=First;
+	MenuNodePassive_1_1.Title="Menu 1...           ";
+	MenuNodePassive_1_1.ItemToPrint =" Nenu 1_1           ";
+	MenuNodePassive_1_1.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu1_2.DownNode=&Item_Menu1_2;
-	Item_Menu1_2.NextNode=&Item_Menu1_2;
-	Item_Menu1_2.UpNode=&Item_Menu1_1;
-	Item_Menu1_2.PreviousNode=&Item_Menu1;
-	Item_Menu1_2.MenuPosition=Last;
-	Item_Menu1_2.Title="Menu 1...           ";
-	Item_Menu1_2.ItemToPrint =" Nenu 1_2           ";
-	Item_Menu1_2.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_1_2.DownNode=&MenuNodePassive_1_2;
+	MenuNodePassive_1_2.NextNode=&MenuNodePassive_1_2;
+	MenuNodePassive_1_2.UpNode=&MenuNodePassive_1_1;
+	MenuNodePassive_1_2.PreviousNode=&MenuNodePassive_1;
+	MenuNodePassive_1_2.MenuPosition=Last;
+	MenuNodePassive_1_2.Title="Menu 1...           ";
+	MenuNodePassive_1_2.ItemToPrint =" Nenu 1_2           ";
+	MenuNodePassive_1_2.NodeExecFct=Menu_PassivePrint;
 
 
 
@@ -163,14 +165,14 @@ void Menu_Node_Init(void)
 	 * 		* Nenu 2_1           *
 	 * 		**********************
 	 */
-	Item_Menu2_1.DownNode=&Item_Menu2_1;
-	Item_Menu2_1.NextNode=&Item_Menu2_1;
-	Item_Menu2_1.UpNode=&Item_Menu2_1;
-	Item_Menu2_1.PreviousNode=&Item_Menu2;
-	Item_Menu2_1.MenuPosition=First;
-	Item_Menu2_1.Title="Menu 2...           ";
-	Item_Menu2_1.ItemToPrint =" Nenu 2_1           ";
-	Item_Menu2_1.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_2_1.DownNode=&MenuNodePassive_2_1;
+	MenuNodePassive_2_1.NextNode=&MenuNodePassive_2_1;
+	MenuNodePassive_2_1.UpNode=&MenuNodePassive_2_1;
+	MenuNodePassive_2_1.PreviousNode=&MenuNodePassive_2;
+	MenuNodePassive_2_1.MenuPosition=First;
+	MenuNodePassive_2_1.Title="Menu 2...           ";
+	MenuNodePassive_2_1.ItemToPrint =" Nenu 2_1           ";
+	MenuNodePassive_2_1.NodeExecFct=Menu_PassivePrint;
 
 
 
@@ -185,69 +187,69 @@ void Menu_Node_Init(void)
 	 * 		* Nenu 3_7           *
 	 * 		**********************
 	 */
-	Item_Menu3_1.DownNode=&Item_Menu3_2;
-	Item_Menu3_1.NextNode=&ItemInput_VoltParam;
-	Item_Menu3_1.UpNode=&Item_Menu3_1;
-	Item_Menu3_1.PreviousNode=&Item_Menu3;
-	Item_Menu3_1.MenuPosition=First;
-	Item_Menu3_1.Title="Menu 3...           ";
-	Item_Menu3_1.ItemToPrint =" Nenu 3_1           ";
-	Item_Menu3_1.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_1.DownNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_1.NextNode=&MenuNodeInput_VoltParam;
+	MenuNodePassive_3_1.UpNode=&MenuNodePassive_3_1;
+	MenuNodePassive_3_1.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_1.MenuPosition=First;
+	MenuNodePassive_3_1.Title="Menu 3...           ";
+	MenuNodePassive_3_1.ItemToPrint =" Nenu 3_1           ";
+	MenuNodePassive_3_1.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3_2.DownNode=&Item_Menu3_3;
-	Item_Menu3_2.NextNode=&Item_Menu3_2;
-	Item_Menu3_2.UpNode=&Item_Menu3_1;
-	Item_Menu3_2.PreviousNode=&Item_Menu3;
-	Item_Menu3_2.MenuPosition=Middle;
-	Item_Menu3_2.Title="Menu 3...           ";
-	Item_Menu3_2.ItemToPrint =" Nenu 3_2           ";
-	Item_Menu3_2.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_2.DownNode=&MenuNodePassive_3_3;
+	MenuNodePassive_3_2.NextNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_2.UpNode=&MenuNodePassive_3_1;
+	MenuNodePassive_3_2.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_2.MenuPosition=Middle;
+	MenuNodePassive_3_2.Title="Menu 3...           ";
+	MenuNodePassive_3_2.ItemToPrint =" Nenu 3_2           ";
+	MenuNodePassive_3_2.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3_3.DownNode=&Item_Menu3_4;
-	Item_Menu3_3.NextNode=&Item_Menu3_2;
-	Item_Menu3_3.UpNode=&Item_Menu3_2;
-	Item_Menu3_3.PreviousNode=&Item_Menu3;
-	Item_Menu3_3.MenuPosition=Middle;
-	Item_Menu3_3.Title="Menu 3...           ";
-	Item_Menu3_3.ItemToPrint =" Nenu 3_3           ";
-	Item_Menu3_3.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_3.DownNode=&MenuNodePassive_3_4;
+	MenuNodePassive_3_3.NextNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_3.UpNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_3.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_3.MenuPosition=Middle;
+	MenuNodePassive_3_3.Title="Menu 3...           ";
+	MenuNodePassive_3_3.ItemToPrint =" Nenu 3_3           ";
+	MenuNodePassive_3_3.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3_4.DownNode=&Item_Menu3_5;
-	Item_Menu3_4.NextNode=&Item_Menu3_4;
-	Item_Menu3_4.UpNode=&Item_Menu3_3;
-	Item_Menu3_4.PreviousNode=&Item_Menu3;
-	Item_Menu3_4.MenuPosition=Middle;
-	Item_Menu3_4.Title="Menu 3...           ";
-	Item_Menu3_4.ItemToPrint =" Nenu 3_4           ";
-	Item_Menu3_4.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_4.DownNode=&MenuNodePassive_3_5;
+	MenuNodePassive_3_4.NextNode=&MenuNodePassive_3_4;
+	MenuNodePassive_3_4.UpNode=&MenuNodePassive_3_3;
+	MenuNodePassive_3_4.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_4.MenuPosition=Middle;
+	MenuNodePassive_3_4.Title="Menu 3...           ";
+	MenuNodePassive_3_4.ItemToPrint =" Nenu 3_4           ";
+	MenuNodePassive_3_4.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3_5.DownNode=&Item_Menu3_6;
-	Item_Menu3_5.NextNode=&Item_Menu3_5;
-	Item_Menu3_5.UpNode=&Item_Menu3_4;
-	Item_Menu3_5.PreviousNode=&Item_Menu3;
-	Item_Menu3_5.MenuPosition=Middle;
-	Item_Menu3_5.Title="Menu 3...           ";
-	Item_Menu3_5.ItemToPrint =" Nenu 3_5           ";
-	Item_Menu3_5.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_5.DownNode=&MenuNodePassive_3_6;
+	MenuNodePassive_3_5.NextNode=&MenuNodePassive_3_5;
+	MenuNodePassive_3_5.UpNode=&MenuNodePassive_3_4;
+	MenuNodePassive_3_5.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_5.MenuPosition=Middle;
+	MenuNodePassive_3_5.Title="Menu 3...           ";
+	MenuNodePassive_3_5.ItemToPrint =" Nenu 3_5           ";
+	MenuNodePassive_3_5.NodeExecFct=Menu_PassivePrint;
 
-	Item_Menu3_6.DownNode=&Item_Menu3_7;
-	Item_Menu3_6.NextNode=&Item_Menu3_6;
-	Item_Menu3_6.UpNode=&Item_Menu3_5;
-	Item_Menu3_6.PreviousNode=&Item_Menu3;
-	Item_Menu3_6.MenuPosition=Middle;
-	Item_Menu3_6.Title="Menu 3...           ";
-	Item_Menu3_6.ItemToPrint =" Nenu 3_6           ";
-	Item_Menu3_6.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_6.DownNode=&MenuNodePassive_3_7;
+	MenuNodePassive_3_6.NextNode=&MenuNodePassive_3_6;
+	MenuNodePassive_3_6.UpNode=&MenuNodePassive_3_5;
+	MenuNodePassive_3_6.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_6.MenuPosition=Middle;
+	MenuNodePassive_3_6.Title="Menu 3...           ";
+	MenuNodePassive_3_6.ItemToPrint =" Nenu 3_6           ";
+	MenuNodePassive_3_6.NodeExecFct=Menu_PassivePrint;
 
 	// procéder dans cet ordre c'est plus logique :
-	Item_Menu3_7.UpNode=&Item_Menu3_6;
-	Item_Menu3_7.NextNode=&Item_Menu3_7;
-	Item_Menu3_7.DownNode=&Item_Menu3_7;
-	Item_Menu3_7.PreviousNode=&Item_Menu3;
-	Item_Menu3_7.MenuPosition=Last;
-	Item_Menu3_7.Title="Menu 3...           ";
-	Item_Menu3_7.ItemToPrint =" Nenu 3_7           ";
-	Item_Menu3_7.NodeExecFct=Menu_PassiveScreenPrint;
+	MenuNodePassive_3_7.UpNode=&MenuNodePassive_3_6;
+	MenuNodePassive_3_7.NextNode=&MenuNodePassive_3_7;
+	MenuNodePassive_3_7.DownNode=&MenuNodePassive_3_7;
+	MenuNodePassive_3_7.PreviousNode=&MenuNodePassive_3;
+	MenuNodePassive_3_7.MenuPosition=Last;
+	MenuNodePassive_3_7.Title="Menu 3...           ";
+	MenuNodePassive_3_7.ItemToPrint =" Nenu 3_7           ";
+	MenuNodePassive_3_7.NodeExecFct=Menu_PassivePrint;
 
 
 	/*      **********************
@@ -259,15 +261,15 @@ void Menu_Node_Init(void)
 	 */
 
 	// procéder dans cet ordre c'est plus logique :
-	ItemInput_VoltParam.UpNode=&ItemInput_VoltParam;
-	ItemInput_VoltParam.NextNode=&ItemInput_VoltParam;
-	ItemInput_VoltParam.DownNode=&ItemInput_VoltParam;
-	ItemInput_VoltParam.PreviousNode=&Item_Menu3_1;
-	ItemInput_VoltParam.MenuPosition=Last;
-	ItemInput_VoltParam.Title="Volt Param [V]...   ";
-	ItemInput_VoltParam.ItemToPrint =" Actual :           ";
-	ItemInput_VoltParam.NodeExecFct=Menu_InputScreenPrint;
-	ItemInput_VoltParam.Param=&VoltageParam;
+	MenuNodeInput_VoltParam.UpNode=&MenuNodeInput_VoltParam;
+	MenuNodeInput_VoltParam.NextNode=&MenuNodeInput_VoltParam;
+	MenuNodeInput_VoltParam.DownNode=&MenuNodeInput_VoltParam;
+	MenuNodeInput_VoltParam.PreviousNode=&MenuNodePassive_3_1;
+	MenuNodeInput_VoltParam.MenuPosition=Last;
+	MenuNodeInput_VoltParam.Title="Volt Param [V]...   ";
+	MenuNodeInput_VoltParam.ItemToPrint =" Actual :           ";
+	MenuNodeInput_VoltParam.NodeExecFct=Menu_InputStateMachine;
+	MenuNodeInput_VoltParam.Param=&VoltageParam;
 
 
 
@@ -314,16 +316,15 @@ void Menu_Node_Init(void)
 -------------------------------------------------*/
 
 typedef enum  {Menu_Up, Menu_Down, Menu_Left, Menu_Right } Menu_Cmd;
-typedef enum  {Entry, SetValue, Discard} NodeState;
+typedef enum  {Entry, SetValue, Discard, Confirm} InputNodeSt;
 struct {
 	Menu_Node *  ActualNode;
 	Menu_Cmd Cmde;
 
-	NodeState InNode_State;
+	InputNodeSt State;
 	Menu_Node * LinkPreviousNode;
 	char StringInputValue[8]; // max 6 digit + '.' + Null
-	int DigitPos; // 0 sur le premier digit , 6 maxi.
-
+	int CursorPos; // 0 sur le premier digit , 6 maxi.
 } Menu_Status;
 
 
@@ -351,7 +352,7 @@ void Menu_Init(UART_HandleTypeDef * UsedUSART)
 	 * init attribut MenuStatus
 	 *
 	 *************************************/
-	Menu_Status.ActualNode=&Item_Menu1;
+	Menu_Status.ActualNode=&MenuNodePassive_1;
 
 
 
@@ -368,7 +369,7 @@ void Menu_Init(UART_HandleTypeDef * UsedUSART)
 	ParamNull.DigitNb=0;
 
 
-	Menu_Status.InNode_State=Entry;
+	Menu_Status.State=Entry;
 }
 
 
@@ -440,20 +441,7 @@ void Menu_NodeUpdate(void)
 		break;
 		}
 	}
-	// Spécifique menue saisie; Discard input en cours
-	if (Menu_Status.InNode_State==Discard)
-	{
-		if (Menu_Status.Cmde==Menu_Right)
-		{
-			Menu_Status.InNode_State=SetValue;
-			Menu_Status.DigitPos=-1; // pour anticiper la seconde prise en compte de Right
-		}
-		if (Menu_Status.Cmde==Menu_Left) // on abandonne la modif
-		{
-			Menu_Status.InNode_State=Entry;
-			Menu_Status.DigitPos=0;
-		}
-	}
+
 	Menu_Status.ActualNode->NodeExecFct();
 
 
@@ -467,7 +455,7 @@ void Menu_NodeUpdate(void)
 *  PRIVATE functions : FONCTIONS D'AFFICHAGE PASSIF
 
 ******************************************************************************/
-void Menu_PassiveScreenPrint(void)
+void Menu_PassivePrint(void)
 {
 
 	ComUART_Print(Menu_Status.ActualNode->Title, 20);
@@ -574,7 +562,10 @@ void Menu_PassiveScreenPrint(void)
 
 ******************************************************************************/
 
-void Menu_PrintThreeLines(void)
+/*............................................
+ *		Les 3 affichages ...
+.............................................*/
+void MenuInput_PrintParam(void)  // var dynamique dans Menu_Status ...
 {
 	char MyString[8];
 	// Line 1
@@ -590,10 +581,44 @@ void Menu_PrintThreeLines(void)
 	StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb);
 	ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
 	ComUART_Print("\r\n", 2);
+	// line 4
+	ComUART_Print(" Actual: ", 9);
+	ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+	ComUART_Print("\r\n", 2);
+}
+
+void MenuInput_PrintDiscard(void)
+{
+	ComUART_Print("Discard Changes ?   ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Back for yes...     ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Forward for no...   ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("                    ",20); //clr
+	ComUART_Print("\r\n", 2);
+}
+
+void MenuInput_PrintConfirm(void)
+{
+	ComUART_Print("Confirm Changes ?   ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Forward for yes...  ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Back for no...      ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("                    ",20); //clr
+	ComUART_Print("\r\n", 2);
 }
 
 
-void Menu_InputScreenPrint(void)
+
+
+/*............................................
+ *		La machine à états...
+.............................................*/
+
+void Menu_InputStateMachine(void)
 {
 	//char MyString[8];
 	float Valeur;
@@ -603,46 +628,31 @@ void Menu_InputScreenPrint(void)
 	int PosMax;
 
 
-	switch(Menu_Status.InNode_State)
+	switch(Menu_Status.State)
 	{
 
 		case  Entry:
 		{
 			// prochaine étape, MenuDo forcément
-			Menu_Status.InNode_State=SetValue;
+			Menu_Status.State=SetValue;
 			// link back
 			Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
             // blocage dans cet item
 			Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
 			// prépa premier digit pour réglage
-			Menu_Status.DigitPos=0;
-
-
-			Menu_PrintThreeLines();
-			// Line 4
+			Menu_Status.CursorPos=0;
+			// chargement de la valeur à traiter
 			Valeur=Menu_Status.ActualNode->Param->Val;
 			DigitNb=Menu_Status.ActualNode->Param->DigitNb;
 			DecNb=Menu_Status.ActualNode->Param->DecimalNb;
-			ComUART_Print(" Actual: ", 9);
 			StringFct_Float2Str(Valeur,Menu_Status.StringInputValue, DigitNb, DecNb);
-			ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
-			ComUART_Print("\r\n", 2);
+			// affichage
+			MenuInput_PrintParam();
 			break;
 		}
 
-
-
-
 		case  SetValue:
 		{
-
-			if (Menu_Status.ActualNode!=Menu_Status.ActualNode->PreviousNode) // back up
-			{
-				Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
-				// blocage dans cet item
-				Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
-			}
-
 			// calcule position Virgule
 			//|xx.xxx00| DigitNb=5, DecimalNb=2
 			//|x.xx0000| DigitNb=3, DecimalNb=2
@@ -650,98 +660,101 @@ void Menu_InputScreenPrint(void)
 			PosVirgule= Menu_Status.ActualNode->Param->DigitNb-Menu_Status.ActualNode->Param->DecimalNb;
 			PosMax=Menu_Status.ActualNode->Param->DigitNb;
 
-			switch(Menu_Status.Cmde)
+			if (Menu_Status.Cmde==Menu_Up)
 			{
-			case Menu_Up:
+				// update digit highlihted (curseur)
+				Tamp=Menu_Status.StringInputValue[Menu_Status.CursorPos];
+				Tamp++;
+				if (Tamp==0x3A) Tamp=0x30;
+				Menu_Status.StringInputValue[Menu_Status.CursorPos]=Tamp;
+				// affichage
+				MenuInput_PrintParam();
+			}
+			else if (Menu_Status.Cmde==Menu_Down)
+			{
+				Tamp=Menu_Status.StringInputValue[Menu_Status.CursorPos];
+				Tamp--;
+				if (Tamp==0x2F) Tamp=0x39;
+				Menu_Status.StringInputValue[Menu_Status.CursorPos]=Tamp;
+				// affichage
+				MenuInput_PrintParam();
+			}
+
+			else if (Menu_Status.Cmde==Menu_Left) // Discard ? or Cursor --
+			{
+				if (Menu_Status.CursorPos==0) // Discard ?
 				{
-					Menu_PrintThreeLines();
-					Tamp=Menu_Status.StringInputValue[Menu_Status.DigitPos];
-					Tamp++;
-					if (Tamp==0x3A) Tamp=0x30;
-					Menu_Status.StringInputValue[Menu_Status.DigitPos]=Tamp;
-					// Line 4
-					ComUART_Print(" Actual: ", 9);
-					ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
-					ComUART_Print("\r\n", 2);
+					Menu_Status.State=Discard;
+					MenuInput_PrintDiscard();
 				}
-				break;
-
-			case Menu_Down:
+				else // cursor --
 				{
-					Menu_PrintThreeLines();
-					Tamp=Menu_Status.StringInputValue[Menu_Status.DigitPos];
-					Tamp--;
-					if (Tamp==0x2F) Tamp=0x39;
-					Menu_Status.StringInputValue[Menu_Status.DigitPos]=Tamp;
-					// Line 4
-					ComUART_Print(" Actual: ", 9);
-					ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
-					ComUART_Print("\r\n", 2);
+					Menu_Status.CursorPos--;
+					// gestion '.' que l'on saute si nécessaire
+					if (Menu_Status.CursorPos==PosVirgule) Menu_Status.CursorPos--;
+					// affichage
+					MenuInput_PrintParam();
 				}
-				break;
-
-			case Menu_Left:
+			}
+			else if (Menu_Status.Cmde==Menu_Right) // Confirm ? or Cursor ++
+			{
+				if (Menu_Status.CursorPos==PosMax) // Confirm ?
 				{
-					if (Menu_Status.DigitPos==0) // Discard
-						{
-						ComUART_Print("Discard Changes ?   ",20);
-						ComUART_Print("\r\n", 2);
-						ComUART_Print("Back for yes...     ",20);
-						ComUART_Print("\r\n", 2);
-						ComUART_Print("Forward for no...   ",20);
-						ComUART_Print("\r\n", 2);
-						ComUART_Print("                    ",20); //clr
-						ComUART_Print("\r\n", 2);
-
-
-						// remise en place du back menu, libération de cet item
-						// si on retourne au menu précédent
-						Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
-						Menu_Status.InNode_State=Discard;
-						Menu_Status.DigitPos=0;
-						}
-					else
-						{
-						Menu_Status.DigitPos--;
-						if (Menu_Status.DigitPos==PosVirgule) Menu_Status.DigitPos--;
-						Menu_PrintThreeLines();
-						// Line 4
-						ComUART_Print(" Actual: ", 9);
-						ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
-						ComUART_Print("\r\n", 2);
-						}
+					Menu_Status.State=Confirm;
+					MenuInput_PrintConfirm();
 				}
-				break;
-
-			case Menu_Right:
+				else // cursor ++
 				{
-
-					if (Menu_Status.DigitPos==PosMax)
-						{
-						// Line 4
-						ComUART_Print("Please Confirm ...  ", 20);
-						ComUART_Print("\r\n", 2);
-						//Menu_Status.InNode_State=MenuExit;
-						}
-					else
-						{
-						Menu_Status.DigitPos++;
-						if (Menu_Status.DigitPos==PosVirgule) Menu_Status.DigitPos++;
-						Menu_PrintThreeLines();
-						// Line 4
-						ComUART_Print(" Actual: ", 9);
-						ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
-						ComUART_Print("\r\n", 2);
-						}
+					Menu_Status.CursorPos++;
+					// gestion '.' que l'on saute si nécessaire
+					if (Menu_Status.CursorPos==PosVirgule) Menu_Status.CursorPos++;
+					// affichage
+					MenuInput_PrintParam();
 				}
-				break;
+
 			}
 			break;
-
-
 		}
 		case Discard:
 		{
+			if (Menu_Status.Cmde==Menu_Left) // confirmation du Discard
+			{
+				// restitution pointeur back du menu actuel
+				Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+				Menu_Status.State=Entry;
+				// basculement node père
+				Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+				// Affichage menu passif
+				Menu_PassivePrint();
+			}
+			else if (Menu_Status.Cmde==Menu_Right) // abandon du Discard
+			{
+				Menu_Status.State=SetValue;
+				// affichage
+				MenuInput_PrintParam();
+			}
+			break;
+		}
+		case Confirm:
+		{
+			if (Menu_Status.Cmde==Menu_Right) // confirmation de la validation
+			{
+				// écriture valeur dans param
+				Menu_Status.ActualNode->Param->Val=StringFct_Str2Float(Menu_Status.StringInputValue,Menu_Status.ActualNode->Param->DigitNb,Menu_Status.ActualNode->Param->DecimalNb);
+
+				// restitution pointeur back du menu actuel
+				Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+				Menu_Status.State=Entry;
+				// basculement node père
+				Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+				Menu_PassivePrint();
+			}
+			else if (Menu_Status.Cmde==Menu_Left) // abandon du Discard
+			{
+				Menu_Status.State=SetValue;
+				// affichage
+				MenuInput_PrintParam();
+			}
 			break;
 		}
 	}

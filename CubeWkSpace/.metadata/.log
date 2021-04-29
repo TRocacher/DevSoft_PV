@@ -1921,3 +1921,97 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\trocache\Docu
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-04-27 09:28:13.144
 !MESSAGE Indexed 'PV' (33 sources, 94 headers) in 8,28 sec: 8 661 declarations; 69 493 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,0026 %)
+!SESSION 2021-04-28 15:39:03.237 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-28 15:39:16.884
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-28 15:39:16.962
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-28 15:39:32.248
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-28 15:39:34.279
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-28 15:39:40.316
+!MESSAGE Indexed 'PV' (33 sources, 94 headers) in 6,54 sec: 8 660 declarations; 69 574 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,0026 %)
+!SESSION 2021-04-29 14:14:54.445 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-29 14:15:08.822
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-29 14:15:08.953
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-29 14:15:24.440
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-29 14:15:26.739
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-29 14:15:35.710
+!MESSAGE Indexed 'PV' (33 sources, 94 headers) in 9,43 sec: 8 661 declarations; 69 574 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,0026 %)
+!SESSION 2021-04-29 19:50:31.653 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-29 19:50:49.141
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-29 19:50:49.210
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-29 19:51:02.570
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-29 19:51:04.800
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-29 19:51:11.549
+!MESSAGE Indexed 'PV' (33 sources, 94 headers) in 7,16 sec: 8 678 declarations; 69 608 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,0026 %)
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-04-29 19:54:09.423
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-04-29 19:54:09.425
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.core.DebugPlugin$EventDispatchJob
+!SESSION 2021-04-29 19:57:50.745 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-29 19:58:06.038
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-29 19:58:06.132
+!MESSAGE Log4j initialized with config file C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\CubeWkSpace\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-29 19:58:22.852
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-29 19:58:25.614
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-29 19:58:32.667
+!MESSAGE Indexed 'PV' (33 sources, 94 headers) in 7,48 sec: 8 678 declarations; 69 608 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0,0026 %)

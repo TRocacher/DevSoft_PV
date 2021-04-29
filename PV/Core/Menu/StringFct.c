@@ -59,7 +59,46 @@ void StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac)
 
 }
 
+float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac)
+{
+	//|xx.xxx00| DigitNb=5, DecimalNb=2
+	//|x.xx0000| DigitNb=3, DecimalNb=2
+	//|x.000000| DigitNb=1, DecimalNb=0
+	//|xxx.xxx0|
+    //|xxxxxx.0|
+
+	float Val;
+	int i;
+	char Digit;
+	float Fact;
+
+	// calcul entier
+	Val=0.0;
+	Fact=1.0;
+	for (i=DigitNb;i>=0;i--)
+	{
+		Digit=*(DigitTab+i);
+		if (Digit !=0)
+		{
+			if (Digit !='.')
+			{
+				Digit = Digit-0x30;
+				Val=Val+(float)Digit*Fact;
+				Fact=Fact*10.0;
+			}
+		}
+	}
+
+	// fractionnaire
+	switch(Frac)
+	{
+	case 1:Val=Val/10.0;break;
+	case 2:Val=Val/100.0;break;
+	case 3:Val=Val/1000.0;break;
+	}
 
 
-//void StringFct_Digit2Str(char * DigitTab, char * Str)
+	return (Val);
+
+}
 

@@ -30,7 +30,7 @@
   **/
 void StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac);
 
-
+float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac);
 
 /**
   * @brief  Convertit un float en un châine de caractères
