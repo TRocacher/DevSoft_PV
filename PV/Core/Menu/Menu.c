@@ -70,15 +70,15 @@ Menu_ParamValTypedef  VoltageParam;
  *		pour les menus saisie
 .............................................*/
 
-// test
+// test$$$$$$$$$$$$$$$$$$$$$$$$$$
 char Tab[8];
 float res;
+// end test $$$$$$$$$$$$$$$$$$$
+void MenuInput_PrintPlantageConv(void);
+
 void Menu_Node_Init(void)
 {
 
-	// test
-	StringFct_Float2Str(12.36,Tab, 5, 3);
-	res=StringFct_Str2Float(Tab, 5, 3);
 
 	/*............................................
 	 *
@@ -370,6 +370,13 @@ void Menu_Init(UART_HandleTypeDef * UsedUSART)
 
 
 	Menu_Status.State=Entry;
+
+	// test $$$$$$$$$$$$$$$$$$$$$$$$$$
+	if (StringFct_Float2Str(12.36,Tab, 5, 3)==0) MenuInput_PrintPlantageConv();
+
+	res=StringFct_Str2Float(Tab, 5, 3);
+	if (res>1000000.0) MenuInput_PrintPlantageConv();
+	// fin test $$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 
 
@@ -573,12 +580,12 @@ void MenuInput_PrintParam(void)  // var dynamique dans Menu_Status ...
 	ComUART_Print("\r\n", 2);
 	// Line 2
 	ComUART_Print(" Min : ", 7);
-	StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb);
+	if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
 	ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
 	ComUART_Print("\r\n", 2);
 	// Line 3
 	ComUART_Print(" Max : ", 7);
-	StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb);
+	if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
 	ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
 	ComUART_Print("\r\n", 2);
 	// line 4
@@ -611,9 +618,30 @@ void MenuInput_PrintConfirm(void)
 	ComUART_Print("\r\n", 2);
 }
 
+void MenuInput_PrintRetry(void)
+{
+	ComUART_Print("Value out of range, ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Please retry        ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Strike any key ...  ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("                    ",20); //clr
+	ComUART_Print("\r\n", 2);
+}
 
-
-
+void MenuInput_PrintPlantageConv(void)
+{
+	ComUART_Print("Plantage sys        ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Pb conv float / str ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("Revoir les datas des ",20);
+	ComUART_Print("\r\n", 2);
+	ComUART_Print("param MenuNode       ",20); //clr
+	ComUART_Print("\r\n", 2);
+	while(1);
+}
 /*............................................
  *		La machine à états...
 .............................................*/
@@ -633,7 +661,7 @@ void Menu_InputStateMachine(void)
 
 		case  Entry:
 		{
-			// prochaine étape, MenuDo forcément
+			// prochaine étape, SetValue forcément
 			Menu_Status.State=SetValue;
 			// link back
 			Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
@@ -645,7 +673,7 @@ void Menu_InputStateMachine(void)
 			Valeur=Menu_Status.ActualNode->Param->Val;
 			DigitNb=Menu_Status.ActualNode->Param->DigitNb;
 			DecNb=Menu_Status.ActualNode->Param->DecimalNb;
-			StringFct_Float2Str(Valeur,Menu_Status.StringInputValue, DigitNb, DecNb);
+			if (StringFct_Float2Str(Valeur,Menu_Status.StringInputValue, DigitNb, DecNb)==0) MenuInput_PrintPlantageConv();
 			// affichage
 			MenuInput_PrintParam();
 			break;
@@ -740,14 +768,26 @@ void Menu_InputStateMachine(void)
 			if (Menu_Status.Cmde==Menu_Right) // confirmation de la validation
 			{
 				// écriture valeur dans param
-				Menu_Status.ActualNode->Param->Val=StringFct_Str2Float(Menu_Status.StringInputValue,Menu_Status.ActualNode->Param->DigitNb,Menu_Status.ActualNode->Param->DecimalNb);
+				Valeur=StringFct_Str2Float(Menu_Status.StringInputValue,Menu_Status.ActualNode->Param->DigitNb,Menu_Status.ActualNode->Param->DecimalNb);
+				if (Valeur>1000000.0) MenuInput_PrintPlantageConv();
+				if ((Valeur<=Menu_Status.ActualNode->Param->MaxVal)&&(Valeur>=Menu_Status.ActualNode->Param->MinVal))
+				{
+					// la valeur est OK
+					Menu_Status.ActualNode->Param->Val=Valeur;
+					Menu_Status.ActualNode->Param->NewUserInputFlag=1;
+					// restitution pointeur back du menu actuel
+					Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+					Menu_Status.State=Entry;
+					// basculement node père
+					Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+					Menu_PassivePrint();
+				}
+				else // valeur KO
+				{
+					Menu_Status.State=SetValue;
+					MenuInput_PrintRetry();
+				}
 
-				// restitution pointeur back du menu actuel
-				Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
-				Menu_Status.State=Entry;
-				// basculement node père
-				Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
-				Menu_PassivePrint();
 			}
 			else if (Menu_Status.Cmde==Menu_Left) // abandon du Discard
 			{

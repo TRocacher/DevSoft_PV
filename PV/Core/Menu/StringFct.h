@@ -28,7 +28,7 @@
   * @param  char Frac : le nombre de digit de la partie décimale
   * @retval None
   **/
-void StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac);
+char StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac);
 
 float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac);
 
