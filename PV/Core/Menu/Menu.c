@@ -30,6 +30,8 @@ enum {First, Middle, Last};
 void Menu_PassivePrint(void);
 void Menu_InputStateMachine(void);
 
+// Param nul
+Menu_ParamValTypedef ParamNull;
 
 /*==========================================================================================
  *
@@ -49,16 +51,22 @@ Menu_Node MenuNodePassive_2_1;
 Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
 Menu_Node MenuNodeInput_VoltParam;
 
+Menu_Node MenuNodeInput_10;
+Menu_Node MenuNodeInput_20,MenuNodeInput_21;
+
+
 /*............................................
  *
  * 		Définitions des structures param
  * 		privée au module
  *
 .............................................*/
-// Param nul
-Menu_ParamValTypedef ParamNull;
+
 // Voltage
-Menu_ParamValTypedef  VoltageParam;
+Menu_ParamValTypedef VoltageParam;
+Menu_ParamValTypedef Param_10;
+Menu_ParamValTypedef Param_20,Param_21;
+
 
 
 /*............................................
@@ -197,7 +205,7 @@ void Menu_Node_Init(void)
 	MenuNodePassive_3_1.NodeExecFct=Menu_PassivePrint;
 
 	MenuNodePassive_3_2.DownNode=&MenuNodePassive_3_3;
-	MenuNodePassive_3_2.NextNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_2.NextNode=&MenuNodeInput_10;
 	MenuNodePassive_3_2.UpNode=&MenuNodePassive_3_1;
 	MenuNodePassive_3_2.PreviousNode=&MenuNodePassive_3;
 	MenuNodePassive_3_2.MenuPosition=Middle;
@@ -206,7 +214,7 @@ void Menu_Node_Init(void)
 	MenuNodePassive_3_2.NodeExecFct=Menu_PassivePrint;
 
 	MenuNodePassive_3_3.DownNode=&MenuNodePassive_3_4;
-	MenuNodePassive_3_3.NextNode=&MenuNodePassive_3_2;
+	MenuNodePassive_3_3.NextNode=&MenuNodeInput_20;
 	MenuNodePassive_3_3.UpNode=&MenuNodePassive_3_2;
 	MenuNodePassive_3_3.PreviousNode=&MenuNodePassive_3;
 	MenuNodePassive_3_3.MenuPosition=Middle;
@@ -215,7 +223,7 @@ void Menu_Node_Init(void)
 	MenuNodePassive_3_3.NodeExecFct=Menu_PassivePrint;
 
 	MenuNodePassive_3_4.DownNode=&MenuNodePassive_3_5;
-	MenuNodePassive_3_4.NextNode=&MenuNodePassive_3_4;
+	MenuNodePassive_3_4.NextNode=&MenuNodeInput_21;
 	MenuNodePassive_3_4.UpNode=&MenuNodePassive_3_3;
 	MenuNodePassive_3_4.PreviousNode=&MenuNodePassive_3;
 	MenuNodePassive_3_4.MenuPosition=Middle;
@@ -272,18 +280,81 @@ void Menu_Node_Init(void)
 	MenuNodeInput_VoltParam.Param=&VoltageParam;
 
 
-
-
 	/*............................................
 	 *		chargement des param
 	 *		pour les menus saisie
 	.............................................*/
 	VoltageParam.Val=12.5;
-	VoltageParam.MaxVal=13.0;
 	VoltageParam.MinVal=12.0;
+	VoltageParam.MaxVal=13.0;
 	VoltageParam.NewUserInputFlag=0;
 	VoltageParam.DigitNb=4;
 	VoltageParam.DecimalNb=2;
+
+//===================================================================================================
+// ========================== TESTS FORMATS FRACT ===================================================
+//===================================================================================================
+
+	/*      **********************
+	 * 		*Volt Param 10...    *
+	 * 		* Min :				 *
+	 * 		* Max :	             *
+	 * 		* Actual :           *
+	 * 		**********************
+	 */
+
+	MenuNodeInput_10.UpNode=&MenuNodeInput_10;
+	MenuNodeInput_10.NextNode=&MenuNodeInput_10;
+	MenuNodeInput_10.DownNode=&MenuNodeInput_10;
+	MenuNodeInput_10.PreviousNode=&MenuNodePassive_3_2;
+	MenuNodeInput_10.MenuPosition=Last;
+	MenuNodeInput_10.Title="Volt Param 10...    ";
+	MenuNodeInput_10.ItemToPrint =" Actual :           ";
+	MenuNodeInput_10.NodeExecFct=Menu_InputStateMachine;
+	MenuNodeInput_10.Param=&Param_10;
+
+	Param_10.Val=1.5;
+	Param_10.MinVal=1.0;
+	Param_10.MaxVal=3.0;
+	Param_10.NewUserInputFlag=0;
+	Param_10.DigitNb=1;
+	Param_10.DecimalNb=0;
+
+	//===================20=====================================
+	MenuNodeInput_20.UpNode=&MenuNodeInput_20;
+	MenuNodeInput_20.NextNode=&MenuNodeInput_20;
+	MenuNodeInput_20.DownNode=&MenuNodeInput_20;
+	MenuNodeInput_20.PreviousNode=&MenuNodePassive_3_3;
+	MenuNodeInput_20.MenuPosition=Last;
+	MenuNodeInput_20.Title="Volt Param 20...    ";
+	MenuNodeInput_20.ItemToPrint =" Actual :           ";
+	MenuNodeInput_20.NodeExecFct=Menu_InputStateMachine;
+	MenuNodeInput_20.Param=&Param_20;
+
+	Param_20.Val=10.0;
+	Param_20.MinVal=5.0;
+	Param_20.MaxVal=99.0;
+	Param_20.NewUserInputFlag=0;
+	Param_20.DigitNb=2;
+	Param_20.DecimalNb=0;
+
+	//=====================21===================================
+	MenuNodeInput_21.UpNode=&MenuNodeInput_21;
+	MenuNodeInput_21.NextNode=&MenuNodeInput_21;
+	MenuNodeInput_21.DownNode=&MenuNodeInput_21;
+	MenuNodeInput_21.PreviousNode=&MenuNodePassive_3_4;
+	MenuNodeInput_21.MenuPosition=Last;
+	MenuNodeInput_21.Title="Volt Param 21...    ";
+	MenuNodeInput_21.ItemToPrint =" Actual :           ";
+	MenuNodeInput_21.NodeExecFct=Menu_InputStateMachine;
+	MenuNodeInput_21.Param=&Param_21;
+
+	Param_21.Val=1.5;
+	Param_21.MinVal=0;
+	Param_21.MaxVal=9.0;
+	Param_21.NewUserInputFlag=0;
+	Param_21.DigitNb=2;
+	Param_21.DecimalNb=1;
 }
 
 
@@ -316,7 +387,7 @@ void Menu_Node_Init(void)
 -------------------------------------------------*/
 
 typedef enum  {Menu_Up, Menu_Down, Menu_Left, Menu_Right } Menu_Cmd;
-typedef enum  {Entry, SetValue, Discard, Confirm} InputNodeSt;
+typedef enum  {Entry, SetValue, Discard, Confirm,Retry} InputNodeSt;
 struct {
 	Menu_Node *  ActualNode;
 	Menu_Cmd Cmde;
@@ -655,6 +726,10 @@ void Menu_InputStateMachine(void)
 	int PosVirgule;
 	int PosMax;
 
+	// chargement local de la valeur à traiter
+	Valeur=Menu_Status.ActualNode->Param->Val;
+	DigitNb=Menu_Status.ActualNode->Param->DigitNb;
+	DecNb=Menu_Status.ActualNode->Param->DecimalNb;
 
 	switch(Menu_Status.State)
 	{
@@ -669,10 +744,6 @@ void Menu_InputStateMachine(void)
 			Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
 			// prépa premier digit pour réglage
 			Menu_Status.CursorPos=0;
-			// chargement de la valeur à traiter
-			Valeur=Menu_Status.ActualNode->Param->Val;
-			DigitNb=Menu_Status.ActualNode->Param->DigitNb;
-			DecNb=Menu_Status.ActualNode->Param->DecimalNb;
 			if (StringFct_Float2Str(Valeur,Menu_Status.StringInputValue, DigitNb, DecNb)==0) MenuInput_PrintPlantageConv();
 			// affichage
 			MenuInput_PrintParam();
@@ -691,6 +762,7 @@ void Menu_InputStateMachine(void)
 			if (Menu_Status.Cmde==Menu_Up)
 			{
 				// update digit highlihted (curseur)
+				if (Menu_Status.CursorPos==PosVirgule) Menu_Status.CursorPos--; // si on tombe sur le '.' ..
 				Tamp=Menu_Status.StringInputValue[Menu_Status.CursorPos];
 				Tamp++;
 				if (Tamp==0x3A) Tamp=0x30;
@@ -700,6 +772,7 @@ void Menu_InputStateMachine(void)
 			}
 			else if (Menu_Status.Cmde==Menu_Down)
 			{
+				if (Menu_Status.CursorPos==PosVirgule) Menu_Status.CursorPos--; // si on tombe sur le '.' ..
 				Tamp=Menu_Status.StringInputValue[Menu_Status.CursorPos];
 				Tamp--;
 				if (Tamp==0x2F) Tamp=0x39;
@@ -734,8 +807,8 @@ void Menu_InputStateMachine(void)
 				else // cursor ++
 				{
 					Menu_Status.CursorPos++;
-					// gestion '.' que l'on saute si nécessaire
-					if (Menu_Status.CursorPos==PosVirgule) Menu_Status.CursorPos++;
+					// gestion '.' que l'on saute si nécessaire (uniquement si fract>0)
+					if ((Menu_Status.CursorPos==PosVirgule)&&(DecNb>0)) Menu_Status.CursorPos++;
 					// affichage
 					MenuInput_PrintParam();
 				}
@@ -784,7 +857,7 @@ void Menu_InputStateMachine(void)
 				}
 				else // valeur KO
 				{
-					Menu_Status.State=SetValue;
+					Menu_Status.State=Retry;
 					MenuInput_PrintRetry();
 				}
 
@@ -795,6 +868,14 @@ void Menu_InputStateMachine(void)
 				// affichage
 				MenuInput_PrintParam();
 			}
+			break;
+		}
+		case Retry:
+		{
+			// prochaine étape, SetValue forcément
+			Menu_Status.State=SetValue;
+			Menu_Status.CursorPos=0;
+			MenuInput_PrintParam();
 			break;
 		}
 	}

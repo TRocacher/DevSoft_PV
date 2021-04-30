@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="StringFct_Str2Float"/>
+		<item key="selection" value="MenuNodeInput_30"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="MenuNodeInput_20"/>
+			<item value="MenuNodeInput_10"/>
+			<item value="MenuPos"/>
+			<item value="Param10"/>
+			<item value="MenuNodeInput_VoltParam"/>
 			<item value="StringFct_Str2Float"/>
 			<item value="StringFct_Float2Str"/>
 			<item value="Menu_InputScreenPrint"/>
@@ -18,13 +23,12 @@
 			<item value="NodeState"/>
 			<item value="ItemInput_VoltParam"/>
 			<item value="Item_Menu3"/>
-			<item value="Item_Menu2"/>
-			<item value="Item_Menu1"/>
-			<item value="Discard"/>
-			<item value="Menu_UserInput"/>
-			<item value="LinkActualNode"/>
 		</list>
 		<list key="replacehistory">
+			<item value="MenuNodeInput_30"/>
+			<item value="MenuNodeInput_20"/>
+			<item value="Param_10"/>
+			<item value="MenuNodeInput_10"/>
 			<item value="Menu_InputStateMachine"/>
 			<item value="Menu_PassivePrint"/>
 			<item value="CursorPos"/>
@@ -36,15 +40,11 @@
 			<item value="MenuNodeInput_VoltParam"/>
 			<item value="MenuNodeInput_"/>
 			<item value="MenuNodePassive_3"/>
-			<item value="MenuNodePassive_2"/>
-			<item value="MenuNodePassive_1"/>
-			<item value="Menu_Status"/>
-			<item value="LinkPreviousNode"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1057"/>
-		<item key="DIALOG_Y_ORIGIN" value="494"/>
+		<item key="DIALOG_X_ORIGIN" value="1176"/>
+		<item key="DIALOG_Y_ORIGIN" value="169"/>
 		<item key="DIALOG_WIDTH" value="648"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

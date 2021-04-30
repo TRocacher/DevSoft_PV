@@ -60,6 +60,9 @@ extern Menu_Node MenuNodePassive_2_1;
 extern Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
 extern Menu_Node MenuNodeInput_VoltParam;
 
+extern Menu_Node MenuNodeInput_10;
+extern Menu_Node MenuNodeInput_20, MenuNodeInput_21;
+
 void Menu_Init(UART_HandleTypeDef * UsedUSART);
 
 

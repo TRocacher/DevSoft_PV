@@ -4824,3 +4824,1169 @@ Finished building: default.size.stdout
 make -j4 clean 
 rm -rf *
  
+17:24:52 **** Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l476rgtx.d" -MT"Core/Startup/startup_stm32l476rgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32l476rgtx.o" "../Core/Startup/startup_stm32l476rgtx.s"
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+In file included from ../Core/Src/main.c:26:0:
+../Core/Menu/Menu.h:63:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_10' [-Wimplicit-int]
+ extern MenuNodeInput_10;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_20' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:26: warning: type defaults to 'int' in declaration of 'MenuNodeInput_21' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+                          ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:63:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_10' [-Wimplicit-int]
+ extern MenuNodeInput_10;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_20' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:26: warning: type defaults to 'int' in declaration of 'MenuNodeInput_21' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+                          ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:54:1: warning: data definition has no type or storage class
+ MenuNodeInput_10;
+ ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:54:1: warning: type defaults to 'int' in declaration of 'MenuNodeInput_10' [-Wimplicit-int]
+../Core/Menu/Menu.c:55:1: warning: data definition has no type or storage class
+ MenuNodeInput_20, MenuNodeInput_21;
+ ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:55:1: warning: type defaults to 'int' in declaration of 'MenuNodeInput_20' [-Wimplicit-int]
+../Core/Menu/Menu.c:55:19: warning: type defaults to 'int' in declaration of 'MenuNodeInput_21' [-Wimplicit-int]
+ MenuNodeInput_20, MenuNodeInput_21;
+                   ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc "../Core/ComUART/ComUART.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/ComUART/ComUART.d" -MT"Core/ComUART/ComUART.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/ComUART/ComUART.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-size   PV.elf 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+   text	   data	    bss	    dec	    hex	filename
+  27660	     20	   2764	  30444	   76ec	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+17:25:39 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:63:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_10' [-Wimplicit-int]
+ extern MenuNodeInput_10;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_20' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:64:26: warning: type defaults to 'int' in declaration of 'MenuNodeInput_21' [-Wimplicit-int]
+ extern MenuNodeInput_20, MenuNodeInput_21;
+                          ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:54:11: error: conflicting types for 'MenuNodeInput_10'
+ Menu_Node MenuNodeInput_10;
+           ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:63:8: note: previous declaration of 'MenuNodeInput_10' was here
+ extern MenuNodeInput_10;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:55:11: error: conflicting types for 'MenuNodeInput_20'
+ Menu_Node MenuNodeInput_20, MenuNodeInput_21;
+           ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:64:8: note: previous declaration of 'MenuNodeInput_20' was here
+ extern MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:55:29: error: conflicting types for 'MenuNodeInput_21'
+ Menu_Node MenuNodeInput_20, MenuNodeInput_21;
+                             ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:64:26: note: previous declaration of 'MenuNodeInput_21' was here
+ extern MenuNodeInput_20, MenuNodeInput_21;
+                          ^~~~~~~~~~~~~~~~
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:26:43 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27660	     20	   2860	  30540	   774c	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:27:41 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27660	     20	   2948	  30628	   77a4	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:28:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:44:26: error: conflicting types for 'Menu_ParamValTypedef'
+ typedef struct Menu_Node Menu_ParamValTypedef;
+                          ^~~~~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:39:3: note: previous declaration of 'Menu_ParamValTypedef' was here
+ } Menu_ParamValTypedef;
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:46:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  NextNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:47:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  PreviousNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:48:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  UpNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:49:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  DownNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:57:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, Item_Menu4;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:58:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_1_1,MenuNodePassive_1_2;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:59:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_2_1;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:60:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
+        ^~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:61:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_VoltParam;
+        ^~~~~~~~~
+In file included from ../Core/Src/main.c:26:0:
+../Core/Menu/Menu.h:44:26: error: conflicting types for 'Menu_ParamValTypedef'
+ typedef struct Menu_Node Menu_ParamValTypedef;
+                          ^~~~~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:39:3: note: previous declaration of 'Menu_ParamValTypedef' was here
+ } Menu_ParamValTypedef;
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:63:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_10;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:46:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  NextNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:47:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  PreviousNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:48:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  UpNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:49:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  DownNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.h:57:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, Item_Menu4;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:58:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_1_1,MenuNodePassive_1_2;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:59:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_2_1;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:60:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
+        ^~~~~~~~~
+In file included from ../Core/Src/main.c:26:0:
+../Core/Menu/Menu.h:61:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_VoltParam;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:63:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_10;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:64:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~
+../Core/Menu/Menu.h:64:8: error: unknown type name 'Menu_Node'
+ extern Menu_Node MenuNodeInput_20, MenuNodeInput_21;
+        ^~~~~~~~~
+../Core/Menu/Menu.c:48:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, Item_Menu4;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:49:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodePassive_1_1,MenuNodePassive_1_2;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:50:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodePassive_2_1;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:51:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodePassive_3_1,MenuNodePassive_3_2,MenuNodePassive_3_3,MenuNodePassive_3_4,MenuNodePassive_3_5,MenuNodePassive_3_6,MenuNodePassive_3_7;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:52:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodeInput_VoltParam;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:54:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodeInput_10;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c:55:1: error: unknown type name 'Menu_Node'; use 'struct' keyword to refer to the type
+ Menu_Node MenuNodeInput_20,MenuNodeInput_21;
+ ^~~~~~~~~
+ struct 
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:107:19: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_1.DownNode=&MenuNodePassive_2;
+                   ^
+../Core/Menu/Menu.c:108:19: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_1.NextNode=&MenuNodePassive_1_1;
+                   ^
+../Core/Menu/Menu.c:109:19: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_1.UpNode=&MenuNodePassive_1;  // lui même
+                   ^
+../Core/Menu/Menu.c:110:19: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_1.PreviousNode=&MenuNodePassive_1;  // lui même
+                   ^
+../Core/Menu/Menu.c:111:19: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_1.MenuPosition=First;
+                   ^
+../Core/Menu/Menu.c:112:19: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_1.Title="Menu principal      ";
+                   ^
+../Core/Menu/Menu.c:113:19: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_1.ItemToPrint =" Nenu 1             ";
+                   ^
+../Core/Menu/Menu.c:114:19: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_1.NodeExecFct=Menu_PassivePrint;
+                   ^
+../Core/Menu/Menu.c:115:19: error: request for member 'Param' in something not a structure or union
+  MenuNodePassive_1.Param=&ParamNull; //------------------------------------------------------------------
+                   ^
+../Core/Menu/Menu.c:117:19: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_2.DownNode=&MenuNodePassive_3;
+                   ^
+../Core/Menu/Menu.c:118:19: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_2.NextNode=&MenuNodePassive_2_1;
+                   ^
+../Core/Menu/Menu.c:119:19: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_2.UpNode=&MenuNodePassive_1;
+                   ^
+../Core/Menu/Menu.c:120:19: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_2.PreviousNode=&MenuNodePassive_2;  // lui même
+                   ^
+../Core/Menu/Menu.c:121:19: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_2.MenuPosition=Middle;
+                   ^
+../Core/Menu/Menu.c:122:19: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_2.Title="Menu principal      ";
+                   ^
+../Core/Menu/Menu.c:123:19: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_2.ItemToPrint =" Nenu 2             ";
+                   ^
+../Core/Menu/Menu.c:124:19: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_2.NodeExecFct=Menu_PassivePrint;
+                   ^
+../Core/Menu/Menu.c:126:19: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3.DownNode=&Item_Menu4;
+                   ^
+../Core/Menu/Menu.c:127:19: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3.NextNode=&MenuNodePassive_3_1;
+                   ^
+../Core/Menu/Menu.c:128:19: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3.UpNode=&MenuNodePassive_2;
+                   ^
+../Core/Menu/Menu.c:129:19: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3.PreviousNode=&MenuNodePassive_3;  // lui même
+                   ^
+../Core/Menu/Menu.c:130:19: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3.MenuPosition=Middle;
+                   ^
+../Core/Menu/Menu.c:131:19: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3.Title="Menu principal      ";
+                   ^
+../Core/Menu/Menu.c:132:19: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3.ItemToPrint =" Nenu 3             ";
+                   ^
+../Core/Menu/Menu.c:133:19: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3.NodeExecFct=Menu_PassivePrint;
+                   ^
+../Core/Menu/Menu.c:135:12: error: request for member 'DownNode' in something not a structure or union
+  Item_Menu4.DownNode=&Item_Menu4; // lui même
+            ^
+../Core/Menu/Menu.c:136:12: error: request for member 'NextNode' in something not a structure or union
+  Item_Menu4.NextNode=&Item_Menu4;
+            ^
+../Core/Menu/Menu.c:137:12: error: request for member 'UpNode' in something not a structure or union
+  Item_Menu4.UpNode=&MenuNodePassive_3;
+            ^
+../Core/Menu/Menu.c:138:12: error: request for member 'PreviousNode' in something not a structure or union
+  Item_Menu4.PreviousNode=&Item_Menu4;  // lui même
+            ^
+../Core/Menu/Menu.c:139:12: error: request for member 'MenuPosition' in something not a structure or union
+  Item_Menu4.MenuPosition=Last;
+            ^
+../Core/Menu/Menu.c:140:12: error: request for member 'Title' in something not a structure or union
+  Item_Menu4.Title="Menu principal      ";
+            ^
+../Core/Menu/Menu.c:141:12: error: request for member 'ItemToPrint' in something not a structure or union
+  Item_Menu4.ItemToPrint =" Nenu 4             ";
+            ^
+../Core/Menu/Menu.c:142:12: error: request for member 'NodeExecFct' in something not a structure or union
+  Item_Menu4.NodeExecFct=Menu_PassivePrint;
+            ^
+../Core/Menu/Menu.c:151:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_1_1.DownNode=&MenuNodePassive_1_2;
+                     ^
+../Core/Menu/Menu.c:152:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_1_1.NextNode=&MenuNodePassive_1_1;
+                     ^
+../Core/Menu/Menu.c:153:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_1_1.UpNode=&MenuNodePassive_1_1;
+                     ^
+../Core/Menu/Menu.c:154:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_1_1.PreviousNode=&MenuNodePassive_1;
+                     ^
+../Core/Menu/Menu.c:155:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_1_1.MenuPosition=First;
+                     ^
+../Core/Menu/Menu.c:156:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_1_1.Title="Menu 1...           ";
+                     ^
+../Core/Menu/Menu.c:157:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_1_1.ItemToPrint =" Nenu 1_1           ";
+                     ^
+make: *** [Core/Src/subdir.mk:38: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Menu/Menu.c:158:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_1_1.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:160:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_1_2.DownNode=&MenuNodePassive_1_2;
+                     ^
+../Core/Menu/Menu.c:161:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_1_2.NextNode=&MenuNodePassive_1_2;
+                     ^
+../Core/Menu/Menu.c:162:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_1_2.UpNode=&MenuNodePassive_1_1;
+                     ^
+../Core/Menu/Menu.c:163:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_1_2.PreviousNode=&MenuNodePassive_1;
+                     ^
+../Core/Menu/Menu.c:164:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_1_2.MenuPosition=Last;
+                     ^
+../Core/Menu/Menu.c:165:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_1_2.Title="Menu 1...           ";
+                     ^
+../Core/Menu/Menu.c:166:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_1_2.ItemToPrint =" Nenu 1_2           ";
+                     ^
+../Core/Menu/Menu.c:167:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_1_2.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:176:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_2_1.DownNode=&MenuNodePassive_2_1;
+                     ^
+../Core/Menu/Menu.c:177:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_2_1.NextNode=&MenuNodePassive_2_1;
+                     ^
+../Core/Menu/Menu.c:178:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_2_1.UpNode=&MenuNodePassive_2_1;
+                     ^
+../Core/Menu/Menu.c:179:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_2_1.PreviousNode=&MenuNodePassive_2;
+                     ^
+../Core/Menu/Menu.c:180:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_2_1.MenuPosition=First;
+                     ^
+../Core/Menu/Menu.c:181:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_2_1.Title="Menu 2...           ";
+                     ^
+../Core/Menu/Menu.c:182:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_2_1.ItemToPrint =" Nenu 2_1           ";
+                     ^
+../Core/Menu/Menu.c:183:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_2_1.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:198:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_1.DownNode=&MenuNodePassive_3_2;
+                     ^
+../Core/Menu/Menu.c:199:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_1.NextNode=&MenuNodeInput_VoltParam;
+                     ^
+../Core/Menu/Menu.c:200:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_1.UpNode=&MenuNodePassive_3_1;
+                     ^
+../Core/Menu/Menu.c:201:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_1.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:202:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_1.MenuPosition=First;
+                     ^
+../Core/Menu/Menu.c:203:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_1.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:204:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_1.ItemToPrint =" Nenu 3_1           ";
+                     ^
+../Core/Menu/Menu.c:205:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_1.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:207:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_2.DownNode=&MenuNodePassive_3_3;
+                     ^
+../Core/Menu/Menu.c:208:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_2.NextNode=&MenuNodePassive_3_2;
+                     ^
+../Core/Menu/Menu.c:209:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_2.UpNode=&MenuNodePassive_3_1;
+                     ^
+../Core/Menu/Menu.c:210:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_2.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:211:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_2.MenuPosition=Middle;
+                     ^
+../Core/Menu/Menu.c:212:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_2.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:213:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_2.ItemToPrint =" Nenu 3_2           ";
+                     ^
+../Core/Menu/Menu.c:214:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_2.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:216:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_3.DownNode=&MenuNodePassive_3_4;
+                     ^
+../Core/Menu/Menu.c:217:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_3.NextNode=&MenuNodePassive_3_2;
+                     ^
+../Core/Menu/Menu.c:218:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_3.UpNode=&MenuNodePassive_3_2;
+                     ^
+../Core/Menu/Menu.c:219:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_3.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:220:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_3.MenuPosition=Middle;
+                     ^
+../Core/Menu/Menu.c:221:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_3.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:222:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_3.ItemToPrint =" Nenu 3_3           ";
+                     ^
+../Core/Menu/Menu.c:223:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_3.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:225:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_4.DownNode=&MenuNodePassive_3_5;
+                     ^
+../Core/Menu/Menu.c:226:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_4.NextNode=&MenuNodePassive_3_4;
+                     ^
+../Core/Menu/Menu.c:227:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_4.UpNode=&MenuNodePassive_3_3;
+                     ^
+../Core/Menu/Menu.c:228:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_4.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:229:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_4.MenuPosition=Middle;
+                     ^
+../Core/Menu/Menu.c:230:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_4.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:231:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_4.ItemToPrint =" Nenu 3_4           ";
+                     ^
+../Core/Menu/Menu.c:232:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_4.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:234:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_5.DownNode=&MenuNodePassive_3_6;
+                     ^
+../Core/Menu/Menu.c:235:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_5.NextNode=&MenuNodePassive_3_5;
+                     ^
+../Core/Menu/Menu.c:236:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_5.UpNode=&MenuNodePassive_3_4;
+                     ^
+../Core/Menu/Menu.c:237:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_5.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:238:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_5.MenuPosition=Middle;
+                     ^
+../Core/Menu/Menu.c:239:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_5.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:240:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_5.ItemToPrint =" Nenu 3_5           ";
+                     ^
+../Core/Menu/Menu.c:241:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_5.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:243:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_6.DownNode=&MenuNodePassive_3_7;
+                     ^
+../Core/Menu/Menu.c:244:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_6.NextNode=&MenuNodePassive_3_6;
+                     ^
+../Core/Menu/Menu.c:245:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_6.UpNode=&MenuNodePassive_3_5;
+                     ^
+../Core/Menu/Menu.c:246:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_6.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:247:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_6.MenuPosition=Middle;
+                     ^
+../Core/Menu/Menu.c:248:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_6.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:249:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_6.ItemToPrint =" Nenu 3_6           ";
+                     ^
+../Core/Menu/Menu.c:250:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_6.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:253:21: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_3_7.UpNode=&MenuNodePassive_3_6;
+                     ^
+../Core/Menu/Menu.c:254:21: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_3_7.NextNode=&MenuNodePassive_3_7;
+                     ^
+../Core/Menu/Menu.c:255:21: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_3_7.DownNode=&MenuNodePassive_3_7;
+                     ^
+../Core/Menu/Menu.c:256:21: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_3_7.PreviousNode=&MenuNodePassive_3;
+                     ^
+../Core/Menu/Menu.c:257:21: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_3_7.MenuPosition=Last;
+                     ^
+../Core/Menu/Menu.c:258:21: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_3_7.Title="Menu 3...           ";
+                     ^
+../Core/Menu/Menu.c:259:21: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_3_7.ItemToPrint =" Nenu 3_7           ";
+                     ^
+../Core/Menu/Menu.c:260:21: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_3_7.NodeExecFct=Menu_PassivePrint;
+                     ^
+../Core/Menu/Menu.c:272:25: error: request for member 'UpNode' in something not a structure or union
+  MenuNodeInput_VoltParam.UpNode=&MenuNodeInput_VoltParam;
+                         ^
+../Core/Menu/Menu.c:273:25: error: request for member 'NextNode' in something not a structure or union
+  MenuNodeInput_VoltParam.NextNode=&MenuNodeInput_VoltParam;
+                         ^
+../Core/Menu/Menu.c:274:25: error: request for member 'DownNode' in something not a structure or union
+  MenuNodeInput_VoltParam.DownNode=&MenuNodeInput_VoltParam;
+                         ^
+../Core/Menu/Menu.c:275:25: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodeInput_VoltParam.PreviousNode=&MenuNodePassive_3_1;
+                         ^
+../Core/Menu/Menu.c:276:25: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodeInput_VoltParam.MenuPosition=Last;
+                         ^
+../Core/Menu/Menu.c:277:25: error: request for member 'Title' in something not a structure or union
+  MenuNodeInput_VoltParam.Title="Volt Param [V]...   ";
+                         ^
+../Core/Menu/Menu.c:278:25: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodeInput_VoltParam.ItemToPrint =" Actual :           ";
+                         ^
+../Core/Menu/Menu.c:279:25: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodeInput_VoltParam.NodeExecFct=Menu_InputStateMachine;
+                         ^
+../Core/Menu/Menu.c:280:25: error: request for member 'Param' in something not a structure or union
+  MenuNodeInput_VoltParam.Param=&VoltageParam;
+                         ^
+../Core/Menu/Menu.c:289:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'Val'
+  VoltageParam.Val=12.5;
+              ^
+../Core/Menu/Menu.c:290:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'MaxVal'
+  VoltageParam.MaxVal=13.0;
+              ^
+../Core/Menu/Menu.c:291:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'MinVal'
+  VoltageParam.MinVal=12.0;
+              ^
+../Core/Menu/Menu.c:292:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'NewUserInputFlag'
+  VoltageParam.NewUserInputFlag=0;
+              ^
+../Core/Menu/Menu.c:293:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'DigitNb'
+  VoltageParam.DigitNb=4;
+              ^
+../Core/Menu/Menu.c:294:14: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'DecimalNb'
+  VoltageParam.DecimalNb=2;
+              ^
+../Core/Menu/Menu.c: At top level:
+../Core/Menu/Menu.c:336:2: error: unknown type name 'Menu_Node'
+  Menu_Node *  ActualNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.c:340:2: error: unknown type name 'Menu_Node'
+  Menu_Node * LinkPreviousNode;
+  ^~~~~~~~~
+../Core/Menu/Menu.c: In function 'Menu_Init':
+../Core/Menu/Menu.c:380:11: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'MaxVal'
+  ParamNull.MaxVal=0.0;
+           ^
+../Core/Menu/Menu.c:381:11: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'MinVal'
+  ParamNull.MinVal=0.0;
+           ^
+../Core/Menu/Menu.c:382:11: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'Val'
+  ParamNull.Val=0.0;
+           ^
+../Core/Menu/Menu.c:383:11: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'NewUserInputFlag'
+  ParamNull.NewUserInputFlag=0;
+           ^
+../Core/Menu/Menu.c:384:11: error: 'Menu_ParamValTypedef {aka struct Menu_Node}' has no member named 'DigitNb'
+  ParamNull.DigitNb=0;
+           ^
+../Core/Menu/Menu.c: In function 'Menu_NodeUpdate':
+../Core/Menu/Menu.c:420:48: error: request for member 'UpNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
+                                                ^~
+../Core/Menu/Menu.c:426:48: error: request for member 'UpNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->UpNode;
+                                                ^~
+../Core/Menu/Menu.c:432:48: error: request for member 'DownNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
+                                                ^~
+../Core/Menu/Menu.c:438:48: error: request for member 'DownNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->DownNode;
+                                                ^~
+../Core/Menu/Menu.c:444:48: error: request for member 'PreviousNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+                                                ^~
+../Core/Menu/Menu.c:450:48: error: request for member 'PreviousNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+                                                ^~
+../Core/Menu/Menu.c:456:48: error: request for member 'NextNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
+                                                ^~
+../Core/Menu/Menu.c:462:48: error: request for member 'NextNode' in something not a structure or union
+   Menu_Status.ActualNode=Menu_Status.ActualNode->NextNode;
+                                                ^~
+../Core/Menu/Menu.c:467:24: error: request for member 'NodeExecFct' in something not a structure or union
+  Menu_Status.ActualNode->NodeExecFct();
+                        ^~
+../Core/Menu/Menu.c: In function 'Menu_PassivePrint':
+../Core/Menu/Menu.c:483:38: error: request for member 'Title' in something not a structure or union
+  ComUART_Print(Menu_Status.ActualNode->Title, 20);
+                                      ^~
+../Core/Menu/Menu.c:485:32: error: request for member 'MenuPosition' in something not a structure or union
+  switch (Menu_Status.ActualNode->MenuPosition)
+                                ^~
+../Core/Menu/Menu.c:491:40: error: request for member 'ItemToPrint' in something not a structure or union
+    ComUART_Print(Menu_Status.ActualNode->ItemToPrint,19);
+                                        ^~
+../Core/Menu/Menu.c:494:30: error: request for member 'DownNode' in something not a structure or union
+    if (Menu_Status.ActualNode->DownNode!=Menu_Status.ActualNode) // existe un item en dessous
+                              ^~
+../Core/Menu/Menu.c:497:41: error: request for member 'DownNode' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->DownNode->ItemToPrint,20);
+                                         ^~
+../Core/Menu/Menu.c:506:30: error: request for member 'DownNode' in something not a structure or union
+    if (Menu_Status.ActualNode->DownNode->DownNode!=Menu_Status.ActualNode->DownNode) // existe un item en dessous
+                              ^~
+../Core/Menu/Menu.c:506:74: error: request for member 'DownNode' in something not a structure or union
+    if (Menu_Status.ActualNode->DownNode->DownNode!=Menu_Status.ActualNode->DownNode) // existe un item en dessous
+                                                                          ^~
+../Core/Menu/Menu.c:509:41: error: request for member 'DownNode' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->DownNode->DownNode->ItemToPrint,20);
+                                         ^~
+../Core/Menu/Menu.c:526:40: error: request for member 'UpNode' in something not a structure or union
+    ComUART_Print(Menu_Status.ActualNode->UpNode->ItemToPrint,20);
+                                        ^~
+../Core/Menu/Menu.c:530:40: error: request for member 'ItemToPrint' in something not a structure or union
+    ComUART_Print(Menu_Status.ActualNode->ItemToPrint,19);
+                                        ^~
+../Core/Menu/Menu.c:534:40: error: request for member 'DownNode' in something not a structure or union
+    ComUART_Print(Menu_Status.ActualNode->DownNode->ItemToPrint,20);
+                                        ^~
+../Core/Menu/Menu.c:544:30: error: request for member 'UpNode' in something not a structure or union
+    if (Menu_Status.ActualNode->UpNode->UpNode!=Menu_Status.ActualNode->UpNode)
+                              ^~
+../Core/Menu/Menu.c:544:70: error: request for member 'UpNode' in something not a structure or union
+    if (Menu_Status.ActualNode->UpNode->UpNode!=Menu_Status.ActualNode->UpNode)
+                                                                      ^~
+../Core/Menu/Menu.c:549:41: error: request for member 'UpNode' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->UpNode->UpNode->ItemToPrint,20);
+                                         ^~
+../Core/Menu/Menu.c:553:41: error: request for member 'UpNode' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->UpNode->ItemToPrint,20);
+                                         ^~
+../Core/Menu/Menu.c:557:41: error: request for member 'ItemToPrint' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->ItemToPrint,19);
+                                         ^~
+../Core/Menu/Menu.c:565:41: error: request for member 'UpNode' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->UpNode->ItemToPrint,20);
+                                         ^~
+../Core/Menu/Menu.c:569:41: error: request for member 'ItemToPrint' in something not a structure or union
+     ComUART_Print(Menu_Status.ActualNode->ItemToPrint,19);
+                                         ^~
+../Core/Menu/Menu.c: In function 'MenuInput_PrintParam':
+../Core/Menu/Menu.c:594:38: error: request for member 'Title' in something not a structure or union
+  ComUART_Print(Menu_Status.ActualNode->Title, 20);
+                                      ^~
+../Core/Menu/Menu.c:598:48: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                ^~
+../Core/Menu/Menu.c:598:96: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                ^~
+../Core/Menu/Menu.c:598:136: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                                                        ^~
+../Core/Menu/Menu.c:599:48: error: request for member 'Param' in something not a structure or union
+  ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
+                                                ^~
+../Core/Menu/Menu.c:603:48: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                ^~
+../Core/Menu/Menu.c:603:96: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                ^~
+../Core/Menu/Menu.c:603:136: error: request for member 'Param' in something not a structure or union
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MaxVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                                                        ^~
+../Core/Menu/Menu.c:604:48: error: request for member 'Param' in something not a structure or union
+  ComUART_Print(MyString, Menu_Status.ActualNode->Param->DigitNb +1);
+                                                ^~
+../Core/Menu/Menu.c:608:68: error: request for member 'Param' in something not a structure or union
+  ComUART_Print(Menu_Status.StringInputValue, Menu_Status.ActualNode->Param->DigitNb +1);
+                                                                    ^~
+../Core/Menu/Menu.c: In function 'Menu_InputStateMachine':
+../Core/Menu/Menu.c:682:55: error: request for member 'PreviousNode' in something not a structure or union
+    Menu_Status.LinkPreviousNode=Menu_Status.ActualNode->PreviousNode; // pour pouvoir revenir
+                                                       ^~
+../Core/Menu/Menu.c:684:26: error: request for member 'PreviousNode' in something not a structure or union
+    Menu_Status.ActualNode->PreviousNode=Menu_Status.ActualNode;
+                          ^~
+../Core/Menu/Menu.c:688:33: error: request for member 'Param' in something not a structure or union
+    Valeur=Menu_Status.ActualNode->Param->Val;
+                                 ^~
+../Core/Menu/Menu.c:689:34: error: request for member 'Param' in something not a structure or union
+    DigitNb=Menu_Status.ActualNode->Param->DigitNb;
+                                  ^~
+../Core/Menu/Menu.c:690:32: error: request for member 'Param' in something not a structure or union
+    DecNb=Menu_Status.ActualNode->Param->DecimalNb;
+                                ^~
+../Core/Menu/Menu.c:703:38: error: request for member 'Param' in something not a structure or union
+    PosVirgule= Menu_Status.ActualNode->Param->DigitNb-Menu_Status.ActualNode->Param->DecimalNb;
+                                      ^~
+../Core/Menu/Menu.c:703:77: error: request for member 'Param' in something not a structure or union
+    PosVirgule= Menu_Status.ActualNode->Param->DigitNb-Menu_Status.ActualNode->Param->DecimalNb;
+                                                                             ^~
+../Core/Menu/Menu.c:704:33: error: request for member 'Param' in something not a structure or union
+    PosMax=Menu_Status.ActualNode->Param->DigitNb;
+                                 ^~
+../Core/Menu/Menu.c:766:27: error: request for member 'PreviousNode' in something not a structure or union
+     Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+                           ^~
+../Core/Menu/Menu.c:769:50: error: request for member 'PreviousNode' in something not a structure or union
+     Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+                                                  ^~
+../Core/Menu/Menu.c:786:83: error: request for member 'Param' in something not a structure or union
+     Valeur=StringFct_Str2Float(Menu_Status.StringInputValue,Menu_Status.ActualNode->Param->DigitNb,Menu_Status.ActualNode->Param->DecimalNb);
+                                                                                   ^~
+../Core/Menu/Menu.c:786:122: error: request for member 'Param' in something not a structure or union
+     Valeur=StringFct_Str2Float(Menu_Status.StringInputValue,Menu_Status.ActualNode->Param->DigitNb,Menu_Status.ActualNode->Param->DecimalNb);
+                                                                                                                          ^~
+../Core/Menu/Menu.c:788:40: error: request for member 'Param' in something not a structure or union
+     if ((Valeur<=Menu_Status.ActualNode->Param->MaxVal)&&(Valeur>=Menu_Status.ActualNode->Param->MinVal))
+                                        ^~
+../Core/Menu/Menu.c:788:89: error: request for member 'Param' in something not a structure or union
+     if ((Valeur<=Menu_Status.ActualNode->Param->MaxVal)&&(Valeur>=Menu_Status.ActualNode->Param->MinVal))
+                                                                                         ^~
+../Core/Menu/Menu.c:791:28: error: request for member 'Param' in something not a structure or union
+      Menu_Status.ActualNode->Param->Val=Valeur;
+                            ^~
+../Core/Menu/Menu.c:792:28: error: request for member 'Param' in something not a structure or union
+      Menu_Status.ActualNode->Param->NewUserInputFlag=1;
+                            ^~
+../Core/Menu/Menu.c:794:28: error: request for member 'PreviousNode' in something not a structure or union
+      Menu_Status.ActualNode->PreviousNode=Menu_Status.LinkPreviousNode;
+                            ^~
+../Core/Menu/Menu.c:797:51: error: request for member 'PreviousNode' in something not a structure or union
+      Menu_Status.ActualNode=Menu_Status.ActualNode->PreviousNode;
+                                                   ^~
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:30:29 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27660	     20	   2908	  30588	   777c	PV.elf
+Finished building: PV.bin
+Finished building: default.size.stdout
+ 
+Finished building: PV.list
+ 
+ 
+17:39:17 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:315:26: error: 'Param10' undeclared (first use in this function); did you mean 'Param_10'?
+  MenuNodeInput_10.Param=&Param10;
+                          ^~~~~~~
+                          Param_10
+../Core/Menu/Menu.c:315:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:40:36 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27796	     20	   2908	  30724	   7804	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:40:44 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27796	     20	   2908	  30724	   7804	PV.elf
+Finished building: default.size.stdout
+ 
+18:17:41 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27804	     20	   2908	  30732	   780c	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+ 
+18:17:48 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27804	     20	   2908	  30732	   780c	PV.elf
+Finished building: default.size.stdout
+ 
+18:20:47 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27804	     20	   2908	  30732	   780c	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+18:20:53 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27804	     20	   2908	  30732	   780c	PV.elf
+Finished building: default.size.stdout
+ 
+18:29:12 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27856	     20	   2908	  30784	   7840	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+18:29:51 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27856	     20	   2908	  30784	   7840	PV.elf
+Finished building: default.size.stdout
+ 
+18:29:54 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27856	     20	   2908	  30784	   7840	PV.elf
+Finished building: default.size.stdout
+ 
+18:43:34 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27872	     20	   2908	  30800	   7850	PV.elf
+Finished building: PV.bin
+Finished building: PV.list
+Finished building: default.size.stdout
+ 
+ 
+ 
+18:43:42 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27872	     20	   2908	  30800	   7850	PV.elf
+Finished building: default.size.stdout
+ 
+19:02:39 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:226:32: error: 'MenuNodeInput_30' undeclared (first use in this function); did you mean 'MenuNodeInput_20'?
+  MenuNodePassive_3_4.NextNode=&MenuNodeInput_30;;
+                                ^~~~~~~~~~~~~~~~
+                                MenuNodeInput_20
+../Core/Menu/Menu.c:226:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Menu/Menu.c:350:26: error: 'Param_30' undeclared (first use in this function); did you mean 'Param_20'?
+  MenuNodeInput_30.Param=&Param_30;
+                          ^~~~~~~~
+                          Param_20
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:02:51 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:226:32: error: 'MenuNodeInput_30' undeclared (first use in this function); did you mean 'MenuNodeInput_20'?
+  MenuNodePassive_3_4.NextNode=&MenuNodeInput_30;
+                                ^~~~~~~~~~~~~~~~
+                                MenuNodeInput_20
+../Core/Menu/Menu.c:226:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Menu/Menu.c:350:26: error: 'Param_30' undeclared (first use in this function); did you mean 'Param_20'?
+  MenuNodeInput_30.Param=&Param_30;
+                          ^~~~~~~~
+                          Param_20
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:06:56 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:226:32: error: 'MenuNodeInput_30' undeclared (first use in this function); did you mean 'MenuNodeInput_20'?
+  MenuNodePassive_3_4.NextNode=&MenuNodeInput_30;
+                                ^~~~~~~~~~~~~~~~
+                                MenuNodeInput_20
+../Core/Menu/Menu.c:226:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Menu/Menu.c:346:2: error: 'MenuNodeInput_210' undeclared (first use in this function); did you mean 'MenuNodeInput_21'?
+  MenuNodeInput_210.MenuPosition=Last;
+  ^~~~~~~~~~~~~~~~~
+  MenuNodeInput_21
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:08 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:226:32: error: 'MenuNodeInput_30' undeclared (first use in this function); did you mean 'MenuNodeInput_20'?
+  MenuNodePassive_3_4.NextNode=&MenuNodeInput_30;
+                                ^~~~~~~~~~~~~~~~
+                                MenuNodeInput_20
+../Core/Menu/Menu.c:226:32: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:23 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28164	     20	   2908	  31092	   7974	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+19:07:30 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28164	     20	   2908	  31092	   7974	PV.elf
+Finished building: default.size.stdout
+ 
+19:07:57 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28164	     20	   2908	  31092	   7974	PV.elf
+Finished building: default.size.stdout
+ 
+19:10:20 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+19:10:36 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+ 
+19:12:12 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+19:12:20 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+ 
+19:14:24 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+19:14:33 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28160	     20	   2908	  31088	   7970	PV.elf
+Finished building: default.size.stdout
+ 
+19:16:23 **** Clean-only build of configuration Debug for project PV ****
+make -j4 clean 
+rm -rf *
+ 
