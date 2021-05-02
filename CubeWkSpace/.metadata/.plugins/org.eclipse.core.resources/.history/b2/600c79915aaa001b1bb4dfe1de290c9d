@@ -1,0 +1,138 @@
+/*
+ * StringFct.c
+ *
+ *  Created on: 26 avr. 2021
+ *      Author: trocache
+ */
+
+
+#include "StringFct.h"
+
+
+int Val; // à mettre en local après debug
+char Tampon[8];
+char StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac)
+{
+    // exemple 1342.54, Fract=2, DigitNb=6
+	//
+	int i;
+	char Sign;
+	Sign=0;
+	if (Value<0)
+	{
+		Value=-Value;
+		Sign=-1;
+	}
+
+	// erase Tab
+    if ((Frac>=0)&&(Frac<=3)&&(DigitNb>0)&&(DigitNb<=6)&&(DigitNb>Frac))
+    {
+    	for (i=0;i<7;i++)
+    	{
+    		*(DigitTab+i)=0;
+    	}
+
+    	switch (Frac)
+    	{
+    	case 0:Val=Value;break;
+    	case 1:Val=10.0*Value;break;
+    	case 2:Val=100.0*Value;break;
+    	case 3:Val=1000.0*Value;break;
+    	}
+
+    	switch (DigitNb)
+    	{
+    	case 6:*(Tampon+5)=Val/100000+0x30;Val=Val%100000;
+    	case 5:*(Tampon+4)=Val/10000+0x30;Val=Val%10000;
+    	case 4:*(Tampon+3)=Val/1000+0x30;Val=Val%1000;
+    	case 3:*(Tampon+2)=Val/100+0x30;Val=Val%100;
+    	case 2:*(Tampon+1)=Val/10+0x30;Val=Val%10;
+    	case 1:*(Tampon)=Val+0x30;break;
+    	// resultat dans la chaîne (7 car) :
+    	// | 6  5   4   3   2   1   0 | avec 6 les centaines de mille, 5 les dizaines ...etc..
+    	// | x '1' '3' '4' '2' '5' '4'|
+
+    	}
+
+
+    	for (i=DigitNb ; i>=(Frac+1); i-- )
+    	{
+    		*(Tampon+i)=*(Tampon+i-1);
+    	}
+    	*(Tampon+Frac)='.';
+
+    	// | 6   5   4   3   2   1   0 | avec 6 les centaines de mille, 5 les dizaines ...etc..
+    	// |'1' '3' '4' '2' '.' '5' '4'|
+
+    	// remise dans l'ordre digit de poids fort en 0 (début de châine)
+    	for (i=0 ; i<=DigitNb; i++ )
+    	{
+    		*(DigitTab+i+1)=*(Tampon+DigitNb-i);
+    	}
+    	*(DigitTab+DigitNb+2)=0; // caractère nul
+    	*(DigitTab)=' '; // par défaut nbre positif, donc pas de signe
+
+    	// DigitTab
+    	// | 8  7   6   5   4   3   2   1   0 | avec 6 les centaines de mille, 5 les dizaines ...etc..
+    	// | 0 '4' '5' '.' '2' '4' '3' '1'  x |
+
+    	if (Sign==-1) *(DigitTab)='-';
+
+
+    	return (1);
+    }
+    else return 0;
+
+}
+
+float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac)
+{
+	//|xx.xxx00| DigitNb=5, DecimalNb=2
+	//|x.xx0000| DigitNb=3, DecimalNb=2
+	//|x.000000| DigitNb=1, DecimalNb=0
+	//|xxx.xxx0|
+    //|xxxxxx.0|
+
+	float Val;
+	int i;
+	char Digit;
+	float Fact;
+
+    if ((Frac>=0)&&(Frac<=3)&&(DigitNb>0)&&(DigitNb<=6)&&(DigitNb>Frac))
+    {
+	// calcul entier
+	Val=0.0;
+	Fact=1.0;
+	for (i=DigitNb+1;i>=1;i--)
+	{
+		Digit=*(DigitTab+i);
+		if (Digit !=0)
+		{
+			if (Digit !='.')
+			{
+				Digit = Digit-0x30;
+				Val=Val+(float)Digit*Fact;
+				Fact=Fact*10.0;
+			}
+		}
+	}
+
+	// fractionnaire
+	switch(Frac)
+	{
+	case 1:Val=Val/10.0;break;
+	case 2:Val=Val/100.0;break;
+	case 3:Val=Val/1000.0;break;
+	}
+
+	if (*DigitTab = '-')
+	{
+		Val=-Val;
+	}
+    }
+    else Val=1100000.0; // valeur hors gabarit, testable en comparant à 1000000.0
+
+	return (Val); // test erreur en faisant si fct <1000000.0
+
+}
+

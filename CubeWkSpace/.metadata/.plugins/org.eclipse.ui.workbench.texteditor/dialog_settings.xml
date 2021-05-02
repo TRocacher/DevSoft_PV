@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="MenuNodeInput_30"/>
+		<item key="selection" value="6"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="5"/>
+			<item value="4"/>
+			<item value="40"/>
+			<item value="41"/>
+			<item value="42"/>
+			<item value="30"/>
+			<item value="MenuNodePassive_4_2"/>
+			<item value="MenuNodePassive_4_1"/>
+			<item value="MenuNodePassive_4_0"/>
+			<item value="item_menu4"/>
+			<item value="PosMax"/>
+			<item value="31"/>
+			<item value="MenuNodeInput_21"/>
 			<item value="MenuNodeInput_20"/>
 			<item value="MenuNodeInput_10"/>
-			<item value="MenuPos"/>
-			<item value="Param10"/>
-			<item value="MenuNodeInput_VoltParam"/>
-			<item value="StringFct_Str2Float"/>
-			<item value="StringFct_Float2Str"/>
-			<item value="Menu_InputScreenPrint"/>
-			<item value="Menu_PassiveScreenPrint"/>
-			<item value="DigitPos"/>
-			<item value="InNode_St"/>
-			<item value="InNode_State"/>
-			<item value="NodeState"/>
-			<item value="ItemInput_VoltParam"/>
-			<item value="Item_Menu3"/>
 		</list>
 		<list key="replacehistory">
+			<item value="6"/>
+			<item value="5"/>
+			<item value="41"/>
+			<item value="43"/>
+			<item value="42"/>
+			<item value="40"/>
+			<item value="MenuNodePassive_4_3"/>
+			<item value="MenuNodePassive_4_2"/>
+			<item value="MenuNodePassive_4_1"/>
+			<item value="MenuNodePassive_4"/>
+			<item value="32"/>
+			<item value="31"/>
 			<item value="MenuNodeInput_30"/>
 			<item value="MenuNodeInput_20"/>
 			<item value="Param_10"/>
-			<item value="MenuNodeInput_10"/>
-			<item value="Menu_InputStateMachine"/>
-			<item value="Menu_PassivePrint"/>
-			<item value="CursorPos"/>
-			<item value="State"/>
-			<item value="state"/>
-			<item value=""/>
-			<item value="InNode_St"/>
-			<item value="InputNodeSt"/>
-			<item value="MenuNodeInput_VoltParam"/>
-			<item value="MenuNodeInput_"/>
-			<item value="MenuNodePassive_3"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1176"/>
-		<item key="DIALOG_Y_ORIGIN" value="169"/>
+		<item key="DIALOG_X_ORIGIN" value="1119"/>
+		<item key="DIALOG_Y_ORIGIN" value="143"/>
 		<item key="DIALOG_WIDTH" value="648"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

@@ -5,70 +5,89 @@
  *      Author: trocache
  */
 
+
 #include "StringFct.h"
 
 
-int Val; // à mettre en local après debug
-char Tampon[7];
+
 char StringFct_Float2Str(float Value,char * DigitTab, char DigitNb, char Frac)
 {
+    // exemple 1342.54, Fract=2, DigitNb=6
+	// pos       0    1   2  2   4   5   6   7  8
+	// 		| 'Sign' '1' '3 '4' '2' '.' '5' '4' 0 |  9 char
+	// min  | 'Sign' '1'  '.' 0 .... |
+
 
 	int i;
-	// erase Tab
+	char PosVirg;
+	int PdsMax;
+	int Val;
+
+
     if ((Frac>=0)&&(Frac<=3)&&(DigitNb>0)&&(DigitNb<=6)&&(DigitNb>Frac))
     {
-    	for (i=0;i<7;i++)
+    	// gestion virgule
+    	PosVirg=DigitNb-Frac+1; // exemple 4.2 donne PosVirg = 5
+    	* DigitTab=' '; // + par défaut
+    	if (Value<0)
     	{
-    		*(DigitTab+i)=0;
+    		Value=-Value;
+    		* DigitTab='-';
     	}
+    	// -> | ' ' 'x' 'x 'x' 'x' 'x' 'x' 'x' x |
 
+    	// réglage du poids max
+    	PdsMax=1;
+    	for (i=1; i<DigitNb;i++)
+    	{
+    		PdsMax=PdsMax*10; // ex : DigitNb = 2 -> PdsMax=10, DigitNb = 1 -> PdsMax=1
+    	}
+    	// passage entier provisoire :
     	switch (Frac)
     	{
-    	case 0:Val=Value;break;
-    	case 1:Val=10.0*Value;break;
-    	case 2:Val=100.0*Value;break;
-    	case 3:Val=1000.0*Value;break;
+    		case 0:Val=Value;break;
+    		case 1:Val=10.0*Value;break;
+    		case 2:Val=100.0*Value;break;
+    		case 3:Val=1000.0*Value;break;
     	}
+    	// 1342.54 donne Val (int) =  134254
 
-    	switch (DigitNb)
+
+    	// détermination des digit
+    	for (i=1; i<=DigitNb;i++)
     	{
-    	case 6:*(Tampon+5)=Val/100000+0x30;Val=Val%100000;
-    	case 5:*(Tampon+4)=Val/10000+0x30;Val=Val%10000;
-    	case 4:*(Tampon+3)=Val/1000+0x30;Val=Val%1000;
-    	case 3:*(Tampon+2)=Val/100+0x30;Val=Val%100;
-    	case 2:*(Tampon+1)=Val/10+0x30;Val=Val%10;
-    	case 1:*(Tampon)=Val+0x30;break;
-    	// resultat dans la chaîne (7 car) :
-    	// |x 6 5 4 3 2 1| avec 6 les centtaines de mille, 5 les dizaines ...etc..
-
+    		*(DigitTab+i)=Val/PdsMax+0x30;Val=Val%PdsMax;
+    		PdsMax=PdsMax/10;
     	}
+    	// -> | ' ' '1' '3 '4' '2' '5' '4' 'x' x |
 
-
-    	for (i=DigitNb ; i>=(Frac+1); i-- )
+    	// insertion virgule
+    	for (i=DigitNb; i>=PosVirg;i--)
     	{
-    		*(Tampon+i)=*(Tampon+i-1);
+    		*(DigitTab+i+1)=*(DigitTab+i);
     	}
-    	*(Tampon+Frac)='.';
+    	// -> | ' ' '1' '3 '4' '2' '5' '5' '4' x |
+    	*(DigitTab+PosVirg)='.';
+    	// -> | ' ' '1' '3 '4' '2' '.' '5' '4' x |
 
-    	// remise dans l'ordre digit de poids fort en 0 (début de châine)
-    	for (i=0 ; i<=DigitNb; i++ )
-    	{
-    		*(DigitTab+i)=*(Tampon+DigitNb-i);
-    	}
-    	*(DigitTab+DigitNb+1)=0; // caractère nul
-    	return (1);
+    	// insertion Null
+    	*(DigitTab+DigitNb+2)=0;
+
+    	return 1;
+
     }
+
     else return 0;
 
 }
 
 float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac)
 {
-	//|xx.xxx00| DigitNb=5, DecimalNb=2
-	//|x.xx0000| DigitNb=3, DecimalNb=2
-	//|x.000000| DigitNb=1, DecimalNb=0
-	//|xxx.xxx0|
-    //|xxxxxx.0|
+	//|sxx.xxx00| DigitNb=5, DecimalNb=2
+	//|sx.xx0000| DigitNb=3, DecimalNb=2
+	//|sx.000000| DigitNb=1, DecimalNb=0
+	//|sxxx.xxx0|
+    //|sxxxxxx.0|
 
 	float Val;
 	int i;
@@ -80,7 +99,7 @@ float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac)
 	// calcul entier
 	Val=0.0;
 	Fact=1.0;
-	for (i=DigitNb;i>=0;i--)
+	for (i=DigitNb+1;i>=1;i--)
 	{
 		Digit=*(DigitTab+i);
 		if (Digit !=0)
@@ -101,6 +120,8 @@ float StringFct_Str2Float(char * DigitTab, char DigitNb, char Frac)
 	case 2:Val=Val/100.0;break;
 	case 3:Val=Val/1000.0;break;
 	}
+
+	if (*DigitTab == '-') Val=-Val;
     }
     else Val=1100000.0; // valeur hors gabarit, testable en comparant à 1000000.0
 

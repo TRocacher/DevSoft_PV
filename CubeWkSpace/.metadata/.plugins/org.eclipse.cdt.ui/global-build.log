@@ -5990,3 +5990,1398 @@ Finished building: default.size.stdout
 make -j4 clean 
 rm -rf *
  
+10:50:38 **** Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l476rgtx.d" -MT"Core/Startup/startup_stm32l476rgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32l476rgtx.o" "../Core/Startup/startup_stm32l476rgtx.s"
+arm-none-eabi-gcc "../Core/Src/MyAnalog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/MyAnalog.d" -MT"Core/Src/MyAnalog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/MyAnalog.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc "../Core/ComUART/ComUART.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/ComUART/ComUART.d" -MT"Core/ComUART/ComUART.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/ComUART/ComUART.o"
+../Core/Menu/StringFct.c:8:6: error: stray '\303' in program
+ Pret à être testé signe -
+      ^
+../Core/Menu/StringFct.c:8:7: error: stray '\240' in program
+ Pret à être testé signe -
+       ^
+../Core/Menu/StringFct.c:8:9: error: stray '\303' in program
+ Pret à être testé signe -
+         ^
+../Core/Menu/StringFct.c:8:10: error: stray '\252' in program
+ Pret à être testé signe -
+          ^
+../Core/Menu/StringFct.c:8:1: error: unknown type name 'Pret'
+ Pret à être testé signe -
+ ^~~~
+../Core/Menu/StringFct.c:8:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'test'
+ Pret à être testé signe -
+               ^~~~
+../Core/Menu/StringFct.c:8:19: error: stray '\303' in program
+ Pret à être testé signe -
+                   ^
+../Core/Menu/StringFct.c:8:20: error: stray '\251' in program
+ Pret à être testé signe -
+                    ^
+../Core/Menu/StringFct.c:8:15: error: unknown type name 'test'
+ Pret à être testé signe -
+               ^~~~
+../Core/Menu/StringFct.c: In function 'StringFct_Str2Float':
+../Core/Menu/StringFct.c:128:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (*DigitTab = '-')
+      ^
+make: *** [Core/Menu/subdir.mk:23: Core/Menu/StringFct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:51:33 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+../Core/Menu/StringFct.c: In function 'StringFct_Str2Float':
+../Core/Menu/StringFct.c:128:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (*DigitTab = '-')
+      ^
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-size   PV.elf 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+   text	   data	    bss	    dec	    hex	filename
+  28216	     20	   2916	  31152	   79b0	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+10:52:33 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     20	   2916	  31156	   79b4	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+10:52:43 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     20	   2916	  31156	   79b4	PV.elf
+Finished building: default.size.stdout
+ 
+10:55:58 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     20	   2916	  31156	   79b4	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+ 
+10:56:03 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     20	   2916	  31156	   79b4	PV.elf
+Finished building: default.size.stdout
+ 
+11:01:15 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     20	   2916	  31156	   79b4	PV.elf
+Finished building: default.size.stdout
+ 
+11:01:51 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28232	     20	   2916	  31168	   79c0	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+11:01:56 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28232	     20	   2916	  31168	   79c0	PV.elf
+Finished building: default.size.stdout
+ 
+11:08:27 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_InputStateMachine':
+../Core/Menu/Menu.c:769:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (Tamp=' ') Tamp='-';
+         ^~~~
+../Core/Menu/Menu.c:770:15: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     else if  (Tamp='-') Tamp=' ';
+               ^~~~
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28224	     20	   2916	  31160	   79b8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+11:08:43 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+11:08:48 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+ 
+11:11:58 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+11:12:31 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+ 
+11:12:35 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+ 
+11:15:57 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+ 
+11:16:03 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28256	     20	   2916	  31192	   79d8	PV.elf
+Finished building: default.size.stdout
+ 
+11:19:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28280	     20	   2916	  31216	   79f0	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+11:19:55 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28280	     20	   2916	  31216	   79f0	PV.elf
+Finished building: default.size.stdout
+ 
+14:13:00 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:65:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_30' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:65:25: warning: type defaults to 'int' in declaration of 'MenuNodeInput_31' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+                         ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:65:42: warning: type defaults to 'int' in declaration of 'MenuNodeInput_32' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+                                          ^~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:26:0:
+../Core/Menu/Menu.h:65:8: warning: type defaults to 'int' in declaration of 'MenuNodeInput_30' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+        ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:65:25: warning: type defaults to 'int' in declaration of 'MenuNodeInput_31' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+                         ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.h:65:42: warning: type defaults to 'int' in declaration of 'MenuNodeInput_32' [-Wimplicit-int]
+ extern MenuNodeInput_30,MenuNodeInput_31,MenuNodeInput_32;
+                                          ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28280	     20	   2916	  31216	   79f0	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+14:13:28 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28280	     20	   2916	  31216	   79f0	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+ 
+14:27:07 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28712	     20	   3068	  31800	   7c38	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:28:50 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:28:58 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+ 
+14:33:09 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:33:21 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+ 
+14:38:16 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
+14:38:22 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28724	     20	   3068	  31812	   7c44	PV.elf
+Finished building: default.size.stdout
+ 
+15:07:01 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:429:36: error: 'MenuNodePassive_4' undeclared (first use in this function); did you mean 'MenuNodePassive_3'?
+  MenuNodePassive_4_0.PreviousNode=&MenuNodePassive_4;
+                                    ^~~~~~~~~~~~~~~~~
+                                    MenuNodePassive_3
+../Core/Menu/Menu.c:429:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:08:12 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Menu/Menu.o: In function `Menu_Node_Init':
+C:/Users/trocache/Documents/Thierry/2013_2016/Projets_perso/2020_Pjet5ESPE/2020_2021_DevSoft/PV/Debug/../Core/Menu/Menu.c:234: undefined reference to `Item_Menu4'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:60: PV.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:10:04 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:145:2: error: 'MenuNodePassive_' undeclared (first use in this function); did you mean 'MenuNodePassive_4'?
+  MenuNodePassive_.NodeExecFct=Menu_PassivePrint;
+  ^~~~~~~~~~~~~~~~
+  MenuNodePassive_4
+../Core/Menu/Menu.c:145:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:10:18 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Menu/Menu.o: In function `Menu_Node_Init':
+C:/Users/trocache/Documents/Thierry/2013_2016/Projets_perso/2020_Pjet5ESPE/2020_2021_DevSoft/PV/Debug/../Core/Menu/Menu.c:234: undefined reference to `Item_Menu4'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:60: PV.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:12:30 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28848	     20	   3356	  32224	   7de0	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+15:12:48 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28848	     20	   3356	  32224	   7de0	PV.elf
+Finished building: default.size.stdout
+ 
+15:16:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28848	     20	   3356	  32224	   7de0	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:16:57 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28848	     20	   3356	  32224	   7de0	PV.elf
+Finished building: default.size.stdout
+ 
+15:22:54 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29076	     20	   3356	  32452	   7ec4	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:23:13 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29076	     20	   3356	  32452	   7ec4	PV.elf
+Finished building: default.size.stdout
+ 
+15:25:10 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29084	     20	   3356	  32460	   7ecc	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:25:17 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29084	     20	   3356	  32460	   7ecc	PV.elf
+Finished building: default.size.stdout
+ 
+15:41:00 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29656	     20	   3420	  33096	   8148	PV.elf
+Finished building: PV.bin
+Finished building: default.size.stdout
+ 
+Finished building: PV.list
+ 
+ 
+15:41:11 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29656	     20	   3420	  33096	   8148	PV.elf
+Finished building: default.size.stdout
+ 
+15:48:07 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29664	     20	   3420	  33104	   8150	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:48:23 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29664	     20	   3420	  33104	   8150	PV.elf
+Finished building: default.size.stdout
+ 
+15:48:31 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29664	     20	   3420	  33104	   8150	PV.elf
+Finished building: default.size.stdout
+ 
+17:06:19 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c:65:1: error: unknown type name 'enu_Node'; did you mean 'Menu_Node'?
+ enu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+ ^~~~~~~~
+ Menu_Node
+../Core/Menu/Menu.c:65:10: error: conflicting types for 'MenuNodeInput_60'
+ enu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+          ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:75:18: note: previous declaration of 'MenuNodeInput_60' was here
+ extern Menu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                  ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:65:27: error: conflicting types for 'MenuNodeInput_61'
+ enu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                           ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:75:35: note: previous declaration of 'MenuNodeInput_61' was here
+ extern Menu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                                   ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:65:44: error: conflicting types for 'MenuNodeInput_62'
+ enu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                                            ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:75:52: note: previous declaration of 'MenuNodeInput_62' was here
+ extern Menu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                                                    ^~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:65:61: error: conflicting types for 'MenuNodeInput_63'
+ enu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                                                             ^~~~~~~~~~~~~~~~
+In file included from ../Core/Menu/Menu.c:16:0:
+../Core/Menu/Menu.h:75:69: note: previous declaration of 'MenuNodeInput_63' was here
+ extern Menu_Node MenuNodeInput_60,MenuNodeInput_61,MenuNodeInput_62,MenuNodeInput_63;
+                                                                     ^~~~~~~~~~~~~~~~
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:06:32 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29664	     20	   3996	  33680	   8390	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:13:54 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:555:36: error: 'MenuNodePassive_5' undeclared (first use in this function); did you mean 'MenuNodePassive_4'?
+  MenuNodePassive_5_0.PreviousNode=&MenuNodePassive_5;
+                                    ^~~~~~~~~~~~~~~~~
+                                    MenuNodePassive_4
+../Core/Menu/Menu.c:555:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:17:02 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c:48:86: warning: data definition has no type or storage class
+ Menu_Node MenuNodePassive_1, MenuNodePassive_2, MenuNodePassive_3, MenuNodePassive_4;MenuNodePassive_5;
+                                                                                      ^~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:48:86: warning: type defaults to 'int' in declaration of 'MenuNodePassive_5' [-Wimplicit-int]
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:155:19: error: request for member 'UpNode' in something not a structure or union
+  MenuNodePassive_5.UpNode=&MenuNodePassive_4;
+                   ^
+../Core/Menu/Menu.c:156:19: error: request for member 'NextNode' in something not a structure or union
+  MenuNodePassive_5.NextNode=&MenuNodePassive_5_0;
+                   ^
+../Core/Menu/Menu.c:157:19: error: request for member 'DownNode' in something not a structure or union
+  MenuNodePassive_5.DownNode=&MenuNodePassive_5;
+                   ^
+../Core/Menu/Menu.c:158:19: error: request for member 'PreviousNode' in something not a structure or union
+  MenuNodePassive_5.PreviousNode=&MenuNodePassive_5;
+                   ^
+../Core/Menu/Menu.c:159:19: error: request for member 'MenuPosition' in something not a structure or union
+  MenuNodePassive_5.MenuPosition=Last;
+                   ^
+../Core/Menu/Menu.c:160:19: error: request for member 'Title' in something not a structure or union
+  MenuNodePassive_5.Title="Menu principal      ";
+                   ^
+../Core/Menu/Menu.c:161:19: error: request for member 'ItemToPrint' in something not a structure or union
+  MenuNodePassive_5.ItemToPrint =" Nenu 5             ";
+                   ^
+../Core/Menu/Menu.c:162:19: error: request for member 'NodeExecFct' in something not a structure or union
+  MenuNodePassive_5.NodeExecFct=Menu_PassivePrint;
+                   ^
+../Core/Menu/Menu.c:564:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  MenuNodePassive_5_0.PreviousNode=&MenuNodePassive_5;
+                                  ^
+../Core/Menu/Menu.c:573:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  MenuNodePassive_5_1.PreviousNode=&MenuNodePassive_5;
+                                  ^
+../Core/Menu/Menu.c:582:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  MenuNodePassive_5_2.PreviousNode=&MenuNodePassive_5;
+                                  ^
+../Core/Menu/Menu.c:591:34: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  MenuNodePassive_5_3.PreviousNode=&MenuNodePassive_5;
+                                  ^
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:17:18 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30704	     20	   4164	  34888	   8848	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:25:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30704	     20	   4164	  34888	   8848	PV.elf
+Finished building: default.size.stdout
+ 
+17:26:52 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30704	     20	   4164	  34888	   8848	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+17:26:58 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30704	     20	   4164	  34888	   8848	PV.elf
+Finished building: default.size.stdout
+ 
+17:43:33 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Node_Init':
+../Core/Menu/Menu.c:157:30: error: 'MenuNodePassive_6' undeclared (first use in this function); did you mean 'MenuNodePassive_5'?
+  MenuNodePassive_5.DownNode=&MenuNodePassive_6;
+                              ^~~~~~~~~~~~~~~~~
+                              MenuNodePassive_5
+../Core/Menu/Menu.c:157:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:44:14 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+17:44:19 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+20:15:48 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+20:16:03 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+23:36:59 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+ 
+23:37:05 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+10:19:32 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31740	     20	   4196	  35956	   8c74	PV.elf
+Finished building: default.size.stdout
+ 
+10:47:12 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31744	     20	   4196	  35960	   8c78	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+10:47:36 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31744	     20	   4196	  35960	   8c78	PV.elf
+Finished building: default.size.stdout
+ 
+10:52:50 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31648	     20	   4196	  35864	   8c18	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+10:52:56 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31648	     20	   4196	  35864	   8c18	PV.elf
+Finished building: default.size.stdout
+ 
+10:55:52 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31588	     20	   4196	  35804	   8bdc	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+10:55:57 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31588	     20	   4196	  35804	   8bdc	PV.elf
+Finished building: default.size.stdout
+ 
+10:58:15 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31564	     20	   4196	  35780	   8bc4	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+10:58:24 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31564	     20	   4196	  35780	   8bc4	PV.elf
+Finished building: default.size.stdout
+ 
+10:59:44 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'MenuInput_PrintParam':
+../Core/Menu/Menu.c:1082:7: warning: unused variable 'MyString' [-Wunused-variable]
+  char MyString[8];
+       ^~~~~~~~
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31508	     20	   4196	  35724	   8b8c	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+10:59:52 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31508	     20	   4196	  35724	   8b8c	PV.elf
+Finished building: default.size.stdout
+ 
+11:01:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31556	     20	   4196	  35772	   8bbc	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+11:01:56 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31556	     20	   4196	  35772	   8bbc	PV.elf
+Finished building: default.size.stdout
+ 
+12:44:07 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31232	     20	   4188	  35440	   8a70	PV.elf
+Finished building: PV.list
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+ 
+12:48:34 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31496	     20	   4196	  35712	   8b80	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+13:01:28 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31496	     20	   4196	  35712	   8b80	PV.elf
+Finished building: default.size.stdout
+ 
+13:06:29 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31492	     20	   4196	  35708	   8b7c	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+13:11:14 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31492	     20	   4196	  35708	   8b7c	PV.elf
+Finished building: default.size.stdout
+ 
+13:15:29 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31488	     20	   4196	  35704	   8b78	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.list
+ 
+Finished building: PV.bin
+ 
+13:15:38 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31488	     20	   4196	  35704	   8b78	PV.elf
+Finished building: default.size.stdout
+ 
+13:47:05 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31484	     20	   4196	  35700	   8b74	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+ 
+13:47:17 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31484	     20	   4196	  35700	   8b74	PV.elf
+Finished building: default.size.stdout
+ 
+13:50:49 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31660	     20	   4196	  35876	   8c24	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+13:50:55 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31660	     20	   4196	  35876	   8c24	PV.elf
+Finished building: default.size.stdout
+ 
+13:55:06 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31672	     20	   4196	  35888	   8c30	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+13:55:17 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31672	     20	   4196	  35888	   8c30	PV.elf
+Finished building: default.size.stdout
+ 
+14:49:13 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc "../Core/Menu/StringFct.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/StringFct.d" -MT"Core/Menu/StringFct.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/StringFct.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31672	     20	   4196	  35888	   8c30	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:52:48 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Init':
+../Core/Menu/Menu.c:864:2: warning: implicit declaration of function 'Menu_Node_Init'; did you mean 'Menu_NodeUpdate'? [-Wimplicit-function-declaration]
+  Menu_Node_Init();
+  ^~~~~~~~~~~~~~
+  Menu_NodeUpdate
+../Core/Menu/Menu.c:878:2: error: 'VarBefore' undeclared (first use in this function)
+  VarBefore=0xAB;
+  ^~~~~~~~~
+../Core/Menu/Menu.c:878:2: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Menu/Menu.c:879:2: error: 'VarAfter' undeclared (first use in this function)
+  VarAfter=0xAB;
+  ^~~~~~~~
+../Core/Menu/Menu.c:881:33: error: 'Tab' undeclared (first use in this function)
+  if (StringFct_Float2Str(-12.36,Tab, 6, 3)==0) MenuInput_PrintPlantageConv();
+                                 ^~~
+../Core/Menu/Menu.c:899:2: error: 'res' undeclared (first use in this function)
+  res=StringFct_Str2Float(Tab, 5, 3);
+  ^~~
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:53:01 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'Menu_Init':
+../Core/Menu/Menu.c:878:2: error: 'VarBefore' undeclared (first use in this function)
+  VarBefore=0xAB;
+  ^~~~~~~~~
+../Core/Menu/Menu.c:878:2: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Menu/Menu.c:879:2: error: 'VarAfter' undeclared (first use in this function)
+  VarAfter=0xAB;
+  ^~~~~~~~
+../Core/Menu/Menu.c:881:33: error: 'Tab' undeclared (first use in this function)
+  if (StringFct_Float2Str(-12.36,Tab, 6, 3)==0) MenuInput_PrintPlantageConv();
+                                 ^~~
+../Core/Menu/Menu.c:899:2: error: 'res' undeclared (first use in this function)
+  res=StringFct_Str2Float(Tab, 5, 3);
+  ^~~
+make: *** [Core/Menu/subdir.mk:21: Core/Menu/Menu.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:53:20 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:54:01 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+../Core/Menu/Menu.c: In function 'MenuInput_PrintParam':
+../Core/Menu/Menu.c:1080:160: warning: implicit declaration of function 'MenuInput_PrintPlantageConv'; did you mean 'MenuInput_PrintParam'? [-Wimplicit-function-declaration]
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                                                                                                MenuInput_PrintParam
+../Core/Menu/Menu.c: At top level:
+../Core/Menu/Menu.c:1135:6: warning: conflicting types for 'MenuInput_PrintPlantageConv'
+ void MenuInput_PrintPlantageConv(void)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Menu/Menu.c:1080:160: note: previous implicit declaration of 'MenuInput_PrintPlantageConv' was here
+  if (StringFct_Float2Str(Menu_Status.ActualNode->Param->MinVal,MyString, Menu_Status.ActualNode->Param->DigitNb, Menu_Status.ActualNode->Param->DecimalNb)==0) MenuInput_PrintPlantageConv() ;
+                                                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:56:32 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+14:58:28 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:03:51 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+ 
+Finished building: PV.list
+ 
+15:04:02 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+ 
+19:50:34 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+Finished building: PV.bin
+ 
+Finished building: PV.list
+ 
+ 
+19:50:42 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+ 
+22:23:10 **** Incremental Build of configuration Debug for project PV ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Menu/Menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Core/ComUART -I../Core/Menu -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Menu/Menu.d" -MT"Core/Menu/Menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Menu/Menu.o"
+arm-none-eabi-gcc -o "PV.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\trocache\Documents\Thierry\2013_2016\Projets_perso\2020_Pjet5ESPE\2020_2021_DevSoft\PV\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PV.elf
+ 
+arm-none-eabi-objdump -h -S  PV.elf  > "PV.list"
+arm-none-eabi-objcopy  -O binary  PV.elf  "PV.bin"
+arm-none-eabi-size   PV.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31320	     20	   4172	  35512	   8ab8	PV.elf
+Finished building: default.size.stdout
+ 
+Finished building: PV.bin
+Finished building: PV.list
+ 
+ 
